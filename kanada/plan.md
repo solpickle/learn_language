@@ -1,3 +1,5 @@
+> **Reading bridge — 2026-10-11:** User accepted Day 1 and requested help recognizing Kannada script before more lesson content. A separate `/kanada/read/` page on `feature/read-kannada` teaches ten Day 1 sight words, selected vowel-mark changes, and a four-question recognition practice. Day 1 pattern and mission now include romanization and direct links. Word audio and letter guidance still await fluent-speaker review; phone feedback remains pending.
+
 > **Current status — 2026-10-11:** Day 1 implemented on `feature/kannada-day-1` in `solpickle/learn_language`. The first full lesson lives at `/kanada/day-1/`; generated MP3s are committed with the lesson. Day 2–7 remain planned. Fluent-speaker language/audio review and phone testing remain open. The older migration and imsank notes below are historical.
 
 > **Migration update — 2026-10-11:** The app and plans now live at C:\Users\sanka\work\learn_language\kanada. This folder is the source of truth. The imsank.github.io integration is being removed; prior paths/hosting milestones below are historical. New hosting details are pending. See dev_setup.md for current commands and layout.
@@ -5,6 +7,17 @@
 # Spoken Kannada for Bengaluru --- V1 Planning Specification
 
 ## Active implementation checklist
+
+### Read Kannada bridge
+
+- [x] Add a compact reading page linked from the audio lab and Day 1.
+- [x] Use Day 1 sight words with Kannada, romanization, meaning, and saved audio.
+- [x] Show selected base consonant and vowel-mark forms without teaching the full alphabet.
+- [x] Add a short recognition practice with answer feedback and replay.
+- [x] Add pronunciation guides and word links to Day 1 pattern and mission.
+- [ ] Obtain fluent-speaker review of word audio and reading explanations.
+- [ ] Test the published reading page on the user's phone and revise from feedback.
+
 
 ### Resume status — 2026-10-11
 

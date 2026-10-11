@@ -1,3 +1,5 @@
+> **Reading page update (2026-10-11):** `/kanada/read/` contains Day 1 sight words, recordings, vowel-mark examples, and practice. Its data and audio are in `kanada/read/`; `phrases.mjs` adapts `content.mjs` for the shared Python generator. Regenerate with `--app-dir kanada/read --output kanada/read/audio`, then commit the MP3s and manifest.
+
 > **Current setup (2026-10-11):** Remote `https://github.com/solpickle/learn_language.git`; `main` publishes via `.github/workflows/publish.yml` to <https://solpickle.github.io/learn_language/kanada/>. Develop on a feature branch, test, merge to `main`, and check the Pages run. Day 1 is at `/kanada/day-1/`. The older migration notes below are historical.
 
 # Kannada app development setup

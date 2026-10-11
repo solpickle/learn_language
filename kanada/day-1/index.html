@@ -14,7 +14,7 @@
   <header><a href="../">← Audio lab</a><span>LEARN KANNADA · DAY 1</span></header>
   <main id="main">
     <div class="day-head"><div><p class="eyebrow">DAY 1 OF 7 · 10 MINUTES</p><h1>Your first conversation</h1><p class="lead">Greet someone, explain how much Kannada you know, and ask them to slow down.</p></div><span class="badge">First steps</span></div>
-    <nav class="day-nav" aria-label="Lesson sections"><a href="#phrases">Phrases</a><a href="#pattern">Pattern</a><a href="#dialogue">Dialogue</a><a href="#story">Story</a><a href="#quiz">Listen</a><a href="#mission">Mission</a></nav>
+    <nav class="day-nav" aria-label="Lesson sections"><a href="#phrases">Phrases</a><a href="#pattern">Pattern</a><a href="#dialogue">Dialogue</a><a href="#story">Story</a><a href="#quiz">Listen</a><a href="#mission">Mission</a><a href="../read/">Read Kannada ↗</a></nav>
     <section class="lesson-tools" aria-label="Listening options">
       <label>Audio speed <select id="rate"><option value="0.6">0.6× · Slow</option><option value="0.8" selected>0.8× · Gentle</option><option value="1">1.0× · Normal</option></select></label>
       <label class="check"><input type="checkbox" id="show-roman" checked> Show pronunciation</label>
@@ -23,11 +23,25 @@
     </section>
     <p id="status" role="status" aria-live="polite">Tap ▶ to listen, then repeat aloud.</p>
     <section id="phrases"><div class="section-heading"><h2>Six useful phrases</h2><span>Listen · repeat</span></div><div id="phrase-list"></div></section>
-    <section id="pattern" class="compact-panel"><h2>Build the thought</h2><p class="pattern-line"><strong>ನನಗೆ</strong> <span>to me</span> <strong>ಸ್ವಲ್ಪ</strong> <span>a little</span> <strong>ಕನ್ನಡ</strong> <span>Kannada</span> <strong>ಗೊತ್ತು</strong> <span>known / familiar</span></p><p>“ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು” means “I know a little Kannada.” Switch <strong>ಗೊತ್ತು (gottu)</strong> to <strong>ಗೊತ್ತಿಲ್ಲ (gottilla)</strong> to say “I don’t know.” Leave out <strong>ಸ್ವಲ್ಪ (swalpa)</strong> when you mean Kannada in general.</p><p class="hint">Try it: ನನಗೆ ಕನ್ನಡ ಗೊತ್ತಿಲ್ಲ · Nanage Kannada gottilla.</p></section>
+    <section id="pattern" class="compact-panel"><div class="section-heading"><h2>Build the thought</h2><a class="read-link" href="../read/">Learn to read these words →</a></div>
+      <div class="pattern-pieces">
+        <div><a href="../read/#word-nanage" lang="kn">ನನಗೆ</a><span data-roman>nanage</span><small>to me</small></div>
+        <div><a href="../read/#word-swalpa" lang="kn">ಸ್ವಲ್ಪ</a><span data-roman>swalpa</span><small>a little</small></div>
+        <div><a href="../read/#word-kannada" lang="kn">ಕನ್ನಡ</a><span data-roman>Kannada</span><small>Kannada</small></div>
+        <div><a href="../read/#word-gottu" lang="kn">ಗೊತ್ತು</a><span data-roman>gottu</span><small>known / familiar</small></div>
+      </div>
+      <p>“ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು” (<span data-roman>Nanage swalpa Kannada gottu</span>) means “I know a little Kannada.” Switch <a href="../read/#word-gottu" lang="kn">ಗೊತ್ತು</a> (<span data-roman>gottu</span>) to <a href="../read/#word-gottilla" lang="kn">ಗೊತ್ತಿಲ್ಲ</a> (<span data-roman>gottilla</span>) to say “I don’t know.” Leave out <a href="../read/#word-swalpa" lang="kn">ಸ್ವಲ್ಪ</a> (<span data-roman>swalpa</span>) when you mean Kannada in general.</p>
+      <p class="hint">Try it: <span lang="kn">ನನಗೆ ಕನ್ನಡ ಗೊತ್ತಿಲ್ಲ</span> <span data-roman>· Nanage Kannada gottilla.</span></p>
+    </section>
     <section id="dialogue"><div class="section-heading"><h2>A first exchange</h2><span>Tap each line</span></div><div id="dialogue-list"></div></section>
     <section id="story"><div class="section-heading"><h2>Mini story: I am learning</h2><span>Five short lines</span></div><div class="story-tools"><button id="play-story">▶ Play all</button><button id="stop-story" class="secondary">■ Stop</button><label>Story view <select id="story-mode"><option value="both">Kannada + translation</option><option value="kannada">Kannada focus</option><option value="audio">Audio first</option></select></label></div><div id="story-list"></div><button id="reveal-story" class="secondary" hidden>Reveal story text</button></section>
     <section id="quiz" class="compact-panel"><h2>Listen and choose</h2><p>Play each clip before choosing its meaning. Your answer reveals the Kannada text.</p><div id="quiz-list"></div><p id="quiz-score" aria-live="polite"></p></section>
-    <section id="mission" class="compact-panel"><h2>Today’s mission</h2><p>Say “ನಮಸ್ಕಾರ” to someone, or practice with a friend. Then say “ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು” and ask “ದಯವಿಟ್ಟು ನಿಧಾನವಾಗಿ ಮಾತಾಡಿ”. Repeat the exchange once more without reading.</p><button id="complete" disabled>Finish Day 1</button><p id="completion" role="status" aria-live="polite"></p></section>
+    <section id="mission" class="compact-panel"><div class="section-heading"><h2>Today’s mission</h2><a class="read-link" href="../read/">Read Kannada →</a></div><p>Say these to someone, or practice with a friend:</p>
+      <ol class="mission-steps">
+        <li>Greet: <a href="../read/#word-namaskaara" lang="kn">ನಮಸ್ಕಾರ</a> <span data-roman>(Namaskaara)</span> · Hello</li>
+        <li>Explain: <span lang="kn">ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು</span> <span data-roman>(Nanage swalpa Kannada gottu)</span> · I know a little Kannada</li>
+        <li>Ask: <span lang="kn">ದಯವಿಟ್ಟು ನಿಧಾನವಾಗಿ ಮಾತಾಡಿ</span> <span data-roman>(Dayavittu nidhaanavaagi maataadi)</span> · Please speak slowly</li>
+      </ol><p>Repeat the exchange once more without reading.</p><button id="complete" disabled>Finish Day 1</button><p id="completion" role="status" aria-live="polite"></p></section>
     <p class="review-note">Kannada wording, romanization and generated speech still need review by a fluent speaker. English is a learning aid, not a word-for-word translation.</p>
   </main>
   <footer>Day 1 · Progress stays in this browser. <a href="../">Back to audio lab</a></footer>

@@ -1,7 +1,7 @@
 # Kannada Everyday
 
 A compact static Kannada app. The approved five-phrase audio lab is at `kanada/`;
-the complete first lesson is at `kanada/day-1/`. Both use committed Kannada MP3s,
+the complete first lesson is at `kanada/day-1/`, and its reading bridge is at `kanada/read/`. Both use committed Kannada MP3s,
 so playback does not require a voice installed on the device.
 
 Day 1 includes a phrase pattern, dialogue, five-line story, audio-first listening

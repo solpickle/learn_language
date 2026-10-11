@@ -1,0 +1,57 @@
+{
+  "generator": "edge-tts 7.2.8",
+  "voice": "kn-IN-SapnaNeural",
+  "rate": "+0%",
+  "phrases": [
+    {
+      "id": "naanu",
+      "text": "ನಾನು",
+      "file": "naanu.mp3"
+    },
+    {
+      "id": "nanage",
+      "text": "ನನಗೆ",
+      "file": "nanage.mp3"
+    },
+    {
+      "id": "sari",
+      "text": "ಸರಿ",
+      "file": "sari.mp3"
+    },
+    {
+      "id": "kannada",
+      "text": "ಕನ್ನಡ",
+      "file": "kannada.mp3"
+    },
+    {
+      "id": "swalpa",
+      "text": "ಸ್ವಲ್ಪ",
+      "file": "swalpa.mp3"
+    },
+    {
+      "id": "gottu",
+      "text": "ಗೊತ್ತು",
+      "file": "gottu.mp3"
+    },
+    {
+      "id": "gottilla",
+      "text": "ಗೊತ್ತಿಲ್ಲ",
+      "file": "gottilla.mp3"
+    },
+    {
+      "id": "namaskaara",
+      "text": "ನಮಸ್ಕಾರ",
+      "file": "namaskaara.mp3"
+    },
+    {
+      "id": "dayavittu",
+      "text": "ದಯವಿಟ್ಟು",
+      "file": "dayavittu.mp3"
+    },
+    {
+      "id": "maataadi",
+      "text": "ಮಾತಾಡಿ",
+      "file": "maataadi.mp3"
+    }
+  ]
+}

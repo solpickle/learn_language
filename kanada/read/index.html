@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Read Kannada · Learn Kannada</title>
+  <meta name="description" content="Recognize ten Kannada sight words from the first lesson and see how vowel marks change their shapes.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to reading practice</a>
+  <header><a href="../day-1/">← Day 1</a><span>LEARN KANNADA · READING</span></header>
+  <main id="main">
+    <p class="eyebrow">READ KANNADA · FIRST STEPS</p>
+    <h1>Recognize words you already speak</h1>
+    <p class="lead">Start with ten words from Day 1. Look at the shape, play the word, and say it. You do not need to memorize the whole alphabet yet.</p>
+    <nav class="reading-nav" aria-label="Reading sections"><a href="#sight-words">Sight words</a><a href="#forms">Letter forms</a><a href="#practice">Practice</a><a href="../day-1/">Day 1 lesson</a></nav>
+    <section class="read-tools"><label>Audio speed <select id="rate"><option value="0.6">0.6× · Slow</option><option value="0.8" selected>0.8× · Gentle</option><option value="1">1.0× · Normal</option></select></label><button id="stop" class="secondary">■ Stop audio</button></section>
+    <p id="status" role="status" aria-live="polite">Play a word and follow its shape with your eyes.</p>
+    <section id="sight-words"><div class="section-heading"><h2>Ten Day 1 sight words</h2><span>Look · listen · recognize</span></div><div id="word-list" class="word-grid"></div></section>
+    <section id="forms" class="read-panel"><h2>Notice the vowel marks</h2><p>A Kannada consonant usually carries a short “a” sound. A mark changes that vowel. These are just the forms you can spot in the words above.</p><div id="form-list"></div><p class="hint">Letters can also join together. Words such as <strong>ಕನ್ನಡ</strong> and <strong>ಸ್ವಲ್ಪ</strong> contain joined forms. For now, learn their overall shape and sound; we can unpack joins later.</p></section>
+    <section id="practice" class="read-panel"><h2>See it, hear it, choose it</h2><p>Try four quick recognition questions. Play the word if you need a clue.</p><div id="question-list"></div><p id="score" role="status" aria-live="polite"></p><button id="retry" class="secondary" hidden>Try again</button></section>
+    <p class="review-note">Pronunciation guides are approximate. These new word recordings and reading notes still need review by a fluent Kannada speaker. <a href="https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-12/">Script reference: Unicode Standard, §12.8</a>.</p>
+  </main>
+  <footer><a href="../day-1/">Back to Day 1</a> · <a href="../">Audio lab</a></footer>
+</body>
+</html>
