@@ -1,3 +1,5 @@
+> **Current setup (2026-10-11):** Remote `https://github.com/solpickle/learn_language.git`; `main` publishes via `.github/workflows/publish.yml` to <https://solpickle.github.io/learn_language/kanada/>. Develop on a feature branch, test, merge to `main`, and check the Pages run. Day 1 is at `/kanada/day-1/`. The older migration notes below are historical.
+
 # Kannada app development setup
 
 Updated: 2026-10-11
@@ -71,3 +73,13 @@ Migration verified 2026-10-11: removal commit 7972ea5 was pushed and merged into
 
 Repository setup: GitHub account solpickle; repository-local commit author solpicker <sankarshan96@live.com>. Source push requested by user; do not infer that GitHub Pages is already enabled.
 Publishing workflow added on feature/pages-deploy (2026-10-11): GitHub Pages Source is GitHub Actions; .github/workflows/publish.yml tests the app and publishes only the root landing page plus kanada runtime files/audio after a push or merge to main. The app URL is https://solpickle.github.io/learn_language/kanada/. Future work should use a new feature branch, review/test, then merge to main.
+## Day 1 commands
+
+From the repository root, run `node --test kanada/tests/*.test.mjs` and serve
+with `python -m http.server 4174`. To regenerate Day 1 MP3s, use the shared
+`kanada/scripts/generate_kannada_audio.py` with `--app-dir kanada/day-1`
+and `--output kanada/day-1/audio`. It reads `day-1/phrases.mjs`, an adapter for
+`content.mjs`. Commit both content and generated MP3s. The old `.venv-tts`
+executable was blocked by Windows application control on 2026-10-11; the
+bundled Codex Python with `edge-tts==7.2.8` installed to a temporary target
+worked. The published site requires no Python or network TTS calls.

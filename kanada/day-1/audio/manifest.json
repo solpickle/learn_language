@@ -1,0 +1,72 @@
+{
+  "generator": "edge-tts 7.2.8",
+  "voice": "kn-IN-SapnaNeural",
+  "rate": "+0%",
+  "phrases": [
+    {
+      "id": "hello",
+      "text": "ನಮಸ್ಕಾರ",
+      "file": "hello.mp3"
+    },
+    {
+      "id": "little",
+      "text": "ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು",
+      "file": "little.mp3"
+    },
+    {
+      "id": "not-know",
+      "text": "ನನಗೆ ಕನ್ನಡ ಗೊತ್ತಿಲ್ಲ",
+      "file": "not-know.mp3"
+    },
+    {
+      "id": "slowly",
+      "text": "ದಯವಿಟ್ಟು ನಿಧಾನವಾಗಿ ಮಾತಾಡಿ",
+      "file": "slowly.mp3"
+    },
+    {
+      "id": "again",
+      "text": "ಮತ್ತೊಮ್ಮೆ ಹೇಳಿ",
+      "file": "again.mp3"
+    },
+    {
+      "id": "thanks",
+      "text": "ಧನ್ಯವಾದಗಳು",
+      "file": "thanks.mp3"
+    },
+    {
+      "id": "question",
+      "text": "ನಿಮಗೆ ಕನ್ನಡ ಗೊತ್ತಾ?",
+      "file": "question.mp3"
+    },
+    {
+      "id": "okay",
+      "text": "ಸರಿ",
+      "file": "okay.mp3"
+    },
+    {
+      "id": "story-1",
+      "text": "ನಾನು ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ.",
+      "file": "story-1.mp3"
+    },
+    {
+      "id": "story-2",
+      "text": "ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು.",
+      "file": "story-2.mp3"
+    },
+    {
+      "id": "story-3",
+      "text": "ನಾನು ನಮಸ್ಕಾರ ಎಂದು ಹೇಳುತ್ತೇನೆ.",
+      "file": "story-3.mp3"
+    },
+    {
+      "id": "story-4",
+      "text": "ಕೆಲವು ಪದಗಳು ನನಗೆ ಗೊತ್ತಿಲ್ಲ.",
+      "file": "story-4.mp3"
+    },
+    {
+      "id": "story-5",
+      "text": "ನಾನು ಮತ್ತೊಮ್ಮೆ ಹೇಳಿ ಎಂದು ಕೇಳುತ್ತೇನೆ.",
+      "file": "story-5.mp3"
+    }
+  ]
+}

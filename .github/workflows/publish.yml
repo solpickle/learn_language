@@ -24,14 +24,16 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
       - name: Test Kannada audio logic
-        run: node --test kanada/tests/kannada-speech.test.mjs
+        run: node --test kanada/tests/*.test.mjs
       - name: Prepare static site
         shell: bash
         run: |
-          mkdir -p _site/kanada/audio
+          mkdir -p _site/kanada/audio _site/kanada/day-1/audio
           cp index.html _site/index.html
           cp kanada/index.html kanada/styles.css kanada/app.js kanada/phrases.mjs kanada/recorded.mjs kanada/speech.mjs _site/kanada/
           cp kanada/audio/*.mp3 _site/kanada/audio/
+          cp kanada/day-1/index.html kanada/day-1/styles.css kanada/day-1/app.js kanada/day-1/content.mjs _site/kanada/day-1/
+          cp kanada/day-1/audio/*.mp3 _site/kanada/day-1/audio/
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site

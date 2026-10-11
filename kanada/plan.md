@@ -1,3 +1,5 @@
+> **Current status — 2026-10-11:** Day 1 implemented on `feature/kannada-day-1` in `solpickle/learn_language`. The first full lesson lives at `/kanada/day-1/`; generated MP3s are committed with the lesson. Day 2–7 remain planned. Fluent-speaker language/audio review and phone testing remain open. The older migration and imsank notes below are historical.
+
 > **Migration update — 2026-10-11:** The app and plans now live at C:\Users\sanka\work\learn_language\kanada. This folder is the source of truth. The imsank.github.io integration is being removed; prior paths/hosting milestones below are historical. New hosting details are pending. See dev_setup.md for current commands and layout.
 
 # Spoken Kannada for Bengaluru --- V1 Planning Specification
@@ -77,13 +79,13 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 
 ### 3. Build one complete learning day after audio approval
 
-- [ ] Separate lesson/story content from presentation using simple local data files.
-- [ ] Build Day 1 end to end: objective, phrase cards, pattern, dialogue, story, listening questions, and real-world mission.
-- [ ] Add phrase and dialogue audio using the tested speech module.
-- [ ] Add story sentence playback, Play All, active sentence highlighting, stop, and speed controls.
-- [ ] Add English/romanization hide and reveal controls and an audio-first listening mode.
-- [ ] Add quiz answer feedback, replay, and answer reveals.
-- [ ] Add local progress/preferences persistence with a graceful storage-failure fallback.
+- [x] Separate lesson/story content from presentation using simple local data files.
+- [x] Build Day 1 end to end: objective, phrase cards, pattern, dialogue, story, listening questions, and real-world mission.
+- [x] Add phrase and dialogue audio using the tested speech module.
+- [x] Add story sentence playback, Play All, active sentence highlighting, stop, and speed controls.
+- [x] Add English/romanization hide and reveal controls and an audio-first listening mode.
+- [x] Add quiz answer feedback, replay, and answer reveals.
+- [x] Add local progress/preferences persistence with a graceful storage-failure fallback.
 - [ ] Test Day 1 locally and on the hosted site; record feedback and improve it before expanding content.
 
 ### 4. Expand to Days 1–7 only
