@@ -1,0 +1,43 @@
+name: Publish language apps
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Test Kannada audio logic
+        run: node --test kanada/tests/kannada-speech.test.mjs
+      - name: Prepare static site
+        shell: bash
+        run: |
+          mkdir -p _site/kanada/audio
+          cp index.html _site/index.html
+          cp kanada/index.html kanada/styles.css kanada/app.js kanada/phrases.mjs kanada/recorded.mjs kanada/speech.mjs _site/kanada/
+          cp kanada/audio/*.mp3 _site/kanada/audio/
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

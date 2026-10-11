@@ -70,3 +70,4 @@ as an archive and pointer; plans in this new folder are now authoritative.
 Migration verified 2026-10-11: removal commit 7972ea5 was pushed and merged into old-site master; GitHub Pages deployment succeeded. Standalone audio played through completion; six tests and old-site Jekyll build passed. New hosting remains pending.
 
 Repository setup: GitHub account solpickle; repository-local commit author solpicker <sankarshan96@live.com>. Source push requested by user; do not infer that GitHub Pages is already enabled.
+Publishing workflow added on feature/pages-deploy (2026-10-11): GitHub Pages Source is GitHub Actions; .github/workflows/publish.yml tests the app and publishes only the root landing page plus kanada runtime files/audio after a push or merge to main. The app URL is https://solpickle.github.io/learn_language/kanada/. Future work should use a new feature branch, review/test, then merge to main.
