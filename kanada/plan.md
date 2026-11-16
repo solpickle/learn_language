@@ -1,3 +1,5 @@
+> **Current status — 2026-11-16:** `AGENTS.md` now records the app's scope, visual style, audio, and workflow contract. Day 2 (want / don't want) is implemented on `feature/kannada-day-2` with saved MP3s and five more reading words. Days 3–7, user phone feedback, and fluent-speaker review remain open. Older migration and hosting notes below are historical.
+
 > **Reading bridge — 2026-10-11:** User accepted Day 1 and requested help recognizing Kannada script before more lesson content. A separate `/kanada/read/` page on `feature/read-kannada` teaches ten Day 1 sight words, selected vowel-mark changes, and a four-question recognition practice. Day 1 pattern and mission now include romanization and direct links. Word audio and letter guidance still await fluent-speaker review; phone feedback remains pending.
 
 > **Current status — 2026-10-11:** Day 1 implemented on `feature/kannada-day-1` in `solpickle/learn_language`. The first full lesson lives at `/kanada/day-1/`; generated MP3s are committed with the lesson. Day 2–7 remain planned. Fluent-speaker language/audio review and phone testing remain open. The older migration and imsank notes below are historical.
@@ -7,6 +9,17 @@
 # Spoken Kannada for Bengaluru --- V1 Planning Specification
 
 ## Active implementation checklist
+
+### Day 2 — want / don't want
+
+- [x] Add `AGENTS.md` before Day 2 implementation.
+- [x] Explain `neeru` (water), `beku` (want/need), and `beda` (don't want/need) with reusable substitutions.
+- [x] Build Day 2 phrase cards, pattern, dialogue, five-line story, listening quiz, and mission.
+- [x] Add generated and committed phrase, dialogue, and story MP3s.
+- [x] Add Day 2 sight words to Read Kannada.
+- [ ] Get fluent-speaker review of new wording, romanization, and audio.
+- [ ] Record user phone feedback on Day 2 and the reading additions.
+
 
 ### Read Kannada bridge
 
@@ -23,7 +36,7 @@
 
 - [x] Verify compact prototype commit `f7738de` is included in fetched `origin/master`.
 - [x] Create the requested next-iteration branch `feature/learn-kannada_v2` from latest remote master (local only so far).
-- [ ] Add word-by-word explanations and reusable substitutions: distinguish `neeru` (water) from `beku` (want/need), then show how other items fit the same pattern. Use beginner-friendly labels and verify precise grammar before teaching formal classifications.
+- [x] Add word-by-word explanations and reusable substitutions: distinguish `neeru` (water) from `beku` (want/need), then show how other items fit the same pattern. Use beginner-friendly labels and verify precise grammar before teaching formal classifications.
 - [ ] Build the first full Day 1 lesson, then expand through Day 7.
 
 The current app remains the five-phrase audio prototype. Generated sample audio was approved by the user; compact styling was merged. No complete daily lessons or progress tracking have been implemented yet. Phone testing is not recorded as completed.
@@ -104,7 +117,7 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 ### 4. Expand to Days 1–7 only
 
 - [ ] Polish Day 1: greetings and survival Kannada.
-- [ ] Add Day 2: want / don't want.
+- [x] Add Day 2: want / don't want.
 - [ ] Add Day 3: price and quantity.
 - [ ] Add Day 4: location and directions.
 - [ ] Add Day 5: review and mini conversation.

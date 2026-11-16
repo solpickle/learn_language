@@ -1,11 +1,13 @@
-"""Generate prototype MP3s from the app's phrase data using online edge-tts.
+"""Generate Kannada MP3s from an app directory's phrase data using online edge-tts.
 
 Usage: python generate_kannada_audio.py --app-dir PATH --output PATH
-Requires edge-tts==7.2.8 and Node.js; no API key. Sends phrase text to Microsoft.
+Requires the edge-tts version in requirements-audio.txt and Node.js; no API key.
+Sends phrase text to Microsoft's online speech service.
 """
 import argparse
 import asyncio
 import json
+from importlib.metadata import version
 from pathlib import Path
 import subprocess
 
@@ -22,7 +24,7 @@ async def generate(app_dir, output, voice):
          f"import {{ phrases }} from {json.dumps(module)}; console.log(JSON.stringify(phrases));"],
         encoding="utf-8"))
     output.mkdir(parents=True, exist_ok=True)
-    manifest = {"generator": "edge-tts 7.2.8", "voice": voice, "rate": "+0%", "phrases": []}
+    manifest = {"generator": f"edge-tts {version('edge-tts')}", "voice": voice, "rate": "+0%", "phrases": []}
     for phrase in phrases:
         phrase_id = phrase["id"]
         if not phrase_id or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-" for c in phrase_id):

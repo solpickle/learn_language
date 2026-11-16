@@ -1,57 +1,97 @@
 {
-  "generator": "edge-tts 7.2.8",
+  "generator": "edge-tts (mixed versions; see each phrase)",
   "voice": "kn-IN-SapnaNeural",
   "rate": "+0%",
   "phrases": [
     {
       "id": "naanu",
       "text": "ನಾನು",
-      "file": "naanu.mp3"
+      "file": "naanu.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "nanage",
       "text": "ನನಗೆ",
-      "file": "nanage.mp3"
+      "file": "nanage.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "sari",
       "text": "ಸರಿ",
-      "file": "sari.mp3"
+      "file": "sari.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "kannada",
       "text": "ಕನ್ನಡ",
-      "file": "kannada.mp3"
+      "file": "kannada.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "swalpa",
       "text": "ಸ್ವಲ್ಪ",
-      "file": "swalpa.mp3"
+      "file": "swalpa.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "gottu",
       "text": "ಗೊತ್ತು",
-      "file": "gottu.mp3"
+      "file": "gottu.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "gottilla",
       "text": "ಗೊತ್ತಿಲ್ಲ",
-      "file": "gottilla.mp3"
+      "file": "gottilla.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "namaskaara",
       "text": "ನಮಸ್ಕಾರ",
-      "file": "namaskaara.mp3"
+      "file": "namaskaara.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "dayavittu",
       "text": "ದಯವಿಟ್ಟು",
-      "file": "dayavittu.mp3"
+      "file": "dayavittu.mp3",
+      "generator": "edge-tts 7.2.8"
     },
     {
       "id": "maataadi",
       "text": "ಮಾತಾಡಿ",
-      "file": "maataadi.mp3"
+      "file": "maataadi.mp3",
+      "generator": "edge-tts 7.2.8"
+    },
+    {
+      "id": "neeru",
+      "text": "ನೀರು",
+      "file": "neeru.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "beku",
+      "text": "ಬೇಕು",
+      "file": "beku.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "beda",
+      "text": "ಬೇಡ",
+      "file": "beda.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "chahaa",
+      "text": "ಚಹಾ",
+      "file": "chahaa.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "kaafi",
+      "text": "ಕಾಫಿ",
+      "file": "kaafi.mp3",
+      "generator": "edge-tts 7.3.1"
     }
   ]
 }

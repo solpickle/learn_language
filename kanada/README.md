@@ -1,13 +1,13 @@
 # Kannada Everyday
 
-A compact static Kannada app. The approved five-phrase audio lab is at `kanada/`;
-the complete first lesson is at `kanada/day-1/`, and its reading bridge is at `kanada/read/`. Both use committed Kannada MP3s,
-so playback does not require a voice installed on the device.
+A compact static Kannada app at `/kanada/`, with lessons for
+[Day 1](day-1/) and [Day 2](day-2/) plus a [Read Kannada](read/) bridge. Saved
+MP3s play without an installed Kannada voice or a runtime TTS service.
 
-Day 1 includes a phrase pattern, dialogue, five-line story, audio-first listening
-quiz and local progress. The new Kannada lines and generated pronunciation still
+Each lesson has reusable phrases, a short exchange and story, listening practice,
+and browser-local completion. Kannada wording and generated pronunciation still
 need fluent-speaker review.
 
 Serve the repository root over HTTP and open `/kanada/`. Run
-`node --test kanada/tests/*.test.mjs`. Audio generation and deployment commands
-are in [dev_setup.md](dev_setup.md); the MVP checklist is in [plan.md](plan.md).
+`node --test kanada/tests/*.test.mjs`. See [dev_setup.md](dev_setup.md) for
+generation and deployment, and [plan.md](plan.md) for the seven-day checklist.

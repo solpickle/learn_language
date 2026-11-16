@@ -24,6 +24,7 @@ function playButton(word, label = "▶ Listen") {
 }
 
 for (const word of words) {
+  if (word.day === 2 && !$("word-list").querySelector(".day-divider")) $("word-list").append(element("h3", "day-divider", "Day 2 · Asking and choosing"));
   const card = element("article", "word-card");
   card.id = `word-${word.id}`;
   const header = element("div", "word-head");

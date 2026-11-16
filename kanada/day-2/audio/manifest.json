@@ -1,0 +1,82 @@
+{
+  "generator": "edge-tts 7.3.1",
+  "voice": "kn-IN-SapnaNeural",
+  "rate": "+0%",
+  "phrases": [
+    {
+      "id": "neeru",
+      "text": "ನೀರು",
+      "file": "neeru.mp3"
+    },
+    {
+      "id": "beku",
+      "text": "ಬೇಕು",
+      "file": "beku.mp3"
+    },
+    {
+      "id": "beda",
+      "text": "ಬೇಡ",
+      "file": "beda.mp3"
+    },
+    {
+      "id": "water-want",
+      "text": "ನನಗೆ ನೀರು ಬೇಕು",
+      "file": "water-want.mp3"
+    },
+    {
+      "id": "tea-want",
+      "text": "ನನಗೆ ಚಹಾ ಬೇಕು",
+      "file": "tea-want.mp3"
+    },
+    {
+      "id": "tea-no",
+      "text": "ನನಗೆ ಚಹಾ ಬೇಡ",
+      "file": "tea-no.mp3"
+    },
+    {
+      "id": "coffee-want",
+      "text": "ನನಗೆ ಕಾಫಿ ಬೇಕು",
+      "file": "coffee-want.mp3"
+    },
+    {
+      "id": "little-water",
+      "text": "ನನಗೆ ಸ್ವಲ್ಪ ನೀರು ಬೇಕು",
+      "file": "little-water.mp3"
+    },
+    {
+      "id": "what-want",
+      "text": "ನಿಮಗೆ ಏನು ಬೇಕು?",
+      "file": "what-want.mp3"
+    },
+    {
+      "id": "tea-question",
+      "text": "ನಿಮಗೆ ಚಹಾ ಬೇಕಾ?",
+      "file": "tea-question.mp3"
+    },
+    {
+      "id": "story-1",
+      "text": "ನಿಮಗೆ ಏನು ಬೇಕು?",
+      "file": "story-1.mp3"
+    },
+    {
+      "id": "story-2",
+      "text": "ನನಗೆ ಚಹಾ ಬೇಡ.",
+      "file": "story-2.mp3"
+    },
+    {
+      "id": "story-3",
+      "text": "ನನಗೆ ಸ್ವಲ್ಪ ನೀರು ಬೇಕು.",
+      "file": "story-3.mp3"
+    },
+    {
+      "id": "story-4",
+      "text": "ಸರಿ.",
+      "file": "story-4.mp3"
+    },
+    {
+      "id": "story-5",
+      "text": "ಧನ್ಯವಾದಗಳು.",
+      "file": "story-5.mp3"
+    }
+  ]
+}
