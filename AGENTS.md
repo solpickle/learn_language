@@ -1,0 +1,38 @@
+# Learn Language repository guide
+
+This repository hosts the Kannada learning MVP at `kanada/` on GitHub Pages. The active source and plan are here; `C:\Users\sanka\work\learn_kanada_app` is a historical planning workspace. Read `kanada/plan.md` and `kanada/dev_setup.md` before changing the app. Their newest status notes take precedence over old migration and `imsank.github.io` sections.
+
+## Product scope
+
+- Build only Days 1–7 of the spoken Kannada course. Do not add architecture or features whose only purpose is a future 30-day course.
+- The user is a beginner who cannot yet read Kannada. Show Kannada script, a consistent romanized reading aid, a plain English meaning, and saved audio for new spoken content. Never make a task depend on reading Kannada script alone.
+- Teach reusable phrases by explaining parts and showing one or two substitutions. Use beginner-friendly descriptions; verify grammar and spelling before teaching formal labels.
+- Keep a separate, small `Read Kannada` path for sight words and letter forms introduced in the lessons. Do not turn each day into a full alphabet course.
+- New Kannada text, romanization, and synthetic pronunciation need fluent-speaker review before being called polished. Record the review as pending when it has not happened.
+- Progress and preferences stay in each browser's local storage, with a graceful fallback when storage is unavailable. No backend or account is needed for this MVP.
+
+## Visual and interaction style
+
+- Preserve the existing compact, calm visual language in `kanada/styles.css` and the day-specific styles: warm off-white background, dark green text/buttons, pale sage panels, subtle borders, modest radii, and restrained serif page headings.
+- Prefer short rows and dense, scannable sections over large cards or empty space. Keep spacing tight without making Kannada text hard to read.
+- Keep the main content around the existing 900px maximum width. Check laptop and 360–430px phone layouts. Horizontal section navigation may scroll on phones; primary actions must remain easy to find.
+- Use readable Kannada font fallbacks (`Nirmala UI`, `Noto Sans Kannada`, sans-serif), adequate line height, strong contrast, visible keyboard focus, and controls around 44px tall where practical.
+- Use semantic headings, labels, links, and buttons. Announce audio/quiz feedback through status text. A Play button must identify what it plays to assistive technology.
+- Page-specific CSS is fine; keep the shared theme consistent. Do not introduce a framework or broad redesign for an individual lesson.
+
+## App and audio structure
+
+- The site is buildless HTML, CSS, and ES modules. Use relative URLs so it works at the GitHub Pages repository path `/learn_language/` and in local HTTP preview.
+- Keep lesson content in a simple data module separate from DOM rendering. Follow the existing `kanada/day-1/` structure where useful, without copying unnecessary features.
+- Saved Kannada MP3s are the default playback path. Browser `kn-IN` TTS is only an optional comparison in the older audio lab; do not depend on an installed Kannada voice or a runtime network TTS request.
+- Generate new recordings with `kanada/scripts/generate_kannada_audio.py`, `kn-IN-SapnaNeural`, and the local `phrases.mjs` adapter. Commit the MP3s and `audio/manifest.json` with the text that produced them. Generation uses online `edge-tts`; the published site does not.
+- Keep Stop, replay, and 0.6x / 0.8x / 1.0x speed behavior predictable, without overlapping audio. Show a clear error if a file cannot play.
+
+## Workflow and checks
+
+- Work in a new feature branch from the latest `origin/main` for each feature. Review the diff, run relevant checks, then merge into `main`; pushes to `main` trigger `.github/workflows/publish.yml` and GitHub Pages. Confirm the action and live URLs after publishing.
+- Update `.github/workflows/publish.yml` whenever a new runtime page or asset directory is added; its static-site copy list is explicit.
+- Run `node --test kanada/tests/*.test.mjs`, JavaScript syntax checks for changed modules, and `git diff --check`. Add tests for meaningful content/audio references or behavior, not for trivial styling.
+- Preview over HTTP rather than `file://`, and inspect the compact laptop and phone layouts when browser tooling is available. User phone testing and fluent-speaker review must be recorded separately from automated tests.
+- Update the current checklist and handoff notes in `kanada/plan.md` and `kanada/dev_setup.md` as work is completed. Avoid perpetuating historical status statements as if they describe the current app.
+- Production: <https://solpickle.github.io/learn_language/kanada/>. Day pages and reading path live under that URL.
