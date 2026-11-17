@@ -1,0 +1,267 @@
+{
+  "generator": "edge-tts 7.3.1",
+  "voice": "kn-IN-SapnaNeural",
+  "rate": "+0%",
+  "phrases": [
+    {
+      "id": "vowel-a",
+      "text": "ಅ",
+      "file": "vowel-a.mp3"
+    },
+    {
+      "id": "vowel-aa",
+      "text": "ಆ",
+      "file": "vowel-aa.mp3"
+    },
+    {
+      "id": "vowel-i",
+      "text": "ಇ",
+      "file": "vowel-i.mp3"
+    },
+    {
+      "id": "vowel-ii",
+      "text": "ಈ",
+      "file": "vowel-ii.mp3"
+    },
+    {
+      "id": "vowel-u",
+      "text": "ಉ",
+      "file": "vowel-u.mp3"
+    },
+    {
+      "id": "vowel-uu",
+      "text": "ಊ",
+      "file": "vowel-uu.mp3"
+    },
+    {
+      "id": "vowel-ru",
+      "text": "ಋ",
+      "file": "vowel-ru.mp3"
+    },
+    {
+      "id": "vowel-e",
+      "text": "ಎ",
+      "file": "vowel-e.mp3"
+    },
+    {
+      "id": "vowel-ee",
+      "text": "ಏ",
+      "file": "vowel-ee.mp3"
+    },
+    {
+      "id": "vowel-ai",
+      "text": "ಐ",
+      "file": "vowel-ai.mp3"
+    },
+    {
+      "id": "vowel-o",
+      "text": "ಒ",
+      "file": "vowel-o.mp3"
+    },
+    {
+      "id": "vowel-oo",
+      "text": "ಓ",
+      "file": "vowel-oo.mp3"
+    },
+    {
+      "id": "vowel-au",
+      "text": "ಔ",
+      "file": "vowel-au.mp3"
+    },
+    {
+      "id": "c-ka",
+      "text": "ಕ",
+      "file": "c-ka.mp3"
+    },
+    {
+      "id": "c-kha",
+      "text": "ಖ",
+      "file": "c-kha.mp3"
+    },
+    {
+      "id": "c-ga",
+      "text": "ಗ",
+      "file": "c-ga.mp3"
+    },
+    {
+      "id": "c-gha",
+      "text": "ಘ",
+      "file": "c-gha.mp3"
+    },
+    {
+      "id": "c-nga",
+      "text": "ಙ",
+      "file": "c-nga.mp3"
+    },
+    {
+      "id": "c-cha",
+      "text": "ಚ",
+      "file": "c-cha.mp3"
+    },
+    {
+      "id": "c-chha",
+      "text": "ಛ",
+      "file": "c-chha.mp3"
+    },
+    {
+      "id": "c-ja",
+      "text": "ಜ",
+      "file": "c-ja.mp3"
+    },
+    {
+      "id": "c-jha",
+      "text": "ಝ",
+      "file": "c-jha.mp3"
+    },
+    {
+      "id": "c-nya",
+      "text": "ಞ",
+      "file": "c-nya.mp3"
+    },
+    {
+      "id": "c-tta",
+      "text": "ಟ",
+      "file": "c-tta.mp3"
+    },
+    {
+      "id": "c-ttha",
+      "text": "ಠ",
+      "file": "c-ttha.mp3"
+    },
+    {
+      "id": "c-dda",
+      "text": "ಡ",
+      "file": "c-dda.mp3"
+    },
+    {
+      "id": "c-ddha",
+      "text": "ಢ",
+      "file": "c-ddha.mp3"
+    },
+    {
+      "id": "c-nna",
+      "text": "ಣ",
+      "file": "c-nna.mp3"
+    },
+    {
+      "id": "c-ta",
+      "text": "ತ",
+      "file": "c-ta.mp3"
+    },
+    {
+      "id": "c-tha",
+      "text": "ಥ",
+      "file": "c-tha.mp3"
+    },
+    {
+      "id": "c-da",
+      "text": "ದ",
+      "file": "c-da.mp3"
+    },
+    {
+      "id": "c-dha",
+      "text": "ಧ",
+      "file": "c-dha.mp3"
+    },
+    {
+      "id": "c-na",
+      "text": "ನ",
+      "file": "c-na.mp3"
+    },
+    {
+      "id": "c-pa",
+      "text": "ಪ",
+      "file": "c-pa.mp3"
+    },
+    {
+      "id": "c-pha",
+      "text": "ಫ",
+      "file": "c-pha.mp3"
+    },
+    {
+      "id": "c-ba",
+      "text": "ಬ",
+      "file": "c-ba.mp3"
+    },
+    {
+      "id": "c-bha",
+      "text": "ಭ",
+      "file": "c-bha.mp3"
+    },
+    {
+      "id": "c-ma",
+      "text": "ಮ",
+      "file": "c-ma.mp3"
+    },
+    {
+      "id": "c-ya",
+      "text": "ಯ",
+      "file": "c-ya.mp3"
+    },
+    {
+      "id": "c-ra",
+      "text": "ರ",
+      "file": "c-ra.mp3"
+    },
+    {
+      "id": "c-la",
+      "text": "ಲ",
+      "file": "c-la.mp3"
+    },
+    {
+      "id": "c-va",
+      "text": "ವ",
+      "file": "c-va.mp3"
+    },
+    {
+      "id": "c-sha",
+      "text": "ಶ",
+      "file": "c-sha.mp3"
+    },
+    {
+      "id": "c-ssha",
+      "text": "ಷ",
+      "file": "c-ssha.mp3"
+    },
+    {
+      "id": "c-sa",
+      "text": "ಸ",
+      "file": "c-sa.mp3"
+    },
+    {
+      "id": "c-ha",
+      "text": "ಹ",
+      "file": "c-ha.mp3"
+    },
+    {
+      "id": "c-lla",
+      "text": "ಳ",
+      "file": "c-lla.mp3"
+    },
+    {
+      "id": "word-house",
+      "text": "ಮನೆ",
+      "file": "word-house.mp3"
+    },
+    {
+      "id": "word-milk",
+      "text": "ಹಾಲು",
+      "file": "word-milk.mp3"
+    },
+    {
+      "id": "word-water",
+      "text": "ನೀರು",
+      "file": "word-water.mp3"
+    },
+    {
+      "id": "word-ear",
+      "text": "ಕಿವಿ",
+      "file": "word-ear.mp3"
+    },
+    {
+      "id": "word-fruit",
+      "text": "ಕಾಯಿ",
+      "file": "word-fruit.mp3"
+    }
+  ]
+}

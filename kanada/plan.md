@@ -14,6 +14,16 @@
 
 ## Active implementation checklist
 
+### Kannada Alphabet
+
+- [x] Add a separate alphabet page with large, bold Kannada vowels and consonants.
+- [x] Explain standalone vowels, built-in consonant a, vowel signs, and buildable syllable examples.
+- [x] Show five simple words broken into Kannada syllable chunks with romanization, meaning, and saved audio.
+- [x] Link the tab from the app home, Read Kannada, and Kannada Numbers; add page and audio to Pages deployment.
+- [x] Add coverage for letter tables, word chunks, recordings, navigation, and deployment.
+- [ ] Review letter pronunciation, romanization, and example words with a fluent Kannada speaker.
+- [ ] Test the published alphabet page on the user's phone and record feedback.
+
 ### Site navigation
 
 - [x] Add a consistent Home link in the header and footer of each Kannada page; label the entry page Home instead of Audio Lab.
