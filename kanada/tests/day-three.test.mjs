@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {readFileSync, statSync} from "node:fs";
+import {readFileSync, readdirSync, statSync} from "node:fs";
 import {phrases, dialogue, story, questions, audioItems} from "../day-3/content.mjs";
 
 const root = new URL("../day-3/", import.meta.url);
@@ -29,6 +29,8 @@ test("every Day 3 play target has a committed MP3 and matching manifest text", (
   assert.equal(manifest.generator, "edge-tts 7.3.1");
   assert.deepEqual(manifest.phrases.map(item => [item.id, item.text]), audioItems.map(item => [item.id, item.kannada]));
   for (const item of audioItems) assert.ok(statSync(new URL(`audio/${item.id}.mp3`, root)).size > 1000);
+  const mp3s = readdirSync(new URL("audio/", root)).filter(name => name.endsWith(".mp3")).sort();
+  assert.deepEqual(mp3s, audioItems.map(item => `${item.id}.mp3`).sort());
 });
 
 test("Day 3 stores completion separately and links to its sight words", () => {
