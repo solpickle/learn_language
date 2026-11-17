@@ -12,6 +12,8 @@
 
 Updated: 2026-11-17
 
+> **Home page layout — 2026-11-17:** Main entry links now stay in one vertical column at desktop and mobile widths, following the user's preferred mobile arrangement.
+
 > **Home in tab navigation — 2026-11-17:** Added Home as the first link in each lesson, reading, numbers, and alphabet navigation row, in addition to the page header/footer links.
 
 > **Kannada Alphabet feature — 2026-11-17:** `/kanada/alphabet/` teaches 13 vowels, 34 consonants, how consonants take vowel signs, and five example words split into readable chunks. Letter sounds and example words have 52 saved `kn-IN-SapnaNeural` recordings. Regenerate with `python kanada/scripts/generate_kannada_audio.py --app-dir kanada/alphabet --output kanada/alphabet/audio`. The publish workflow copies the page and MP3s; fluent-speaker review and phone feedback remain open.
