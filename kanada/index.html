@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Learn Kannada · Home</title>
-  <meta name="description" content="Try Kannada speech on your browser before starting everyday lessons.">
+  <meta name="description" content="Listen to useful Kannada phrases, then continue with beginner lessons.">
   <link rel="stylesheet" href="./styles.css">
   <script type="module" src="./app.js"></script>
 </head>
@@ -18,19 +18,14 @@
       <p class="lead">Start here, then continue with Days 1–3 or practice reading Kannada.</p>
     </section>
     <div class="entry-links"><p class="lesson-link"><a href="./day-1/">Start Day 1 → Your first conversation</a></p><p class="lesson-link"><a href="./day-2/">Start Day 2 → Want or don't want</a></p><p class="lesson-link"><a href="./day-3/">Start Day 3 → Price and quantity</a></p><p class="lesson-link"><a href="./read/">Read Kannada → Sight words and letter forms</a></p><p class="lesson-link"><a href="./alphabet/">Kannada Alphabet → vowels, consonants, and syllables</a></p><p class="lesson-link"><a href="./numbers/">Kannada Numbers → digits, words, and counting</a></p></div>
-    <section class="audio-panel" aria-labelledby="audio-heading">
-      <div class="panel-heading"><h2 id="audio-heading">Your audio setup</h2><span class="badge">kn-IN</span></div>
-      <p id="voice-status" role="status">Checking for Kannada voices…</p>
-      <div class="controls">
-        <label>Kannada voice<select id="voice" disabled><option>Checking voices…</option></select></label>
-        <label>Speaking speed<select id="rate"><option value="0.6">0.6× · Slow</option><option value="0.8" selected>0.8× · Gentle</option><option value="1">1.0× · Normal</option></select></label>
-      </div>
-      <div class="actions"><button id="stop" disabled>■ Stop audio</button><button id="refresh" class="secondary">Refresh voices</button></div>
-      <p class="hint">These saved MP3s were generated with the Kannada Sapna voice. No voice installation is needed. Speed controls adjust playback while preserving pitch.</p>
-      <p id="playback-status" role="status" aria-live="polite">Choose a phrase to listen.</p>
+    <section class="audio-tools" aria-label="Audio controls">
+      <p class="voice-note">Voice: Kannada Sapna recordings.</p>
+      <label>Speaking speed<select id="rate"><option value="0.6">0.6× · Slow</option><option value="0.8" selected>0.8× · Gentle</option><option value="1">1.0× · Normal</option></select></label>
+      <button id="stop" class="secondary" type="button" hidden disabled>■ Stop audio</button>
+      <p id="playback-status" role="status" aria-live="polite">Tap Listen on a phrase to hear it.</p>
     </section>
     <section aria-labelledby="phrases-heading">
-      <div class="section-heading"><h2 id="phrases-heading">Five phrases to try</h2><span>Listen · Repeat · Compare</span></div>
+      <div class="section-heading"><h2 id="phrases-heading">Five phrases to try</h2><span>Listen · Repeat</span></div>
       <div id="phrases"></div>
     </section>
     <aside class="testing-note">
