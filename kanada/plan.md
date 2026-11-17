@@ -14,6 +14,16 @@
 
 ## Active implementation checklist
 
+### Kannada Numbers
+
+- [x] Add a separate Kannada Numbers page linked from the app home and Read Kannada.
+- [x] Show Kannada digit glyphs, words, simple romanized reading aids, English meanings, and saved audio for 0–20, tens through 100, and examples 21, 25, 31, 41, 51, 61, 71, 81, 91, 101, 110, and 120.
+- [x] Explain the tens + ones and hundred + remainder patterns with examples.
+- [x] Generate and commit audio with `kn-IN-SapnaNeural`; add the Numbers page and MP3 folder to the Pages workflow.
+- [x] Add tests for number coverage, key forms, digit conversion, audio, and navigation/workflow.
+- [ ] Review the number spellings, romanization, and recordings with a fluent Kannada speaker.
+- [ ] Test the published Numbers page on the user's phone and record feedback.
+
 ### Day 3 — price and quantity
 
 - [x] Teach `eshtu` (how much), `bele` (price), `keji` (kilo), and a reusable quantity + item + `kodi` request.

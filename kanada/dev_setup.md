@@ -12,6 +12,8 @@
 
 Updated: 2026-11-17
 
+> **Kannada Numbers feature — 2026-11-17:** The current feature branch adds `/kanada/numbers/`, linked from the app home and Read Kannada. The page teaches Kannada digit forms and spoken number words for 0–20, tens through 100, selected tens-plus-ones examples, and 101/110/120, with 41 saved `kn-IN-SapnaNeural` MP3s. Generate/regenerate with `python kanada/scripts/generate_kannada_audio.py --app-dir kanada/numbers --output kanada/numbers/audio`. The workflow explicitly copies the page and its MP3s. Number-language/audio review and phone feedback remain pending; see `plan.md`.
+
 ## Current home
 All application code, MP3s, generator, tests and planning documents now live in:
 `C:\Users\sanka\work\learn_language\kanada`
