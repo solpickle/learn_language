@@ -92,6 +92,42 @@
       "text": "ಕಾಫಿ",
       "file": "kaafi.mp3",
       "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "nimage",
+      "text": "ನಿಮಗೆ",
+      "file": "nimage.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "enu",
+      "text": "ಏನು",
+      "file": "enu.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "nidhaanavaagi",
+      "text": "ನಿಧಾನವಾಗಿ",
+      "file": "nidhaanavaagi.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "mattomme",
+      "text": "ಮತ್ತೊಮ್ಮೆ",
+      "file": "mattomme.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "heli",
+      "text": "ಹೇಳಿ",
+      "file": "heli.mp3",
+      "generator": "edge-tts 7.3.1"
+    },
+    {
+      "id": "dhanyavaadagalu",
+      "text": "ಧನ್ಯವಾದಗಳು",
+      "file": "dhanyavaadagalu.mp3",
+      "generator": "edge-tts 7.3.1"
     }
   ]
 }
