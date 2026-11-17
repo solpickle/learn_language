@@ -14,6 +14,10 @@
 
 ## Active implementation checklist
 
+### Site navigation
+
+- [x] Add a consistent Home link in the header and footer of each Kannada page; label the entry page Home instead of Audio Lab.
+
 ### Kannada Numbers
 
 - [x] Add a separate Kannada Numbers page linked from the app home and Read Kannada.
