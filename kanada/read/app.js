@@ -71,7 +71,6 @@ function renderQuestions() {
     for (const choice of question.choices) {
       const button = element("button", highlights.classFor(index, choice, question.correct), choice);
       button.type = "button";
-      button.disabled = answers[index] !== null;
       button.addEventListener("click", () => { answers[index] = choice === question.correct; highlights.flash(index, choice); renderQuestions(); });
       choices.append(button);
     }

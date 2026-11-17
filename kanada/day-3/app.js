@@ -113,7 +113,6 @@ function renderQuiz() {
     question.choices.forEach(choice => {
       const option = el("button", highlights.classFor(index, choice, question.correct), choice);
       option.type = "button";
-      option.disabled = resolved;
       option.addEventListener("click", () => {
         answers[index] = choice === question.correct;
         highlights.flash(index, choice);
