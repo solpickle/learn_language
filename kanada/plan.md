@@ -18,6 +18,7 @@
 
 - [x] Flash the selected answer pale green when correct and pale red when incorrect across Days 1–3 and Read Kannada.
 - [x] Clear answer highlights after 1.8 seconds while keeping the answer result and score; cancel timers when a practice round is reset.
+- [x] Keep choices enabled so answers can be changed and attempted again without refreshing.
 - [x] Test the shared timed feedback helper and publish it with the site runtime.
 
 ### Kannada Alphabet
