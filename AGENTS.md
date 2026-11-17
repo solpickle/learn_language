@@ -20,6 +20,16 @@ This repository hosts the Kannada learning MVP at `kanada/` on GitHub Pages. The
 - Use semantic headings, labels, links, and buttons. Announce audio/quiz feedback through status text. A Play button must identify what it plays to assistive technology.
 - Page-specific CSS is fine; keep the shared theme consistent. Do not introduce a framework or broad redesign for an individual lesson.
 
+## User preferences to apply across future lessons and tabs
+
+- The learner is an adult beginner who cannot yet read Kannada and does not speak it. Never make an activity depend on Kannada script alone: pair new script with simple romanization, a plain-English meaning, and saved audio.
+- Keep the interface compact at laptop and phone widths. Prefer short, vertically stacked links and rows; avoid oversized cards and excess whitespace. The Home page entry links should remain a single vertical list on desktop as well as mobile.
+- Every lesson and reference tab must have a Home link in its header and as the first link in its in-page navigation row. Use relative links that work under the GitHub Pages `/learn_language/` path.
+- Keep learning references as separate, clearly linked tabs: Read Kannada for sight words from lessons, Kannada Numbers for spoken number forms and patterns, and Kannada Alphabet for letter recognition and combining sounds.
+- On the Alphabet tab, make Kannada letterforms visibly large and bold. Explain independent vowels versus consonant vowel signs, show how a consonant changes when a vowel sign is added, and use simple words broken into readable chunks. Do not present a chart without showing how to use it.
+- In quizzes and recognition practice, briefly highlight the selected choice pale green when correct and pale red when incorrect; clear the color after about 1.8 seconds while retaining the answer explanation and score. Reuse `kanada/quiz-feedback.mjs` for this behavior.
+- Keep every new lesson focused on the agreed Days 1–7 MVP. Do not build for a future 30-day course unless the user expands scope.
+
 ## App and audio structure
 
 - The site is buildless HTML, CSS, and ES modules. Use relative URLs so it works at the GitHub Pages repository path `/learn_language/` and in local HTTP preview.

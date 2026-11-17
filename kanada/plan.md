@@ -32,6 +32,7 @@
 
 ### Site navigation
 
+- [x] Record the user's recurring teaching, navigation, feedback, and compact-layout preferences in `AGENTS.md` for future lesson work.
 - [x] Add a consistent Home link in the header and footer of each Kannada page; label the entry page Home instead of Audio Lab.
 - [x] Keep Home visible in the navigation row on every lesson, reading, numbers, and alphabet tab.
 - [x] Stack the Home page lesson and section links vertically on desktop, matching the preferred mobile layout.
