@@ -27,6 +27,7 @@
 ### Site navigation
 
 - [x] Add a consistent Home link in the header and footer of each Kannada page; label the entry page Home instead of Audio Lab.
+- [x] Keep Home visible in the navigation row on every lesson, reading, numbers, and alphabet tab.
 
 ### Kannada Numbers
 

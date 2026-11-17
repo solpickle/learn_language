@@ -17,5 +17,9 @@ test("every Kannada page has a header link named Home to the app home", () => {
     const page = readFileSync(new URL(path, import.meta.url), "utf8");
     assert.ok(page.includes(`<header><a href="${href}" aria-label="Home">Home</a>`), `${name} page`);
     assert.doesNotMatch(page, /Audio lab/i, `${name} page`);
+    if (name !== "Home") {
+      const tabRow = page.match(/<nav\b[^>]*>[\s\S]*?<\/nav>/)?.[0] || "";
+      assert.ok(tabRow.includes(`<a href="${href}" aria-label="Home">Home</a>`), `${name} tab row`);
+    }
   }
 });
