@@ -1,10 +1,12 @@
 import {words, forms, questions} from "./content.mjs";
 import {createRecordedController} from "../recorded.mjs";
+import {createTimedAnswerHighlights} from "../quiz-feedback.mjs";
 
 const $ = id => document.getElementById(id);
 const byId = new Map(words.map(word => [word.id, word]));
 const player = createRecordedController(() => new Audio(), event => { $("status").textContent = event.message; });
 let answers = Array(questions.length).fill(null);
+const highlights = createTimedAnswerHighlights(questions.length, {onExpire: () => renderQuestions()});
 
 function element(tag, className, value) {
   const node = document.createElement(tag);
@@ -67,10 +69,10 @@ function renderQuestions() {
     const choices = element("div", "choices");
     const feedback = element("p", "feedback");
     for (const choice of question.choices) {
-      const button = element("button", answers[index] !== null && choice === question.correct ? "correct" : "", choice);
+      const button = element("button", highlights.classFor(index, choice, question.correct), choice);
       button.type = "button";
       button.disabled = answers[index] !== null;
-      button.addEventListener("click", () => { answers[index] = choice === question.correct; renderQuestions(); });
+      button.addEventListener("click", () => { answers[index] = choice === question.correct; highlights.flash(index, choice); renderQuestions(); });
       choices.append(button);
     }
     if (answers[index] !== null) feedback.textContent = `${answers[index] ? "Correct" : "Good try"} · ${word.script} · ${word.roman} · ${word.meaning}`;
@@ -82,5 +84,5 @@ function renderQuestions() {
   $("retry").hidden = !done;
 }
 renderQuestions();
-$("retry").addEventListener("click", () => { answers = Array(questions.length).fill(null); renderQuestions(); });
+$("retry").addEventListener("click", () => { highlights.reset(); answers = Array(questions.length).fill(null); renderQuestions(); });
 $("stop").addEventListener("click", () => player.stop());

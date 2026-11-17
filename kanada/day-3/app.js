@@ -1,4 +1,5 @@
 import {phrases, dialogue, story, questions} from "./content.mjs";
+import {createTimedAnswerHighlights} from "../quiz-feedback.mjs";
 
 const $ = id => document.getElementById(id);
 const rate = $("rate"), status = $("status");
@@ -7,6 +8,7 @@ const storyMode = $("story-mode");
 const storeKey = "learn-kannada-day-3-v1";
 let currentAudio = null, playToken = 0, activeRow = null, cancelCurrent = null;
 let answers = Array(questions.length).fill(null);
+const highlights = createTimedAnswerHighlights(questions.length, {onExpire: () => renderQuiz()});
 
 function saveProgress() {
   try { localStorage.setItem(storeKey, JSON.stringify({answers, completed: $("complete").dataset.done === "true", roman:romanToggle.checked, english:englishToggle.checked, rate:rate.value})); }
@@ -109,11 +111,12 @@ function renderQuiz() {
     const reveal = el("p", "quiz-reveal");
     const resolved = answers[index] !== null;
     question.choices.forEach(choice => {
-      const option = el("button", resolved && choice === question.correct ? "correct" : "", choice);
+      const option = el("button", highlights.classFor(index, choice, question.correct), choice);
       option.type = "button";
       option.disabled = resolved;
       option.addEventListener("click", () => {
         answers[index] = choice === question.correct;
+        highlights.flash(index, choice);
         renderQuiz(); saveProgress();
       });
       choices.append(option);

@@ -12,6 +12,8 @@
 
 Updated: 2026-11-17
 
+> **Quiz feedback — 2026-11-17:** Day 1–3 listening quizzes and Read Kannada practice briefly highlight the selected choice green (correct) or red (incorrect), then clear it after 1.8 seconds. Answer state and scores remain; Read Kannada retry cancels any pending highlight timers. Shared code is `kanada/quiz-feedback.mjs` and the Pages workflow copies it to the site root.
+
 > **Home page layout — 2026-11-17:** Main entry links now stay in one vertical column at desktop and mobile widths, following the user's preferred mobile arrangement.
 
 > **Home in tab navigation — 2026-11-17:** Added Home as the first link in each lesson, reading, numbers, and alphabet navigation row, in addition to the page header/footer links.
