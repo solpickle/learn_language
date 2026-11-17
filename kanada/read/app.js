@@ -24,12 +24,15 @@ function playButton(word, label = "▶ Listen") {
   return button;
 }
 
-let currentDay = 1;
+let currentDay = 0;
+const dayLabels = {1:"First conversation", 2:"Asking and choosing", 3:"Price and quantity"};
 for (const word of words) {
-  if (word.day && word.day !== currentDay) {
-    const label = word.day === 2 ? "Asking and choosing" : "Price and quantity";
-    $("word-list").append(element("h3", "day-divider", `Day ${word.day} · ${label}`));
-    currentDay = word.day;
+  const day = word.day || 1;
+  if (day !== currentDay) {
+    const divider = element("h3", "day-divider", `Day ${day} · ${dayLabels[day]}`);
+    divider.id = `day-${day}`;
+    $("word-list").append(divider);
+    currentDay = day;
   }
   const card = element("article", "word-card");
   card.id = `word-${word.id}`;

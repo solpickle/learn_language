@@ -10,6 +10,12 @@ export const words = [
   {id:"namaskaara", script:"ನಮಸ್ಕಾರ", roman:"Namaskaara", meaning:"Hello", example:"ನಮಸ್ಕಾರ.", exampleRoman:"Namaskaara.", note:"Start by recognizing the whole greeting."},
   {id:"dayavittu", script:"ದಯವಿಟ್ಟು", roman:"Dayavittu", meaning:"Please", example:"ದಯವಿಟ್ಟು ನಿಧಾನವಾಗಿ ಮಾತಾಡಿ.", exampleRoman:"Dayavittu nidhaanavaagi maataadi.", note:"A polite word at the start of a request."},
   {id:"maataadi", script:"ಮಾತಾಡಿ", roman:"Maataadi", meaning:"Speak (polite request)", example:"ನಿಧಾನವಾಗಿ ಮಾತಾಡಿ.", exampleRoman:"Nidhaanavaagi maataadi.", note:"Look for ಮಾ at the start."},
+  {id:"nimage", script:"ನಿಮಗೆ", roman:"Nimage", meaning:"to you", example:"ನಿಮಗೆ ಕನ್ನಡ ಗೊತ್ತಾ?", exampleRoman:"Nimage Kannada gottaa?", note:"The polite 'you' form in the conversation."},
+  {id:"enu", script:"ಏನು", roman:"Enu", meaning:"What?", example:"ನಿಮಗೆ ಏನು ಬೇಕು?", exampleRoman:"Nimage enu beku?", note:"Listen for this question word in the Day 2 dialogue."},
+  {id:"nidhaanavaagi", script:"ನಿಧಾನವಾಗಿ", roman:"Nidhaanavaagi", meaning:"Slowly", example:"ದಯವಿಟ್ಟು ನಿಧಾನವಾಗಿ ಮಾತಾಡಿ.", exampleRoman:"Dayavittu nidhaanavaagi maataadi.", note:"Use it when you want someone to speak slowly."},
+  {id:"mattomme", script:"ಮತ್ತೊಮ್ಮೆ", roman:"Mattomme", meaning:"Again / one more time", example:"ಮತ್ತೊಮ್ಮೆ ಹೇಳಿ.", exampleRoman:"Mattomme heli.", note:"A useful word when you want to hear something again."},
+  {id:"heli", script:"ಹೇಳಿ", roman:"Heli", meaning:"Please say", example:"ಮತ್ತೊಮ್ಮೆ ಹೇಳಿ.", exampleRoman:"Mattomme heli.", note:"The polite request form in 'Please say it again.'"},
+  {id:"dhanyavaadagalu", script:"ಧನ್ಯವಾದಗಳು", roman:"Dhanyavaadagalu", meaning:"Thank you", example:"ಧನ್ಯವಾದಗಳು.", exampleRoman:"Dhanyavaadagalu.", note:"A polite way to end the short exchange."},
   {id:"neeru", day:2, script:"ನೀರು", roman:"Neeru", meaning:"Water", example:"ನನಗೆ ನೀರು ಬೇಕು.", exampleRoman:"Nanage neeru beku.", note:"The item in Day 2's first request."},
   {id:"beku", day:2, script:"ಬೇಕು", roman:"Beku", meaning:"Want / need", example:"ನನಗೆ ನೀರು ಬೇಕು.", exampleRoman:"Nanage neeru beku.", note:"Compare this with ಬೇಡ below."},
   {id:"beda", day:2, script:"ಬೇಡ", roman:"Beda", meaning:"Don't want / need", example:"ನನಗೆ ಚಹಾ ಬೇಡ.", exampleRoman:"Nanage chahaa beda.", note:"Use it to decline an item."},
@@ -23,7 +29,9 @@ export const words = [
   {id:"ardha", day:3, script:"ಅರ್ಧ", roman:"Ardha", meaning:"Half", example:"ಅರ್ಧ ಕೆಜಿ ಟೊಮೇಟೊ ಕೊಡಿ.", exampleRoman:"Ardha keji tomato kodi.", note:"Switch ಅರ್ಧ (half) to ಒಂದು (one) for a full kilo."},
   {id:"kodi", day:3, script:"ಕೊಡಿ", roman:"Kodi", meaning:"Please give", example:"ಅರ್ಧ ಕೆಜಿ ಕೊಡಿ.", exampleRoman:"Ardha keji kodi.", note:"A polite way to end this simple request."},
   {id:"tomato", day:3, script:"ಟೊಮೇಟೊ", roman:"Tomato", meaning:"Tomato", example:"ಅರ್ಧ ಕೆಜಿ ಟೊಮೇಟೊ ಕೊಡಿ.", exampleRoman:"Ardha keji tomato kodi.", note:"Try another item in the same quantity pattern."},
-  {id:"brinjal", day:3, script:"ಬದನೆಕಾಯಿ", roman:"Badanekaayi", meaning:"Eggplant / brinjal", example:"ಒಂದು ಕೆಜಿ ಬದನೆಕಾಯಿಗೆ ಎಷ್ಟು ಬೆಲೆ?", exampleRoman:"Ondu keji badanekaayige eshtu bele?", note:"This word appears in the market price question."}
+  {id:"brinjal", day:3, script:"ಬದನೆಕಾಯಿ", roman:"Badanekaayi", meaning:"Eggplant / brinjal", example:"ಒಂದು ಕೆಜಿ ಬದನೆಕಾಯಿಗೆ ಎಷ್ಟು ಬೆಲೆ?", exampleRoman:"Ondu keji badanekaayige eshtu bele?", note:"This word appears in the market price question."},
+  {id:"nalavattu", day:3, script:"ನಲವತ್ತು", roman:"Nalavattu", meaning:"Forty", example:"ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ.", exampleRoman:"Kejige nalavattu roopaayi.", note:"A sample number in the market price answer."},
+  {id:"roopaayi", day:3, script:"ರೂಪಾಯಿ", roman:"Roopaayi", meaning:"Rupee / rupees", example:"ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ.", exampleRoman:"Kejige nalavattu roopaayi.", note:"A money word used with the sample price."}
 ];
 
 export const forms = [

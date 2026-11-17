@@ -9,6 +9,8 @@ export const phrases = [
   {id:"kodi", kannada:"ಕೊಡಿ", roman:"Kodi", english:"Please give", note:"A polite, useful request ending."},
   {id:"tomato", kannada:"ಟೊಮೇಟೊ", roman:"Tomato", english:"Tomato", note:"A familiar item to swap into the request."},
   {id:"brinjal", kannada:"ಬದನೆಕಾಯಿ", roman:"Badanekaayi", english:"Eggplant / brinjal", note:"A common vegetable in the market example."},
+  {id:"nalavattu", kannada:"ನಲವತ್ತು", roman:"Nalavattu", english:"Forty", note:"A sample number in the market price answer."},
+  {id:"roopaayi", kannada:"ರೂಪಾಯಿ", roman:"Roopaayi", english:"Rupee / rupees", note:"Money word used with the sample price."},
   {id:"price-question", kannada:"ಇದರ ಬೆಲೆ ಎಷ್ಟು?", roman:"Idara bele eshtu?", english:"How much is this?", note:"ಇದರ = of this · ಬೆಲೆ = price · ಎಷ್ಟು = how much."},
   {id:"half-tomato", kannada:"ಅರ್ಧ ಕೆಜಿ ಟೊಮೇಟೊ ಕೊಡಿ.", roman:"Ardha keji tomato kodi.", english:"Half a kilo of tomatoes, please.", note:"Change ಅರ್ಧ (half) to ಒಂದು (one) to ask for a full kilo."},
   {id:"one-tomato", kannada:"ಒಂದು ಕೆಜಿ ಟೊಮೇಟೊ ಕೊಡಿ.", roman:"Ondu keji tomato kodi.", english:"One kilo of tomatoes, please.", note:"ಒಂದು (one) + ಕೆಜಿ (kilo) + item + ಕೊಡಿ (please give)."},
@@ -16,18 +18,20 @@ export const phrases = [
   {id:"price-answer", kannada:"ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ.", roman:"Kejige nalavattu roopaayi.", english:"Forty rupees per kilo.", note:"A sample answer for practice; market prices vary."}
 ];
 
+const phrase = id => phrases.find(item => item.id === id);
+
 export const dialogue = [
   {speaker:"Shopkeeper", id:"what-want", audioId:"what-want", kannada:"ನಿಮಗೆ ಏನು ಬೇಕು?", roman:"Nimage enu beku?", english:"What would you like?"},
-  {speaker:"You", audioId:"half-tomato", ...phrases[10]},
-  {speaker:"You", audioId:"price-question", ...phrases[9]},
-  {speaker:"Shopkeeper", audioId:"price-answer", ...phrases[13]},
+  {speaker:"You", audioId:"half-tomato", ...phrase("half-tomato")},
+  {speaker:"You", audioId:"price-question", ...phrase("price-question")},
+  {speaker:"Shopkeeper", audioId:"price-answer", ...phrase("price-answer")},
   {speaker:"You", id:"half-kilo-please", audioId:"half-kilo-please", kannada:"ಅರ್ಧ ಕೆಜಿ ಕೊಡಿ.", roman:"Ardha keji kodi.", english:"Half a kilo, please."}
 ];
 
 export const story = [
-  {...phrases[9]},
-  {...phrases[13]},
-  {...phrases[10]},
+  {...phrase("price-question")},
+  {...phrase("price-answer")},
+  {...phrase("half-tomato")},
   {id:"sari", kannada:"ಸರಿ.", roman:"Sari.", english:"Okay."},
   {id:"thanks", kannada:"ಧನ್ಯವಾದಗಳು.", roman:"Dhanyavaadagalu.", english:"Thank you."}
 ];

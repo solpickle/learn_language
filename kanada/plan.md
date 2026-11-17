@@ -1,4 +1,6 @@
-> **Current status — 2026-11-17:** Day 3 (price and quantity) is implemented on `feature/kannada-day-3` with generated Kannada audio, a five-line market mini-story, four listening questions, and nine Day 3 sight words. New language/audio review and phone feedback remain open. Follow the current repo contract in `AGENTS.md`; merge through a GitHub CLI PR and monitor the Pages workflow. This note supersedes older migration and status entries below.
+> **Current status — 2026-11-17:** Day 3 is live. Read Kannada now groups 32 words across Days 1–3, with six added Day 1 terms, two Day 3 price terms, saved audio, and direct group links. This feature is on `feature/kannada-read-days-1-3`; language/audio review and user phone feedback remain pending.
+
+> **Current status — 2026-11-17:** Day 3 (price and quantity) is implemented on `feature/kannada-day-3` with generated Kannada audio, a five-line market mini-story, four listening questions, and eleven Day 3 sight words. New language/audio review and phone feedback remain open. Follow the current repo contract in `AGENTS.md`; merge through a GitHub CLI PR and monitor the Pages workflow. This note supersedes older migration and status entries below.
 
 > **Current status — 2026-11-16:** `AGENTS.md` now records the app's scope, visual style, audio, and workflow contract. Day 2 (want / don't want) is implemented on `feature/kannada-day-2` with saved MP3s and five more reading words. Days 3–7, user phone feedback, and fluent-speaker review remain open. Older migration and hosting notes below are historical.
 
@@ -16,7 +18,7 @@
 
 - [x] Teach `eshtu` (how much), `bele` (price), `keji` (kilo), and a reusable quantity + item + `kodi` request.
 - [x] Add a price question, one-kilo/half-kilo substitutions, dialogue, five-line market story, four listening questions, and mission.
-- [x] Generate Day 3 audio and add eight related sight words with listening practice.
+- [x] Generate Day 3 audio and add eleven related sight words with listening practice.
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 3 and the reading additions.
 
@@ -38,6 +40,7 @@
 - [x] Show selected base consonant and vowel-mark forms without teaching the full alphabet.
 - [x] Add a short recognition practice with answer feedback and replay.
 - [x] Add pronunciation guides and word links to Day 1 pattern and mission.
+- [x] Align sight words with Days 1–3, add day-group jump links, and save audio for each card.
 - [ ] Obtain fluent-speaker review of word audio and reading explanations.
 - [ ] Test the published reading page on the user's phone and revise from feedback.
 
