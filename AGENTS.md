@@ -30,7 +30,8 @@ This repository hosts the Kannada learning MVP at `kanada/` on GitHub Pages. The
 
 ## Workflow and checks
 
-- Work in a new feature branch from the latest `origin/main` for each feature. Review the diff, run relevant checks, then merge into `main`; pushes to `main` trigger `.github/workflows/publish.yml` and GitHub Pages. Confirm the action and live URLs after publishing.
+- Work in a new feature branch from the latest `origin/main` for each feature. Review the diff and run relevant checks. Push the branch, create its PR with `gh pr create`, and merge it with `gh pr merge`; do not merge a feature branch into `main` locally. Keep the PR title and body focused on the final change and validation.
+- A PR merge pushes to `main` and triggers `.github/workflows/publish.yml`. Use GitHub CLI to check deployment (`gh run list --workflow publish.yml`, then `gh run watch <run-id> --exit-status`). Use `gh workflow run publish.yml --ref main` only when a manual deployment is needed; avoid starting a duplicate run after the automatic one. Verify the live page and audio URLs after a successful run.
 - Update `.github/workflows/publish.yml` whenever a new runtime page or asset directory is added; its static-site copy list is explicit.
 - Run `node --test kanada/tests/*.test.mjs`, JavaScript syntax checks for changed modules, and `git diff --check`. Add tests for meaningful content/audio references or behavior, not for trivial styling.
 - Preview over HTTP rather than `file://`, and inspect the compact laptop and phone layouts when browser tooling is available. User phone testing and fluent-speaker review must be recorded separately from automated tests.
