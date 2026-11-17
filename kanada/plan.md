@@ -175,6 +175,23 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 - [ ] Add one simple deterministic shop role-play using learned phrases.
 - [ ] Review Kannada, English meanings, and romanization for consistency; flag uncertain content and listen to new audio before marking content polished.
 
+### Future lesson ideas — discuss before scripting
+
+These are user-proposed topics beyond the current Days 1–7 MVP. Keep them as
+rough concepts only for now; agree on the final lesson scripts and scope with
+the user before implementation.
+
+- [ ] **Day 8 — Bus and auto travel:** Ask the conductor or driver about the fare
+  and direction, buy a ticket, explain that you are new to the area, and ask to
+  be told when the destination/stop arrives.
+- [ ] **Day 9 — Ordering at Rameshwaram Cafe:** Practical ordering conversation
+  for idli, dosa, and related items.
+- [ ] **Day 10 — Traffic stop:** A calm, respectful conversation with a traffic
+  police officer after accidentally crossing a red light; understand the
+  officer's question and respond appropriately.
+- [ ] **Day 11 — Minor car/auto collision:** De-escalate an upset auto driver,
+  explain what happened, and communicate calmly about next steps.
+
 ### 5. Iterate and finish the seven-day MVP
 
 - [ ] Add simple Home, Learn, Stories, Practice, Progress, and Settings navigation as needed by the seven-day experience.

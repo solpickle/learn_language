@@ -14,6 +14,8 @@ Updated: 2026-11-17
 
 > **Standing user preferences — 2026-11-17:** Future lesson work should follow the user-specific checklist in the repository-root `AGENTS.md`: beginner-friendly script + romanization + English + saved audio; compact vertical links and a Home link in every page header/tab row; Alphabet focused on vowel signs and making simple word chunks; short red/green quiz feedback that clears after 1.8 seconds while keeping choices repeatable; and a simple Home audio area that hides browser voice selection/refresh. The active MVP remains Days 1–7.
 
+> **Future lesson ideas — 2026-11-17:** The user proposed Days 8–11 on bus/auto travel, ordering at Rameshwaram Cafe, a respectful traffic-stop conversation, and de-escalating a car/auto collision. Keep these as rough post-MVP concepts; discuss and agree on final scripts before implementation. Current active scope remains Days 1–7.
+
 > **Home audio controls — 2026-11-17:** The Home page uses saved Sapna MP3s, shows the speaking-speed selector and a short voice note, and displays Stop only during playback. Browser voice selection and refresh controls were removed from Home.
 
 > **Quiz feedback — 2026-11-17:** Day 1–3 listening quizzes and Read Kannada practice briefly highlight the selected choice green (correct) or red (incorrect), then clear it after 1.8 seconds. Choices stay enabled for repeat attempts, and each new answer updates the score/result. Read Kannada retry cancels any pending highlight timers. Shared code is `kanada/quiz-feedback.mjs` and the Pages workflow copies it to the site root.
