@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kannada Alphabet · Vowels and Consonants</title>
+  <meta name="description" content="See Kannada vowels and consonants, combine vowel signs, and sound out simple Kannada words.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to alphabet guide</a>
+  <header><a href="../" aria-label="Home">Home</a><span>LEARN KANNADA · ALPHABET</span></header>
+  <main id="main">
+    <p class="eyebrow">KANNADA ALPHABET · FIRST STEPS</p>
+    <h1>Vowels, consonants, and how they join</h1>
+    <p class="lead">Learn the letter shapes, then see how a vowel changes a consonant into a syllable. The larger letters are meant to be easy to spot.</p>
+    <nav class="alphabet-nav" aria-label="Alphabet sections"><a href="#vowels">Vowels</a><a href="#builder">Build a syllable</a><a href="#consonants">Consonants</a><a href="#words">Make simple words</a><a href="../read/">Read Kannada</a><a href="../numbers/">Kannada Numbers</a></nav>
+    <section class="alphabet-tools" aria-label="Audio controls"><label>Audio speed <select id="rate"><option value="0.6">0.6× · Slow</option><option value="0.8" selected>0.8× · Gentle</option><option value="1">1.0× · Normal</option></select></label><button id="stop" class="secondary" type="button">■ Stop audio</button></section>
+    <p id="status" class="hint" role="status" aria-live="polite">Tap a letter or word to hear it.</p>
+
+    <section id="vowels" class="alphabet-section">
+      <div class="section-heading"><h2>Vowels · ಸ್ವರಗಳು</h2><span>13 independent vowel letters</span></div>
+      <p>Use a vowel letter when its sound starts a word. When it follows a consonant, use the vowel sign shown below instead.</p>
+      <div id="vowel-grid" class="vowel-grid"></div>
+      <p class="hint">ಋ (ru) appears mostly in Sanskrit-derived words. The sounds written with English letters are approximate reading aids. Tap a vowel to hear it.</p>
+    </section>
+
+    <section id="builder" class="alphabet-section builder-panel">
+      <div class="section-heading"><h2>Build a syllable</h2><span>Choose a consonant</span></div>
+      <p>A Kannada consonant normally includes a short <strong>a</strong>: <span lang="kn">ಕ</span> sounds like <strong>ka</strong>. Add a vowel sign to change that sound: <span lang="kn">ಕ + ಾ = ಕಾ</span> (<strong>kaa</strong>).</p>
+      <div id="builder-consonants" class="builder-consonants" aria-label="Choose a consonant"></div>
+      <p id="selected-label" class="selected-label" aria-live="polite"></p>
+      <div id="syllable-grid" class="syllable-grid"></div>
+      <p class="hint">ಅ (a) is already inside the consonant, so its form has no extra sign. The small mark ್ removes that built-in vowel: <span lang="kn">ಕ</span> (ka) → <span lang="kn">ಕ್</span> (k). You can ignore that mark while starting out.</p>
+    </section>
+
+    <section id="consonants" class="alphabet-section">
+      <div class="section-heading"><h2>Consonants · ವ್ಯಂಜನಗಳು</h2><span>34 common letters</span></div>
+      <p>These consonant sounds are shown with their built-in <strong>a</strong> sound. Tap any letter to hear it and select it in the syllable builder.</p>
+      <div id="consonant-groups"></div>
+      <p class="hint">Some letters, such as ಙ and ಞ, are uncommon at the start of everyday words. The grouped rows help you notice how the sounds are organized.</p>
+    </section>
+
+    <section id="words" class="alphabet-section">
+      <div class="section-heading"><h2>Read a few simple words</h2><span>Sound out each chunk</span></div>
+      <p>Each chunk is one consonant plus its vowel sound. Follow the chunks from left to right, then listen to the whole word.</p>
+      <div id="word-list" class="word-grid"></div>
+    </section>
+
+    <p class="review-note">These large letters and sound guides are for recognition and reading practice. Spellings, romanization, and generated audio still need fluent-speaker review. Letter groups and vowel combinations follow <a href="https://kannadakalike.org/grammar/kannada-alphabet">Kannaḍa Kalike’s Kannada alphabet guide ↗</a>.</p>
+  </main>
+  <footer><a href="../">Home</a> · <a href="../read/">Read Kannada</a> · <a href="../numbers/">Kannada Numbers</a></footer>
+</body>
+</html>

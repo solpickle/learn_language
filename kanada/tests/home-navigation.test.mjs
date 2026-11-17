@@ -8,7 +8,8 @@ const pages = [
   ["Day 2", "../day-2/index.html", "../"],
   ["Day 3", "../day-3/index.html", "../"],
   ["Read Kannada", "../read/index.html", "../"],
-  ["Kannada Numbers", "../numbers/index.html", "../"]
+  ["Kannada Numbers", "../numbers/index.html", "../"],
+  ["Kannada Alphabet", "../alphabet/index.html", "../"]
 ];
 
 test("every Kannada page has a header link named Home to the app home", () => {
