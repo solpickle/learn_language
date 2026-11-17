@@ -1,3 +1,5 @@
+> **Current status — 2026-11-17:** Day 3 (price and quantity) is implemented on `feature/kannada-day-3` with generated Kannada audio, a five-line market mini-story, four listening questions, and nine Day 3 sight words. New language/audio review and phone feedback remain open. Follow the current repo contract in `AGENTS.md`; merge through a GitHub CLI PR and monitor the Pages workflow. This note supersedes older migration and status entries below.
+
 > **Current status — 2026-11-16:** `AGENTS.md` now records the app's scope, visual style, audio, and workflow contract. Day 2 (want / don't want) is implemented on `feature/kannada-day-2` with saved MP3s and five more reading words. Days 3–7, user phone feedback, and fluent-speaker review remain open. Older migration and hosting notes below are historical.
 
 > **Reading bridge — 2026-10-11:** User accepted Day 1 and requested help recognizing Kannada script before more lesson content. A separate `/kanada/read/` page on `feature/read-kannada` teaches ten Day 1 sight words, selected vowel-mark changes, and a four-question recognition practice. Day 1 pattern and mission now include romanization and direct links. Word audio and letter guidance still await fluent-speaker review; phone feedback remains pending.
@@ -9,6 +11,14 @@
 # Spoken Kannada for Bengaluru --- V1 Planning Specification
 
 ## Active implementation checklist
+
+### Day 3 — price and quantity
+
+- [x] Teach `eshtu` (how much), `bele` (price), `keji` (kilo), and a reusable quantity + item + `kodi` request.
+- [x] Add a price question, one-kilo/half-kilo substitutions, dialogue, five-line market story, four listening questions, and mission.
+- [x] Generate Day 3 audio and add eight related sight words with listening practice.
+- [ ] Get fluent-speaker review of new wording, romanization, and audio.
+- [ ] Record user phone feedback on Day 3 and the reading additions.
 
 ### Day 2 — want / don't want
 
@@ -118,7 +128,7 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 
 - [ ] Polish Day 1: greetings and survival Kannada.
 - [x] Add Day 2: want / don't want.
-- [ ] Add Day 3: price and quantity.
+- [x] Add Day 3: price and quantity.
 - [ ] Add Day 4: location and directions.
 - [ ] Add Day 5: review and mini conversation.
 - [ ] Add Day 6: grocery shopping (finalize the specific phrases before authoring).

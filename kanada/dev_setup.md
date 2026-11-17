@@ -1,3 +1,5 @@
+> **Day 3 update (2026-11-17):** Day 3 lives at `/kanada/day-3/`; the Read Kannada bridge now includes nine Day 3 sight words. Its word audio points to Day 3 MP3s, while Days 1–2 keep their existing read-audio folder. The publish workflow copies Day 3 HTML, JS, content, CSS, and MP3s explicitly. Generate with `--app-dir kanada/day-3 --output kanada/day-3/audio`; voice remains `kn-IN-SapnaNeural` with pinned `edge-tts==7.3.1`. Content/audio review by a fluent speaker and user phone feedback remain pending.
+
 > **GitHub CLI workflow (2026-11-16):** For each feature, branch from latest `origin/main`, test, push, create a PR with `gh pr create`, and merge with `gh pr merge`. The merge triggers `.github/workflows/publish.yml`; check the run using `gh run list --workflow publish.yml` and `gh run watch <run-id> --exit-status`, then verify live URLs. Use `gh workflow run publish.yml --ref main` only for a needed manual redeploy. This is the current development contract; do not merge feature branches locally into `main`.
 
 > **Day 2 update (2026-11-16):** The active repository root now has `AGENTS.md`. Day 2 lives at `/kanada/day-2/`; reading cards for Days 1–2 are at `/kanada/read/`. Generate Day 2 MP3s with `--app-dir kanada/day-2 --output kanada/day-2/audio`. The older `edge-tts==7.2.8` generator returned HTTP 403; `edge-tts==7.3.1` produced a successful Kannada sample and is now pinned in `scripts/requirements-audio.txt`. The generator records its installed version in each manifest. Commit MP3s and manifests; the published site needs no Python.
@@ -8,7 +10,7 @@
 
 # Kannada app development setup
 
-Updated: 2026-10-11
+Updated: 2026-11-17
 
 ## Current home
 All application code, MP3s, generator, tests and planning documents now live in:
@@ -68,8 +70,8 @@ as an archive and pointer; plans in this new folder are now authoritative.
 ## Product agreement
 - Keep the compact visual style and comfortable tap targets.
 - Generated sample audio was accepted by the user.
-- The current app is the five-phrase prototype, not the seven-day course.
-- Next: word-by-word phrase explanations and substitutions, then Day 1 and Days 2–7.
+- The current app contains Days 1–3 of the seven-day MVP; Days 4–7 are still planned.
+- Next planned lesson: Day 4, location and directions.
 - Include readable Kannada, romanization, English and saved audio.
 - No backend or authentication; future progress stays local to each browser.
 - Phone testing and fluent-speaker language review are not recorded as complete.

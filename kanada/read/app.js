@@ -13,7 +13,8 @@ function element(tag, className, value) {
   return node;
 }
 function listen(word) {
-  player.play(new URL(`./audio/${word.id}.mp3`, import.meta.url).href, Number($("rate").value), word.id);
+  const folder = word.day === 3 ? "../day-3/audio" : "./audio";
+  player.play(new URL(`${folder}/${word.id}.mp3`, import.meta.url).href, Number($("rate").value), word.id);
 }
 function playButton(word, label = "▶ Listen") {
   const button = element("button", "", label);
@@ -23,8 +24,13 @@ function playButton(word, label = "▶ Listen") {
   return button;
 }
 
+let currentDay = 1;
 for (const word of words) {
-  if (word.day === 2 && !$("word-list").querySelector(".day-divider")) $("word-list").append(element("h3", "day-divider", "Day 2 · Asking and choosing"));
+  if (word.day && word.day !== currentDay) {
+    const label = word.day === 2 ? "Asking and choosing" : "Price and quantity";
+    $("word-list").append(element("h3", "day-divider", `Day ${word.day} · ${label}`));
+    currentDay = word.day;
+  }
   const card = element("article", "word-card");
   card.id = `word-${word.id}`;
   const header = element("div", "word-head");

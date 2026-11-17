@@ -5,16 +5,17 @@ import {words, forms, questions} from "../read/content.mjs";
 
 const root = new URL("../read/", import.meta.url);
 
-test("sight words have audio and the expected Days 1–2 content", () => {
-  assert.equal(words.length, 15);
+test("sight words have audio and the expected Days 1–3 content", () => {
+  assert.equal(words.length, 24);
   assert.equal(new Set(words.map(word => word.id)).size, words.length);
   const manifest = JSON.parse(readFileSync(new URL("audio/manifest.json", root), "utf8"));
   assert.equal(manifest.voice, "kn-IN-SapnaNeural");
-  assert.deepEqual(manifest.phrases.map(item => [item.id, item.text]), words.map(word => [word.id, word.script]));
+  assert.deepEqual(manifest.phrases.map(item => [item.id, item.text]), words.filter(word => word.day !== 3).map(word => [word.id, word.script]));
   assert.deepEqual(new Set(manifest.phrases.map(item => item.generator)), new Set(["edge-tts 7.2.8", "edge-tts 7.3.1"]));
   for (const word of words) {
     assert.ok(word.roman && word.meaning && word.example && word.exampleRoman);
-    assert.ok(statSync(new URL(`audio/${word.id}.mp3`, root)).size > 1000);
+    const audioUrl = word.day === 3 ? new URL(`../day-3/audio/${word.id}.mp3`, root) : new URL(`audio/${word.id}.mp3`, root);
+    assert.ok(statSync(audioUrl).size > 1000);
   }
 });
 
@@ -39,6 +40,13 @@ test("Day 1 reading links resolve to available cards", () => {
 
 test("Day 2 reading links resolve to available cards", () => {
   const lesson = readFileSync(new URL("../day-2/index.html", import.meta.url), "utf8");
+  const ids = [...lesson.matchAll(/\.\.\/read\/#word-([a-z-]+)/g)].map(match => match[1]);
+  assert.ok(ids.length >= 5);
+  for (const id of ids) assert.ok(words.some(word => word.id === id), id);
+});
+
+test("Day 3 reading links resolve to available cards", () => {
+  const lesson = readFileSync(new URL("../day-3/index.html", import.meta.url), "utf8");
   const ids = [...lesson.matchAll(/\.\.\/read\/#word-([a-z-]+)/g)].map(match => match[1]);
   assert.ok(ids.length >= 5);
   for (const id of ids) assert.ok(words.some(word => word.id === id), id);
