@@ -1,0 +1,97 @@
+{
+  "generator": "edge-tts 7.3.1",
+  "voice": "kn-IN-SapnaNeural",
+  "rate": "+0%",
+  "phrases": [
+    {
+      "id": "eshtu",
+      "text": "ಎಷ್ಟು?",
+      "file": "eshtu.mp3"
+    },
+    {
+      "id": "idara",
+      "text": "ಇದರ",
+      "file": "idara.mp3"
+    },
+    {
+      "id": "bele",
+      "text": "ಬೆಲೆ",
+      "file": "bele.mp3"
+    },
+    {
+      "id": "keji",
+      "text": "ಕೆಜಿ",
+      "file": "keji.mp3"
+    },
+    {
+      "id": "ondu",
+      "text": "ಒಂದು",
+      "file": "ondu.mp3"
+    },
+    {
+      "id": "ardha",
+      "text": "ಅರ್ಧ",
+      "file": "ardha.mp3"
+    },
+    {
+      "id": "kodi",
+      "text": "ಕೊಡಿ",
+      "file": "kodi.mp3"
+    },
+    {
+      "id": "tomato",
+      "text": "ಟೊಮೇಟೊ",
+      "file": "tomato.mp3"
+    },
+    {
+      "id": "brinjal",
+      "text": "ಬದನೆಕಾಯಿ",
+      "file": "brinjal.mp3"
+    },
+    {
+      "id": "price-question",
+      "text": "ಇದರ ಬೆಲೆ ಎಷ್ಟು?",
+      "file": "price-question.mp3"
+    },
+    {
+      "id": "half-tomato",
+      "text": "ಅರ್ಧ ಕೆಜಿ ಟೊಮೇಟೊ ಕೊಡಿ.",
+      "file": "half-tomato.mp3"
+    },
+    {
+      "id": "one-tomato",
+      "text": "ಒಂದು ಕೆಜಿ ಟೊಮೇಟೊ ಕೊಡಿ.",
+      "file": "one-tomato.mp3"
+    },
+    {
+      "id": "brinjal-price",
+      "text": "ಒಂದು ಕೆಜಿ ಬದನೆಕಾಯಿಗೆ ಎಷ್ಟು ಬೆಲೆ?",
+      "file": "brinjal-price.mp3"
+    },
+    {
+      "id": "price-answer",
+      "text": "ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ.",
+      "file": "price-answer.mp3"
+    },
+    {
+      "id": "what-want",
+      "text": "ನಿಮಗೆ ಏನು ಬೇಕು?",
+      "file": "what-want.mp3"
+    },
+    {
+      "id": "half-kilo-please",
+      "text": "ಅರ್ಧ ಕೆಜಿ ಕೊಡಿ.",
+      "file": "half-kilo-please.mp3"
+    },
+    {
+      "id": "sari",
+      "text": "ಸರಿ.",
+      "file": "sari.mp3"
+    },
+    {
+      "id": "thanks",
+      "text": "ಧನ್ಯವಾದಗಳು.",
+      "file": "thanks.mp3"
+    }
+  ]
+}

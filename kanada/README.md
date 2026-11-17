@@ -1,7 +1,7 @@
 # Kannada Everyday
 
 A compact static Kannada app at `/kanada/`, with lessons for
-[Day 1](day-1/) and [Day 2](day-2/) plus a [Read Kannada](read/) bridge. Saved
+[Day 1](day-1/), [Day 2](day-2/) and [Day 3](day-3/) plus a [Read Kannada](read/) bridge. Saved
 MP3s play without an installed Kannada voice or a runtime TTS service.
 
 Each lesson has reusable phrases, a short exchange and story, listening practice,
