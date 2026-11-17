@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kannada Numbers · Learn Kannada</title>
+  <meta name="description" content="Learn Kannada digits, number words, pronunciation, and how to combine tens and hundreds.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to number guide</a>
+  <header><a href="../read/">← Read Kannada</a><span>LEARN KANNADA · NUMBERS</span></header>
+  <main id="main">
+    <p class="eyebrow">KANNADA NUMBERS · FIRST STEPS</p>
+    <h1>Say it. See it. Count it.</h1>
+    <p class="lead">Each row shows the familiar number, its Kannada digit, the Kannada word, an easy reading aid, and saved audio.</p>
+    <nav class="reading-nav" aria-label="Number sections"><a href="#basics">0–20</a><a href="#tens">Tens</a><a href="#pattern">Tens + ones</a><a href="#hundreds">Past 100</a><a href="../read/">Read Kannada</a></nav>
+    <section class="number-tools" aria-label="Audio controls"><label>Audio speed <select id="rate"><option value="0.6">0.6× · Slow</option><option value="0.8" selected>0.8× · Gentle</option><option value="1">1.0× · Normal</option></select></label><button id="stop" class="secondary">■ Stop audio</button></section>
+    <p id="status" role="status" aria-live="polite">Tap a number to hear it. Repeat it aloud.</p>
+    <section id="basics" class="number-section"><div class="section-heading"><h2>Start here · 0–20</h2><span>Digits and words</span></div><div id="list-basics" class="number-list"></div><p class="hint">For zero, <span lang="kn">ಸೊನ್ನೆ</span> (sonne) is a common everyday word. <span lang="kn">ಶೂನ್ಯ</span> (shoonya) is another form.</p></section>
+    <section id="tens" class="number-section"><div class="section-heading"><h2>Tens · 30–100</h2><span>Learn the anchors</span></div><div id="list-tens" class="number-list"></div></section>
+    <section id="pattern" class="number-section number-note"><h2>Tens + ones</h2><p>From 21 to 99, combine the tens word with a one-digit number. The ending changes a little as the sounds join:</p><p><span lang="kn">ಇಪ್ಪತ್ತು</span> (ippattu, 20) + <span lang="kn">ಒಂದು</span> (ondu, 1) → <span lang="kn">ಇಪ್ಪತ್ತೊಂದು</span> (ippattondu, 21).</p><p>Here are examples with 1, plus 25. The same idea works with other ones too: 42 = 40 + 2.</p><div id="list-pattern" class="number-list"></div></section>
+    <section id="hundreds" class="number-section number-note"><h2>Past 100</h2><p>Say the hundred, then the remaining part. In these examples, <span lang="kn">ನೂರು</span> (nooru, 100) becomes <span lang="kn">ನೂರ</span> (noora) before the next number.</p><div id="list-hundreds" class="number-list"></div></section>
+    <p class="review-note">Romanized spellings are simple reading aids, not exact pronunciation notation. Listen to the saved audio. Number forms and generated pronunciation still need fluent-speaker review. <a href="https://kannadakalike.org/grammar/numerals">Number reference: Kannaḍa Kalike ↗</a>.</p>
+  </main>
+  <footer><a href="../read/">Read Kannada</a> · <a href="../">Learn Kannada home</a></footer>
+</body>
+</html>
