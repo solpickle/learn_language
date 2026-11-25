@@ -14,7 +14,7 @@
 
 # Kannada app development setup
 
-> **Latest published update — 2026-11-25:** PR #20 added the Day 4 auto pickup exchange and `hattira` (near) sight word, with five new Sapna MP3s. Pages run 45660301987 passed. Read Kannada now has 49 words and 17 questions. The live route phrase and sight-word clips played through in browser review. See `plan.md` for the Day 4 checklist. Fluent-speaker review and user phone feedback remain open.
+> **Latest published update — 2026-11-25:** Day 5's scope correction is live. PR #25 merged as `38bffa2`; Pages run 45670566281 passed. It adds all 11 requested practical conversations, saved Sapna MP3s, nine Day 5 sight words, and expanded Read Kannada coverage. The public Day 5 page and phrase playback were verified. All 40 project tests and JavaScript syntax checks passed. See `plan.md` for the checklist. Fluent-speaker review and user phone feedback remain open.
 
 > **Scenario scope — 2026-11-25:** The user clarified that all previously listed situations belong in Day 5: DMart, vegetable/sweet/puncture shops, auto and bus, a traffic stop, Udupi restaurant with separate/mixed sambar, temple flowers, household help, and a PAN–Aadhaar help desk. Keep them in Day 5; do not move these categories to a later backlog. PAN–Aadhaar linking is handled on Income Tax e-Filing, not by a municipal office; link the official source and keep the role-play at a general help desk.
 
@@ -36,7 +36,7 @@ Updated: 2026-11-17
 
 > **Kannada Alphabet feature — 2026-11-17:** `/kanada/alphabet/` teaches 13 vowels, 34 consonants, how consonants take vowel signs, and five example words split into readable chunks. Letter sounds and example words have 52 saved `kn-IN-SapnaNeural` recordings. Regenerate with `python kanada/scripts/generate_kannada_audio.py --app-dir kanada/alphabet --output kanada/alphabet/audio`. The publish workflow copies the page and MP3s; fluent-speaker review and phone feedback remain open.
 
-> **Day 5 scenario expansion — 2026-11-25:** `kanada/day-5/phrases.mjs` contains the new audio source lines and nine standalone reading clips. Regenerate with `python kanada/scripts/generate_kannada_audio.py --app-dir kanada/day-5 --output kanada/day-5/audio`. The local build requires no separate read-audio generation for Day 5; `kanada/read/app.js` plays those word clips from `../day-5/audio/`. The Page workflow now copies the day5 page, module, recordings, and manifest. Do not mark this update live until the PR is merged and its Pages run plus live audio are verified.
+> **Day 5 scenario expansion — 2026-11-25:** Published in PR #25; Pages run 45670566281 passed. `kanada/day-5/phrases.mjs` contains the new audio source lines and nine standalone reading clips. Regenerate with `python kanada/scripts/generate_kannada_audio.py --app-dir kanada/day-5 --output kanada/day-5/audio`. No separate Read Kannada audio generation is needed; `kanada/read/app.js` plays these clips from `../day-5/audio/`. The Pages workflow copies the Day 5 page, module, recordings, and manifest.
 
 > **Home navigation — 2026-11-17:** Every Kannada page (home, Days 1–3, Read Kannada, and Kannada Numbers) has a header Home link to `/kanada/`; footer navigation uses the same label. The entry page is titled Home instead of Audio Lab.
 
