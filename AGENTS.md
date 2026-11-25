@@ -32,6 +32,7 @@ This repository hosts the Kannada learning MVP at `kanada/` on GitHub Pages. The
 - Keep every new lesson focused on the agreed Days 1–7 MVP. Do not build for a future 30-day course unless the user expands scope.
 - When it fits the lesson, use practical Bengaluru settings such as asking for a local address, telling an auto driver a destination, buying a bus ticket, and asking about journey time. Keep each new phrase beginner-readable with Kannada script, romanization, English, and saved audio.
 - Include practical pickup conversations when helpful: ask the driver where they are, exchange nearby landmarks, and guide them with a short route. Treat user-provided place names and directions as their scenario, not as independently map-verified information. Keep new phrases playable and add useful standalone words to Read Kannada.
+- Prefer everyday role-play situations proposed by the user (shops, transport, restaurants, temple flower stalls, household help, and public offices). Match each situation to the active seven-day lesson; keep future topics in the plan as idea backlog, and agree on a short script before implementing it. Reuse known words where possible and keep each role-play easy to follow.
 - When published learning material or a reference informs a lesson's words or patterns, add a compact Sources section on that lesson page. Link the actual source and, where possible, cite the lesson/page that supports the pattern. Treat citations as traceability and further reading, not as a substitute for fluent-speaker review.
 
 ## App and audio structure

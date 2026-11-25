@@ -190,6 +190,20 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 - [ ] Add one simple deterministic shop role-play using learned phrases.
 - [ ] Review Kannada, English meanings, and romanization for consistency; flag uncertain content and listen to new audio before marking content polished.
 
+### Real-life conversation scenario bank — user ideas (2026-11-25)
+
+These are topic ideas, not finalized scripts or a commitment to add all of them to Days 1–7. Match a scenario to a lesson, agree on its practical phrases, and reuse vocabulary already taught.
+
+- **Buyer and seller:** buying something at DMart, a vegetable shop, or a sweet shop; getting a scooter tyre repaired at a puncture shop. The grocery and vegetable examples may fit Days 6–7; a simple shopping exchange may also work as Day 5 review.
+- **Getting around:** conversations with a cab/auto driver or bus conductor. Day 4 already introduces directions, auto pickup, and a bus ticket; keep richer travel situations as optional follow-ups.
+- **Food:** ordering at an Udupi restaurant, including how the learner wants sambar served with idli. This can complement the existing rough Day 9 Rameshwaram Cafe idea.
+- **Temple visit:** buying flowers from a stall outside a temple.
+- **At home:** politely asking the maid why she did not come yesterday.
+- **Public office:** asking about linking Aadhaar and PAN at the municipal office, as proposed by the user.
+- **Traffic stop:** discussion of a red-light or helmet violation and the fine/challan; this relates to the earlier rough Day 10 idea and stays outside the active MVP unless scope changes.
+
+Day 5 remains a review and mini-conversation lesson. Its exact role-play (for example, a compact buyer–seller exchange or a directions conversation reusing Days 1–4) is still to be chosen before writing the script.
+
 ### Future lesson ideas — discuss before scripting
 
 These are user-proposed topics beyond the current Days 1–7 MVP. Keep them as
