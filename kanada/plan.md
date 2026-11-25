@@ -12,7 +12,7 @@
 
 > **Published — 2026-11-25:** Day 4's auto pickup exchange is live from PR #20; Pages run [45660301987](https://github.com/solpickle/learn_language/actions/runs/45660301987) succeeded. Added the Spice Garden ↔ Smahitha Maruthi Homes landmark exchange, the user-supplied Chinnapannahalli Road turn, five saved Sapna MP3s, `hattira` (near) in Read Kannada, and a new question. The live route recording and sight-word recording both played through in browser review. Read Kannada now has 49 words and 17 questions. All 36 project tests passed. The Kannada Abhivrudhi Pradhikara course is cited through Lesson 9, pp. 73–75. Fluent-speaker review and user phone feedback remain open.
 
-> **Day 5 in progress — 2026-11-25:** Building the agreed review lesson on `feature/day-5-review`. Chosen mini conversation: ask for directions to a vegetable shop, then greet the seller and buy half a kilo of tomatoes, reusing phrases and saved recordings from Days 1–4. Includes pattern recap, five-line story, six mixed listening questions, and a mission. Automated tests pass; PR and Pages/browser verification remain.
+> **Day 5 published — 2026-11-25:** PR #23 merged `feature/day-5-review`; Pages run [45666697799](https://github.com/solpickle/learn_language/actions/runs/45666697799) passed. The review lesson is live at [Day 5](https://solpickle.github.io/learn_language/kanada/day-5/). It asks for directions to a vegetable shop, then reuses familiar phrases to buy half a kilo of tomatoes. It includes a pattern recap, five-line story, six mixed listening questions, and a mission. All 39 project tests passed; the published page and cross-day Sapna audio were verified in browser. Fluency review and user phone feedback remain open.
 
 ## Active implementation checklist
 
@@ -92,7 +92,7 @@
 - [x] Reuse audio files from Days 1–4 rather than duplicating recordings.
 - [x] Link Day 5 from Home and add its page to the GitHub Pages workflow.
 - [x] Run the complete automated suite: 39 tests pass.
-- [ ] Create/merge the PR, verify Pages deployment, and review the published layout and cross-day audio.
+- [x] Create/merge PR #23, verify Pages run 45666697799, and review the published page and cross-day audio.
 - [ ] Get fluent-speaker review and record the user's phone feedback.
 
 
