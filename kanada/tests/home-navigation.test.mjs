@@ -7,6 +7,7 @@ const pages = [
   ["Day 1", "../day-1/index.html", "../"],
   ["Day 2", "../day-2/index.html", "../"],
   ["Day 3", "../day-3/index.html", "../"],
+  ["Day 4", "../day-4/index.html", "../"],
   ["Read Kannada", "../read/index.html", "../"],
   ["Kannada Numbers", "../numbers/index.html", "../"],
   ["Kannada Alphabet", "../alphabet/index.html", "../"]

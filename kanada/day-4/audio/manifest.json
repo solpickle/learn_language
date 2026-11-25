@@ -1,0 +1,102 @@
+{
+  "generator": "edge-tts 7.3.1",
+  "voice": "kn-IN-SapnaNeural",
+  "rate": "+0%",
+  "phrases": [
+    {
+      "id": "elli",
+      "text": "ಎಲ್ಲಿ?",
+      "file": "elli.mp3"
+    },
+    {
+      "id": "illi",
+      "text": "ಇಲ್ಲಿ",
+      "file": "illi.mp3"
+    },
+    {
+      "id": "alli",
+      "text": "ಅಲ್ಲಿ",
+      "file": "alli.mp3"
+    },
+    {
+      "id": "munde",
+      "text": "ಮುಂದೆ",
+      "file": "munde.mp3"
+    },
+    {
+      "id": "edakke",
+      "text": "ಎಡಕ್ಕೆ",
+      "file": "edakke.mp3"
+    },
+    {
+      "id": "balakke",
+      "text": "ಬಲಕ್ಕೆ",
+      "file": "balakke.mp3"
+    },
+    {
+      "id": "neravaagi",
+      "text": "ನೇರವಾಗಿ",
+      "file": "neravaagi.mp3"
+    },
+    {
+      "id": "bus-stop-where",
+      "text": "ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?",
+      "file": "bus-stop-where.mp3"
+    },
+    {
+      "id": "go-ahead",
+      "text": "ಮುಂದೆ ಹೋಗಿ.",
+      "file": "go-ahead.mp3"
+    },
+    {
+      "id": "straight",
+      "text": "ನೇರವಾಗಿ ಹೋಗಿ.",
+      "file": "straight.mp3"
+    },
+    {
+      "id": "turn-left",
+      "text": "ಎಡಕ್ಕೆ ತಿರುಗಿ.",
+      "file": "turn-left.mp3"
+    },
+    {
+      "id": "turn-right",
+      "text": "ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+      "file": "turn-right.mp3"
+    },
+    {
+      "id": "shop-where",
+      "text": "ಅಂಗಡಿ ಎಲ್ಲಿದೆ?",
+      "file": "shop-where.mp3"
+    },
+    {
+      "id": "ahead-is",
+      "text": "ಮುಂದೆ ಇದೆ.",
+      "file": "ahead-is.mp3"
+    },
+    {
+      "id": "shop-there",
+      "text": "ಅಂಗಡಿ ಅಲ್ಲಿದೆ.",
+      "file": "shop-there.mp3"
+    },
+    {
+      "id": "stop-here",
+      "text": "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+      "file": "stop-here.mp3"
+    },
+    {
+      "id": "thanks",
+      "text": "ಧನ್ಯವಾದಗಳು.",
+      "file": "thanks.mp3"
+    },
+    {
+      "id": "bus-nildana",
+      "text": "ಬಸ್ ನಿಲ್ದಾಣ",
+      "file": "bus-nildana.mp3"
+    },
+    {
+      "id": "nillisi",
+      "text": "ನಿಲ್ಲಿಸಿ",
+      "file": "nillisi.mp3"
+    }
+  ]
+}

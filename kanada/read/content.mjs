@@ -31,7 +31,16 @@ export const words = [
   {id:"tomato", day:3, script:"ಟೊಮೇಟೊ", roman:"Tomato", meaning:"Tomato", example:"ಅರ್ಧ ಕೆಜಿ ಟೊಮೇಟೊ ಕೊಡಿ.", exampleRoman:"Ardha keji tomato kodi.", note:"Try another item in the same quantity pattern."},
   {id:"brinjal", day:3, script:"ಬದನೆಕಾಯಿ", roman:"Badanekaayi", meaning:"Eggplant / brinjal", example:"ಒಂದು ಕೆಜಿ ಬದನೆಕಾಯಿಗೆ ಎಷ್ಟು ಬೆಲೆ?", exampleRoman:"Ondu keji badanekaayige eshtu bele?", note:"This word appears in the market price question."},
   {id:"nalavattu", day:3, script:"ನಲವತ್ತು", roman:"Nalavattu", meaning:"Forty", example:"ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ.", exampleRoman:"Kejige nalavattu roopaayi.", note:"A sample number in the market price answer."},
-  {id:"roopaayi", day:3, script:"ರೂಪಾಯಿ", roman:"Roopaayi", meaning:"Rupee / rupees", example:"ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ.", exampleRoman:"Kejige nalavattu roopaayi.", note:"A money word used with the sample price."}
+  {id:"roopaayi", day:3, script:"ರೂಪಾಯಿ", roman:"Roopaayi", meaning:"Rupee / rupees", example:"ಕೆಜಿಗೆ ನಲವತ್ತು ರೂಪಾಯಿ.", exampleRoman:"Kejige nalavattu roopaayi.", note:"A money word used with the sample price."},
+  {id:"elli", day:4, script:"ಎಲ್ಲಿ", roman:"Elli", meaning:"Where?", example:"ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?", exampleRoman:"Bus nildaana ellide?", note:"The key word for asking where a place is."},
+  {id:"illi", day:4, script:"ಇಲ್ಲಿ", roman:"Illi", meaning:"Here", example:"ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.", exampleRoman:"Illi nillisi.", note:"A place close to the speaker: here."},
+  {id:"alli", day:4, script:"ಅಲ್ಲಿ", roman:"Alli", meaning:"There", example:"ಅಂಗಡಿ ಅಲ್ಲಿದೆ.", exampleRoman:"Angadi allide.", note:"A place away from the speaker: there."},
+  {id:"munde", day:4, script:"ಮುಂದೆ", roman:"Munde", meaning:"Ahead / in front", example:"ಮುಂದೆ ಹೋಗಿ.", exampleRoman:"Munde hogi.", note:"Listen for this in simple directions."},
+  {id:"edakke", day:4, script:"ಎಡಕ್ಕೆ", roman:"Edakke", meaning:"To the left", example:"ಎಡಕ್ಕೆ ತಿರುಗಿ.", exampleRoman:"Edakke tirugi.", note:"Compare it with ಬಲಕ್ಕೆ (balakke), to the right."},
+  {id:"balakke", day:4, script:"ಬಲಕ್ಕೆ", roman:"Balakke", meaning:"To the right", example:"ಬಲಕ್ಕೆ ತಿರುಗಿ.", exampleRoman:"Balakke tirugi.", note:"Compare it with ಎಡಕ್ಕೆ (edakke), to the left."},
+  {id:"neravaagi", day:4, script:"ನೇರವಾಗಿ", roman:"Neravaagi", meaning:"Straight", example:"ನೇರವಾಗಿ ಹೋಗಿ.", exampleRoman:"Neravaagi hogi.", note:"Combine with ಹೋಗಿ (hogi, go): go straight."},
+  {id:"bus-nildana", day:4, script:"ಬಸ್ ನಿಲ್ದಾಣ", roman:"Bus nildaana", meaning:"Bus stop / bus station", example:"ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?", exampleRoman:"Bus nildaana ellide?", note:"Put a place name before ಎಲ್ಲಿದೆ? (ellide?, where is it?)."},
+  {id:"nillisi", day:4, script:"ನಿಲ್ಲಿಸಿ", roman:"Nillisi", meaning:"Please stop", example:"ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.", exampleRoman:"Illi nillisi.", note:"A polite instruction; ಇಲ್ಲಿ (illi) means here."}
 ];
 
 export const forms = [
@@ -50,7 +59,10 @@ export const questions = [
   {wordId:"eshtu", ask:"Which reading matches this word?", choices:["Bele","Eshtu","Kodi"], correct:"Eshtu"},
   {wordId:"bele", ask:"What does this word mean?", choices:["Half","Price","Please give"], correct:"Price"},
   {wordId:"ardha", ask:"What does this word mean?", choices:["One","Half","Kilo"], correct:"Half"},
-  {wordId:"kodi", ask:"Which reading matches this word?", choices:["Kodi","Keji","Tomato"], correct:"Kodi"}
+  {wordId:"kodi", ask:"Which reading matches this word?", choices:["Kodi","Keji","Tomato"], correct:"Kodi"},
+  {wordId:"elli", ask:"Which reading means where?", choices:["Elli","Illi","Alli"], correct:"Elli"},
+  {wordId:"munde", ask:"What does this word mean?", choices:["To the left","Ahead / in front","There"], correct:"Ahead / in front"},
+  {wordId:"balakke", ask:"Which direction is this?", choices:["To the right","To the left","Straight"], correct:"To the right"}
 ];
 
 export const phrases = words.map(({id, script}) => ({id, kannada:script}));
