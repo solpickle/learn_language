@@ -46,6 +46,16 @@ test("Day 1 teaches a reusable bus-stop introduction and covers varied pairs", (
   assert.match(workflow, /cp kanada\/day-1\/audio\/\*\.mp3 kanada\/day-1\/audio\/manifest\.json/);
 });
 
+test("Day 1 still renders the pairing cards if its optional data export is empty", () => {
+  const app = readFileSync(new URL("../day-1/app.js", import.meta.url), "utf8");
+  assert.match(app, /const defaultPairings = \[/);
+  assert.match(app, /const availablePairs = strangerPairs\?\.length \? strangerPairs : defaultPairings/);
+  for (const expected of ["Boy and girl", "Boy and boy", "Girl and girl", "Woman and man", "Older man and schoolboy"]) {
+    assert.ok(app.includes(expected), expected);
+  }
+  assert.match(app, /availablePairs\.forEach\(pair =>/);
+});
+
 test("recording manifest matches the Day 1 source text", () => {
   const manifest = JSON.parse(readFileSync(new URL("audio/manifest.json", root), "utf8"));
   assert.equal(manifest.voice, "kn-IN-SapnaNeural");
