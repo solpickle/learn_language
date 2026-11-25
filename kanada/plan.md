@@ -16,6 +16,8 @@
 
 > **Day 5 scope correction — 2026-11-25:** The user clarified that the full list of real-life situations previously shared was meant for Day 5, not just a future scenario bank. Branch `feature/day-5-real-life-scenarios` is expanding the lesson into 11 short conversations (DMart, vegetable and sweet shops, scooter puncture repair, auto, bus, traffic stop, Udupi restaurant, temple flowers, household help, and PAN–Aadhaar help desk). It also adds Day 5 sight words to Read Kannada and new saved Sapna audio. Automated checks and publication are pending. The Aadhaar/PAN dialogue is at a general help desk because the official linking service is on Income Tax e-Filing, not a municipal service.
 
+> **Day 5 expanded and published — 2026-11-25:** The 11 requested scenarios, saved audio, nine Day 5 sight words, and updated Read Kannada page are live. PR #25 merged as commit `38bffa2`; Pages run [45670566281](https://github.com/solpickle/learn_language/actions/runs/45670566281) succeeded. The public Day 5 page shows all 11 situations; its first phrase audio played through in browser review. All 40 project tests and syntax checks passed. Fluent-speaker review and user phone feedback remain open.
+
 ## Active implementation checklist
 
 ### Quiz answer feedback
@@ -94,8 +96,8 @@
 - [x] Add nine useful Day 5 sight words with audio to Read Kannada.
 - [x] Cite the Kannada self-instruction course, the Bengaluru conversation guide, and official Income Tax e-Filing guidance.
 - [x] Update the Pages workflow to publish Day 5 recordings and source modules.
-- [ ] Run all project tests and JavaScript syntax checks; review the full diff.
-- [ ] Create/merge the PR, verify the Pages deployment, and inspect the live Day 5 page/audio.
+- [x] Run all project tests and JavaScript syntax checks; review the full diff (40 tests passed).
+- [x] Create/merge PR #25, verify Pages run 45670566281, and inspect the live Day 5 page/audio.
 - [ ] Get fluent-speaker review and record the user's phone feedback.
 
 
