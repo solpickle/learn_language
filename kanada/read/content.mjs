@@ -49,6 +49,15 @@ export const words = [
   {id:"traffic", day:4, script:"ಟ್ರಾಫಿಕ್", roman:"Traffic", meaning:"Traffic", example:"ಟ್ರಾಫಿಕ್ ಮೇಲೆ ಡಿಪೆಂಡ್ ಆಗತ್ತೆ.", exampleRoman:"Traffic mele depend agatte.", note:"A common English loan word in a possible travel-time reply."},
   {id:"marathahalli", day:4, script:"ಮಾರತಹಳ್ಳಿ", roman:"Marathahalli", meaning:"Marathahalli (Bengaluru area)", example:"ಮಾರತಹಳ್ಳಿಯಿಂದ ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?", exampleRoman:"Marathahalliyinda MG Road-ge eshtu time agatte?", note:"A Bengaluru place name used to ask about journey time."},
   {id:"hattira", day:4, script:"ಹತ್ತಿರ", roman:"Hattira", meaning:"Near", example:"ನಾನು Spice Garden ಹತ್ತಿರ ಇದ್ದೀನಿ.", exampleRoman:"Naanu Spice Garden hattira iddini.", note:"Use after a landmark to say you are near it."}
+  ,{id:"sight-cheela", day:5, script:"ಚೀಲ", roman:"Cheela", meaning:"Bag", example:"ಚೀಲ ಬೇಕಾ?", exampleRoman:"Cheela bekaa?", note:"A cashier may ask whether you need a bag."}
+  ,{id:"sight-puncture", day:5, script:"ಪಂಚರ್", roman:"Panchur", meaning:"Puncture", example:"ನನ್ನ ಸ್ಕೂಟರ್ ಟೈರ್ ಪಂಚರ್ ಆಗಿದೆ.", exampleRoman:"Nanna scooter tyre puncture aagide.", note:"A common borrowed word used at a repair shop."}
+  ,{id:"sight-sambar", day:5, script:"ಸಾಂಬಾರ್", roman:"Sambar", meaning:"Sambar", example:"ಹೌದು, ಸಾಂಬಾರ್ ಬೇರೆ ಕೊಡಿ.", exampleRoman:"Howdu, sambar bere kodi.", note:"Choose whether you want it separate or poured over the idli."}
+  ,{id:"sight-hoovu", day:5, script:"ಹೂವು", roman:"Hoovu", meaning:"Flower", example:"ದೇವಸ್ಥಾನಕ್ಕೆ ಒಂದು ಹೂವಿನ ಹಾರ ಬೇಕು.", exampleRoman:"Devasthaanakke ondu hoovina haara beku.", note:"The word changes to ಹೂವಿನ (hoovina) before ಹಾರ (garland)."}
+  ,{id:"sight-haara", day:5, script:"ಹಾರ", roman:"Haara", meaning:"Garland", example:"ಒಂದು ಹಾರ ಕೊಡಿ.", exampleRoman:"Ondu haara kodi.", note:"Ask for one garland with ಒಂದು (ondu, one) + ಹಾರ + ಕೊಡಿ (kodi, please give)."}
+  ,{id:"sight-challan", day:5, script:"ಚಲನ್", roman:"Challan", meaning:"Traffic challan", example:"ಚಲನ್ ಹೇಗೆ ಪಾವತಿಸಬೇಕು?", exampleRoman:"Challan hege paavatisabeku?", note:"A code-mixed word used for the traffic fine notice."}
+  ,{id:"sight-helmet", day:5, script:"ಹೆಲ್ಮೆಟ್", roman:"Helmet", meaning:"Helmet", example:"ಹೆಲ್ಮೆಟ್ ಯಾಕೆ ಹಾಕಿಲ್ಲ?", exampleRoman:"Helmet yaake haakilla?", note:"A borrowed word written in Kannada script."}
+  ,{id:"sight-license", day:5, script:"ಲೈಸೆನ್ಸ್", roman:"License", meaning:"Driving licence", example:"ದಯವಿಟ್ಟು ಲೈಸೆನ್ಸ್ ತೋರಿಸಿ.", exampleRoman:"Dayavittu license torisi.", note:"Show this during the traffic-stop practice."}
+  ,{id:"sight-sahaaya", day:5, script:"ಸಹಾಯ", roman:"Sahaaya", meaning:"Help", example:"ದಯವಿಟ್ಟು ನನಗೆ ಸಹಾಯ ಮಾಡುತ್ತೀರಾ?", exampleRoman:"Dayavittu nanage sahaaya maadutteeraa?", note:"A polite phrase for asking for help."}
 ];
 
 export const forms = [
@@ -75,6 +84,9 @@ export const questions = [
   {wordId:"indiranagar", ask:"Which place name is this?", choices:["MG Road","Indiranagar","Marathahalli"], correct:"Indiranagar"},
   {wordId:"time", ask:"Which reading means time?", choices:["Traffic","Time","Address"], correct:"Time"},
   {wordId:"hattira", ask:"What does this word mean?", choices:["Near","Ahead","To the left"], correct:"Near"}
+  ,{wordId:"sight-sambar", ask:"Which word means sambar?", choices:["Sambar","Bag","Flower"], correct:"Sambar"}
+  ,{wordId:"sight-haara", ask:"What does ಹಾರ mean?", choices:["Bag","Garland","Help"], correct:"Garland"}
+  ,{wordId:"sight-sahaaya", ask:"Which word means help?", choices:["Challan","Helmet","Help"], correct:"Help"}
 ];
 
 export const phrases = words.map(({id, script}) => ({id, kannada:script}));

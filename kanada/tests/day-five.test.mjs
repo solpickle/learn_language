@@ -1,45 +1,63 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFileSync, statSync} from "node:fs";
-import {phrases, dialogue, story, questions} from "../day-5/content.mjs";
+import {phrases, scenarios, questions} from "../day-5/content.mjs";
+import {phrases as generated} from "../day-5/phrases.mjs";
 
 const root = new URL("../day-5/", import.meta.url);
 
-test("Day 5 reviews familiar phrases in a market mini conversation", () => {
-  assert.equal(dialogue.length, 8);
-  assert.equal(story.length, 5);
-  assert.equal(questions.length, 6);
-  assert.ok(phrases.some(item => item.english === "Hello"));
-  assert.ok(phrases.some(item => item.english === "I want water"));
-  assert.ok(phrases.some(item => item.english === "How much is this?"));
-  assert.ok(phrases.some(item => item.english === "Where is the shop?"));
-  assert.match(dialogue.map(item => item.english).join(" "), /half a kilo of tomatoes/i);
-  assert.match(dialogue.map(item => item.english).join(" "), /How much is this/);
-  assert.ok(questions.every(item => [1, 2, 3, 4].some(day => item.audioUrl.startsWith(`../day-${day}/`))));
+test("Day 5 includes every requested everyday conversation category", () => {
+  assert.deepEqual(scenarios.map(item => item.title), [
+    "At DMart", "At a vegetable shop", "At a sweet shop", "At a scooter puncture shop",
+    "With an auto driver", "With a bus conductor", "Stopped by traffic police",
+    "At an Udupi restaurant", "Buying flowers near a temple",
+    "Checking in with your house helper", "Asking for PAN–Aadhaar help"
+  ]);
+  assert.equal(questions.length, 8);
+  assert.match(scenarios.find(item => item.id === "udupi-restaurant").context, /sambar separate or poured over it/);
+  assert.match(scenarios.find(item => item.id === "public-help-desk").context, /not a municipal service/);
 });
 
-test("Day 5 reuses committed audio and each quiz answer has a visible phrase", () => {
-  for (const item of [...phrases, ...dialogue, ...story, ...questions]) {
-    assert.ok(item.kannada && item.roman && item.english || item.audioId, JSON.stringify(item));
-    assert.ok(item.audioUrl, JSON.stringify(item));
+test("every Day 5 conversation line has readable text and a committed Sapna recording", () => {
+  assert.equal(generated.length, new Set(generated.map(item => item.id)).size);
+  const manifest = JSON.parse(readFileSync(new URL("audio/manifest.json", root), "utf8"));
+  assert.equal(manifest.voice, "kn-IN-SapnaNeural");
+  assert.deepEqual(manifest.phrases.map(item => [item.id, item.text]), generated.map(item => [item.id, item.kannada]));
+  for (const item of phrases) {
+    assert.ok(item.kannada && item.roman && item.english, JSON.stringify(item));
     assert.ok(statSync(new URL(item.audioUrl, root)).size > 1000, item.audioUrl);
+  }
+  for (const scenario of scenarios) {
+    assert.ok(scenario.lines.length >= 4, scenario.title);
+    for (const line of scenario.lines) {
+      assert.ok(line.speaker && line.kannada && line.roman && line.english && line.audioUrl, JSON.stringify(line));
+      assert.ok(statSync(new URL(line.audioUrl, root)).size > 1000, `${scenario.title}: ${line.audioUrl}`);
+    }
   }
   for (const question of questions) {
     assert.ok(phrases.some(item => item.id === question.audioId));
     assert.ok(question.choices.includes(question.correct));
+    assert.ok(statSync(new URL(question.audioUrl, root)).size > 1000);
   }
 });
 
-test("Day 5 is linked from Home and included in the Pages static copy step", () => {
+test("Day 5 links its new sight words, Home, citations, and audio in GitHub Pages", () => {
   const page = readFileSync(new URL("index.html", root), "utf8");
   const home = readFileSync(new URL("../index.html", root), "utf8");
   const workflow = readFileSync(new URL("../../.github/workflows/publish.yml", root), "utf8");
   const app = readFileSync(new URL("app.js", root), "utf8");
+  const reader = readFileSync(new URL("../read/index.html", root), "utf8");
+  const readApp = readFileSync(new URL("../read/app.js", root), "utf8");
   assert.match(page, /href="\.\.\/" aria-label="Home">Home/);
-  assert.match(page, /Finish Day 5/);
+  assert.match(page, /Everyday conversations/);
+  assert.match(page, /href="\.\.\/read\/#day-5">Read Kannada · Day 5 words/);
+  assert.match(page, /incometax\.gov\.in/);
   assert.match(home, /href="\.\/day-5\/">Start Day 5/);
-  assert.match(page, /href="\.\.\/day-4\/">Day 4/);
-  assert.match(workflow, /kanada\/day-5\/index\.html kanada\/day-5\/styles\.css kanada\/day-5\/app\.js kanada\/day-5\/content\.mjs/);
-  assert.match(app, /learn-kannada-day-5-v1/);
+  assert.match(workflow, /kanada\/day-5\/index\.html kanada\/day-5\/styles\.css kanada\/day-5\/app\.js kanada\/day-5\/content\.mjs kanada\/day-5\/phrases\.mjs/);
+  assert.match(workflow, /cp kanada\/day-5\/audio\/\*\.mp3 kanada\/day-5\/audio\/manifest\.json/);
+  assert.match(app, /learn-kannada-day-5-v2/);
   assert.match(app, /item\.audioUrl/);
+  assert.match(reader, /href="#day-5">Day 5 words/);
+  assert.match(reader, /58 words/);
+  assert.match(readApp, /word\.day === 5 \? "\.\.\/day-5\/audio"/);
 });

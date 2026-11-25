@@ -1,24 +1,23 @@
-import {phrases, dialogue, story, questions} from "./content.mjs";
+import {phrases, scenarios, questions} from "./content.mjs";
 import {createTimedAnswerHighlights} from "../quiz-feedback.mjs";
 
 const $ = id => document.getElementById(id);
 const rate = $("rate"), status = $("status");
 const romanToggle = $("show-roman"), englishToggle = $("show-english");
-const storyMode = $("story-mode");
-const storeKey = "learn-kannada-day-5-v1";
+const storeKey = "learn-kannada-day-5-v2";
 let currentAudio = null, playToken = 0, activeRow = null, cancelCurrent = null;
 let answers = Array(questions.length).fill(null);
 const highlights = createTimedAnswerHighlights(questions.length, {onExpire: () => renderQuiz()});
 
 function saveProgress() {
-  try { localStorage.setItem(storeKey, JSON.stringify({answers, completed: $("complete").dataset.done === "true", roman:romanToggle.checked, english:englishToggle.checked, rate:rate.value})); }
+  try { localStorage.setItem(storeKey, JSON.stringify({answers, completed:$("complete").dataset.done === "true", roman:romanToggle.checked, english:englishToggle.checked, rate:rate.value})); }
   catch { $("completion").textContent = "Progress could not be saved in this browser."; }
 }
 function loadProgress() {
   try {
     const saved = JSON.parse(localStorage.getItem(storeKey) || "null");
     if (!saved) return;
-    if (Array.isArray(saved.answers) && saved.answers.length === answers.length) answers = saved.answers.map(v => v === true || v === false ? v : null);
+    if (Array.isArray(saved.answers) && saved.answers.length === answers.length) answers = saved.answers.map(value => value === true || value === false ? value : null);
     if (typeof saved.roman === "boolean") romanToggle.checked = saved.roman;
     if (typeof saved.english === "boolean") englishToggle.checked = saved.english;
     if (["0.6","0.8","1"].includes(saved.rate)) rate.value = saved.rate;
@@ -42,7 +41,7 @@ function play(item, row) {
   stopAudio("Loading Kannada audio…");
   const token = playToken;
   if (row) { activeRow = row; row.classList.add("story-active"); }
-  const audioUrl = typeof item === "string" ? `./audio/${item}.mp3` : item.audioUrl || `./audio/${item.audioId || item.id}.mp3`;
+  const audioUrl = item.audioUrl || `./audio/${item.audioId || item.id}.mp3`;
   const audio = new Audio(new URL(audioUrl, import.meta.url).href);
   currentAudio = audio;
   audio.playbackRate = Number(rate.value);
@@ -56,7 +55,7 @@ function play(item, row) {
       if (token === playToken) {
         if (activeRow) activeRow.classList.remove("story-active");
         activeRow = null; currentAudio = null;
-        status.textContent = ok ? "Finished. Listen again or continue." : "Audio could not play. Check your connection and try again.";
+        status.textContent = ok ? "Finished. Listen again or choose another line." : "Audio could not play. Check your connection and try again.";
       }
       resolve(ok && token === playToken);
     };
@@ -68,37 +67,40 @@ function play(item, row) {
     audio.play().catch(() => finish(false));
   });
 }
-function row(item, label, showSpeaker = false) {
+function row(item) {
   const article = el("article", "lesson-row");
   const copy = el("div");
-  if (showSpeaker) copy.append(el("span", "speaker", item.speaker));
-  copy.append(el("h3", "", item.kannada));
+  copy.append(el("span", "speaker", item.speaker), el("h3", "", item.kannada));
   const roman = el("p", "romanized", item.roman);
   roman.dataset.roman = "";
   const english = el("p", "meaning", item.english);
   english.dataset.english = "";
   copy.append(roman, english);
   if (item.note) copy.append(el("p", "hint", item.note));
-  const button = el("button", "", `▶ ${label}`);
+  const button = el("button", "", "▶ Listen");
   button.type = "button";
   button.setAttribute("aria-label", `Play ${item.english}`);
   button.addEventListener("click", () => play(item, article));
   article.append(copy, button);
   return article;
 }
+function renderScenarios() {
+  const list = $("scenario-list");
+  scenarios.forEach((scenario, index) => {
+    const details = el("details", "scenario-block");
+    details.id = `scenario-${index + 1}`;
+    details.open = index === 0;
+    const summary = el("summary", "scenario-title", scenario.title);
+    const context = el("p", "scenario-context", scenario.context);
+    const lines = el("div", "scenario-lines");
+    scenario.lines.forEach(item => lines.append(row(item)));
+    details.append(summary, context, lines);
+    list.append(details);
+  });
+}
 function applyVisibility() {
   document.querySelectorAll("[data-roman]").forEach(node => node.hidden = !romanToggle.checked);
   document.querySelectorAll("[data-english]").forEach(node => node.hidden = !englishToggle.checked);
-  applyStoryMode();
-}
-function applyStoryMode() {
-  const mode = storyMode.value;
-  for (const node of $("story-list").children) {
-    node.querySelector("h3").hidden = mode === "audio";
-    node.querySelector("[data-roman]").hidden = mode !== "both" || !romanToggle.checked;
-    node.querySelector("[data-english]").hidden = mode !== "both" || !englishToggle.checked;
-  }
-  $("reveal-story").hidden = mode !== "audio";
 }
 function renderQuiz() {
   const container = $("quiz-list");
@@ -107,10 +109,10 @@ function renderQuiz() {
     const section = el("div", "quiz-item");
     const listen = el("button", "", `▶ Play clip ${index + 1}`);
     listen.type = "button";
+    listen.setAttribute("aria-label", `Play quiz clip ${index + 1}`);
     listen.addEventListener("click", () => play(question));
     const choices = el("div", "answer-options");
     const reveal = el("p", "quiz-reveal");
-    const resolved = answers[index] !== null;
     question.choices.forEach(choice => {
       const option = el("button", highlights.classFor(index, choice, question.correct), choice);
       option.type = "button";
@@ -121,7 +123,7 @@ function renderQuiz() {
       });
       choices.append(option);
     });
-    if (resolved) {
+    if (answers[index] !== null) {
       const item = phrases.find(phrase => phrase.id === question.audioId);
       reveal.textContent = `${answers[index] ? "Correct" : "Good try"} · ${item.kannada} · ${item.roman} · ${question.correct}`;
     }
@@ -134,27 +136,16 @@ function renderQuiz() {
 }
 
 loadProgress();
-phrases.forEach(item => $("phrase-list").append(row(item, "Listen")));
-dialogue.forEach(item => $("dialogue-list").append(row(item, "Listen", true)));
-story.forEach((item, i) => $("story-list").append(row(item, `Line ${i + 1}`)));
-renderQuiz(); applyVisibility();
+renderScenarios();
+renderQuiz();
+applyVisibility();
 romanToggle.addEventListener("change", () => { applyVisibility(); saveProgress(); });
 englishToggle.addEventListener("change", () => { applyVisibility(); saveProgress(); });
 rate.addEventListener("change", saveProgress);
-storyMode.addEventListener("change", applyStoryMode);
-$("reveal-story").addEventListener("click", () => { storyMode.value = "both"; applyStoryMode(); });
 $("stop").addEventListener("click", () => stopAudio());
-$("stop-story").addEventListener("click", () => stopAudio());
-$("play-story").addEventListener("click", async () => {
-  stopAudio("Starting the story…");
-  for (const [index, item] of story.entries()) {
-    const ok = await play(item, $("story-list").children[index]);
-    if (!ok) break;
-  }
-});
 $("complete").addEventListener("click", () => {
   if (answers.some(answer => answer === null)) return;
   $("complete").dataset.done = "true";
-  $("completion").textContent = "Day 5 finished! You reviewed phrases from Days 1–4. Come back and practice again anytime.";
+  $("completion").textContent = "Day 5 finished! You practised everyday conversations. Come back and practice again anytime.";
   saveProgress();
 });

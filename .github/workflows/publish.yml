@@ -25,7 +25,7 @@ jobs:
       - name: Prepare static site
         shell: bash
         run: |
-          mkdir -p _site/kanada/audio _site/kanada/day-1/audio _site/kanada/day-2/audio _site/kanada/day-3/audio _site/kanada/day-4/audio _site/kanada/day-5 _site/kanada/read/audio _site/kanada/numbers/audio _site/kanada/alphabet/audio
+          mkdir -p _site/kanada/audio _site/kanada/day-1/audio _site/kanada/day-2/audio _site/kanada/day-3/audio _site/kanada/day-4/audio _site/kanada/day-5/audio _site/kanada/read/audio _site/kanada/numbers/audio _site/kanada/alphabet/audio
           cp index.html _site/index.html
           cp kanada/index.html kanada/styles.css kanada/app.js kanada/phrases.mjs kanada/recorded.mjs kanada/quiz-feedback.mjs kanada/speech.mjs _site/kanada/
           cp kanada/audio/*.mp3 _site/kanada/audio/
@@ -37,7 +37,8 @@ jobs:
           cp kanada/day-3/audio/*.mp3 _site/kanada/day-3/audio/
           cp kanada/day-4/index.html kanada/day-4/styles.css kanada/day-4/app.js kanada/day-4/content.mjs _site/kanada/day-4/
           cp kanada/day-4/audio/*.mp3 _site/kanada/day-4/audio/
-          cp kanada/day-5/index.html kanada/day-5/styles.css kanada/day-5/app.js kanada/day-5/content.mjs _site/kanada/day-5/
+          cp kanada/day-5/index.html kanada/day-5/styles.css kanada/day-5/app.js kanada/day-5/content.mjs kanada/day-5/phrases.mjs _site/kanada/day-5/
+          cp kanada/day-5/audio/*.mp3 kanada/day-5/audio/manifest.json _site/kanada/day-5/audio/
           cp kanada/read/index.html kanada/read/styles.css kanada/read/app.js kanada/read/content.mjs _site/kanada/read/
           cp kanada/read/audio/*.mp3 _site/kanada/read/audio/
           cp kanada/numbers/index.html kanada/numbers/styles.css kanada/numbers/app.js kanada/numbers/content.mjs _site/kanada/numbers/

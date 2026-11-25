@@ -1,0 +1,267 @@
+{
+  "generator": "edge-tts 7.3.1",
+  "voice": "kn-IN-SapnaNeural",
+  "rate": "+0%",
+  "phrases": [
+    {
+      "id": "milk-where",
+      "text": "ಹಾಲು ಎಲ್ಲಿ ಸಿಗುತ್ತದೆ?",
+      "file": "milk-where.mp3"
+    },
+    {
+      "id": "milk-over-there",
+      "text": "ಹಾಲು ಅಲ್ಲಿ ಇದೆ.",
+      "file": "milk-over-there.mp3"
+    },
+    {
+      "id": "litre-milk",
+      "text": "ಒಂದು ಲೀಟರ್ ಹಾಲು ಕೊಡಿ.",
+      "file": "litre-milk.mp3"
+    },
+    {
+      "id": "bag-question",
+      "text": "ಚೀಲ ಬೇಕಾ?",
+      "file": "bag-question.mp3"
+    },
+    {
+      "id": "no-bag",
+      "text": "ಬೇಡ, ಧನ್ಯವಾದಗಳು.",
+      "file": "no-bag.mp3"
+    },
+    {
+      "id": "mysorepak-have",
+      "text": "ಮೈಸೂರು ಪಾಕ್ ಇದೆಯಾ?",
+      "file": "mysorepak-have.mp3"
+    },
+    {
+      "id": "mysorepak-yes",
+      "text": "ಮೈಸೂರು ಪಾಕ್ ಇದೆ.",
+      "file": "mysorepak-yes.mp3"
+    },
+    {
+      "id": "half-mysorepak",
+      "text": "ಅರ್ಧ ಕೆಜಿ ಮೈಸೂರು ಪಾಕ್ ಕೊಡಿ.",
+      "file": "half-mysorepak.mp3"
+    },
+    {
+      "id": "sweet-price-answer",
+      "text": "ಇದು ನೂರು ರೂಪಾಯಿ.",
+      "file": "sweet-price-answer.mp3"
+    },
+    {
+      "id": "puncture-problem",
+      "text": "ನನ್ನ ಸ್ಕೂಟರ್ ಟೈರ್ ಪಂಚರ್ ಆಗಿದೆ.",
+      "file": "puncture-problem.mp3"
+    },
+    {
+      "id": "puncture-can-fix",
+      "text": "ಇದನ್ನು ರಿಪೇರಿ ಮಾಡುತ್ತೀರಾ?",
+      "file": "puncture-can-fix.mp3"
+    },
+    {
+      "id": "repair-yes",
+      "text": "ಹೌದು, ಈಗಲೇ ರಿಪೇರಿ ಮಾಡುತ್ತೇನೆ.",
+      "file": "repair-yes.mp3"
+    },
+    {
+      "id": "puncture-how-long",
+      "text": "ಎಷ್ಟು ಸಮಯ ಆಗುತ್ತದೆ?",
+      "file": "puncture-how-long.mp3"
+    },
+    {
+      "id": "half-hour",
+      "text": "ಅರ್ಧ ಗಂಟೆ ಆಗುತ್ತದೆ.",
+      "file": "half-hour.mp3"
+    },
+    {
+      "id": "puncture-cost",
+      "text": "ರಿಪೇರಿಗೆ ಎಷ್ಟು?",
+      "file": "puncture-cost.mp3"
+    },
+    {
+      "id": "meter-please",
+      "text": "ಮೀಟರ್ ಹಾಕಿ, ದಯವಿಟ್ಟು.",
+      "file": "meter-please.mp3"
+    },
+    {
+      "id": "bus-destination",
+      "text": "ಈ ಬಸ್ ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಹೋಗುತ್ತದೆಯಾ?",
+      "file": "bus-destination.mp3"
+    },
+    {
+      "id": "stop-arrival",
+      "text": "ನನ್ನ ನಿಲ್ದಾಣ ಬಂದಾಗ ಹೇಳಿ.",
+      "file": "stop-arrival.mp3"
+    },
+    {
+      "id": "signal-question",
+      "text": "ನೀವು ಸಿಗ್ನಲ್ ದಾಟಿದಿರಾ?",
+      "file": "signal-question.mp3"
+    },
+    {
+      "id": "helmet-question",
+      "text": "ಹೆಲ್ಮೆಟ್ ಯಾಕೆ ಹಾಕಿಲ್ಲ?",
+      "file": "helmet-question.mp3"
+    },
+    {
+      "id": "show-license",
+      "text": "ದಯವಿಟ್ಟು ಲೈಸೆನ್ಸ್ ತೋರಿಸಿ.",
+      "file": "show-license.mp3"
+    },
+    {
+      "id": "sorry-mistake",
+      "text": "ಕ್ಷಮಿಸಿ, ತಪ್ಪಾಯಿತು.",
+      "file": "sorry-mistake.mp3"
+    },
+    {
+      "id": "challan-amount",
+      "text": "ಚಲನ್ ಎಷ್ಟು?",
+      "file": "challan-amount.mp3"
+    },
+    {
+      "id": "challan-how-pay",
+      "text": "ಚಲನ್ ಹೇಗೆ ಪಾವತಿಸಬೇಕು?",
+      "file": "challan-how-pay.mp3"
+    },
+    {
+      "id": "idli-order",
+      "text": "ಎರಡು ಇಡ್ಲಿ ಕೊಡಿ.",
+      "file": "idli-order.mp3"
+    },
+    {
+      "id": "sambar-choice",
+      "text": "ಸಾಂಬಾರ್ ಬೇರೆ ಬೇಕಾ?",
+      "file": "sambar-choice.mp3"
+    },
+    {
+      "id": "sambar-separate",
+      "text": "ಹೌದು, ಸಾಂಬಾರ್ ಬೇರೆ ಕೊಡಿ.",
+      "file": "sambar-separate.mp3"
+    },
+    {
+      "id": "sambar-mixed",
+      "text": "ಇಡ್ಲಿ ಮೇಲೆ ಸಾಂಬಾರ್ ಹಾಕಿ.",
+      "file": "sambar-mixed.mp3"
+    },
+    {
+      "id": "bill-please",
+      "text": "ಬಿಲ್ ಕೊಡಿ.",
+      "file": "bill-please.mp3"
+    },
+    {
+      "id": "temple-garland",
+      "text": "ದೇವಸ್ಥಾನಕ್ಕೆ ಒಂದು ಹೂವಿನ ಹಾರ ಬೇಕು.",
+      "file": "temple-garland.mp3"
+    },
+    {
+      "id": "garland-price",
+      "text": "ಈ ಹೂವಿನ ಹಾರ ಎಷ್ಟು?",
+      "file": "garland-price.mp3"
+    },
+    {
+      "id": "fifty-rupees",
+      "text": "ಐವತ್ತು ರೂಪಾಯಿ.",
+      "file": "fifty-rupees.mp3"
+    },
+    {
+      "id": "one-garland",
+      "text": "ಒಂದು ಹಾರ ಕೊಡಿ.",
+      "file": "one-garland.mp3"
+    },
+    {
+      "id": "maid-yesterday",
+      "text": "ನೀವು ನಿನ್ನೆ ಯಾಕೆ ಬರಲಿಲ್ಲ?",
+      "file": "maid-yesterday.mp3"
+    },
+    {
+      "id": "maid-well",
+      "text": "ಎಲ್ಲ ಚೆನ್ನಾಗಿದೆಯಾ?",
+      "file": "maid-well.mp3"
+    },
+    {
+      "id": "maid-couldnt-come",
+      "text": "ಕ್ಷಮಿಸಿ, ನನಗೆ ಬರಲು ಆಗಲಿಲ್ಲ.",
+      "file": "maid-couldnt-come.mp3"
+    },
+    {
+      "id": "maid-tell-ahead",
+      "text": "ಮುಂದೆ ಬರಲಾಗದಿದ್ದರೆ ಮುಂಚಿತವಾಗಿ ತಿಳಿಸಿ.",
+      "file": "maid-tell-ahead.mp3"
+    },
+    {
+      "id": "maid-will-tell",
+      "text": "ಖಂಡಿತ, ಮುಂದಿನ ಬಾರಿ ತಿಳಿಸುತ್ತೇನೆ.",
+      "file": "maid-will-tell.mp3"
+    },
+    {
+      "id": "pan-aadhaar-link",
+      "text": "ನನ್ನ ಪ್ಯಾನ್ ಮತ್ತು ಆಧಾರ್ ಲಿಂಕ್ ಮಾಡಬೇಕು.",
+      "file": "pan-aadhaar-link.mp3"
+    },
+    {
+      "id": "where-do-link",
+      "text": "ಇದನ್ನು ಎಲ್ಲಿ ಮಾಡಬಹುದು?",
+      "file": "where-do-link.mp3"
+    },
+    {
+      "id": "not-done-here",
+      "text": "ಇದು ಇಲ್ಲಿ ಆಗುವುದಿಲ್ಲ.",
+      "file": "not-done-here.mp3"
+    },
+    {
+      "id": "efile-portal",
+      "text": "ಆದಾಯ ತೆರಿಗೆ ಇ-ಫೈಲಿಂಗ್ ಜಾಲತಾಣದಲ್ಲಿ ಮಾಡಿ.",
+      "file": "efile-portal.mp3"
+    },
+    {
+      "id": "help-me-please",
+      "text": "ದಯವಿಟ್ಟು ನನಗೆ ಸಹಾಯ ಮಾಡುತ್ತೀರಾ?",
+      "file": "help-me-please.mp3"
+    },
+    {
+      "id": "sight-cheela",
+      "text": "ಚೀಲ",
+      "file": "sight-cheela.mp3"
+    },
+    {
+      "id": "sight-puncture",
+      "text": "ಪಂಚರ್",
+      "file": "sight-puncture.mp3"
+    },
+    {
+      "id": "sight-sambar",
+      "text": "ಸಾಂಬಾರ್",
+      "file": "sight-sambar.mp3"
+    },
+    {
+      "id": "sight-hoovu",
+      "text": "ಹೂವು",
+      "file": "sight-hoovu.mp3"
+    },
+    {
+      "id": "sight-haara",
+      "text": "ಹಾರ",
+      "file": "sight-haara.mp3"
+    },
+    {
+      "id": "sight-challan",
+      "text": "ಚಲನ್",
+      "file": "sight-challan.mp3"
+    },
+    {
+      "id": "sight-helmet",
+      "text": "ಹೆಲ್ಮೆಟ್",
+      "file": "sight-helmet.mp3"
+    },
+    {
+      "id": "sight-license",
+      "text": "ಲೈಸೆನ್ಸ್",
+      "file": "sight-license.mp3"
+    },
+    {
+      "id": "sight-sahaaya",
+      "text": "ಸಹಾಯ",
+      "file": "sight-sahaaya.mp3"
+    }
+  ]
+}
