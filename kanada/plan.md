@@ -10,6 +10,8 @@
 
 # Spoken Kannada for Bengaluru --- V1 Planning Specification
 
+> **In progress — 2026-11-25:** Day 4 pickup-location exchange is implemented on `feature/day-4-auto-pickup-route`: find each other between Spice Garden and Smahitha Maruthi Homes, then give the user-supplied Chinnapannahalli Road direction. Adds four playable dialogue phrases, a `hattira` (near) sight word, one recognition question, and KDP Lesson 9 citation. All 37 Day 4 recordings are present and all 36 project tests pass; PR/deployment verification is pending.
+
 ## Active implementation checklist
 
 ### Quiz answer feedback
@@ -65,6 +67,8 @@
 - [x] Verify the GitHub Pages deployment; the live Day 4 lesson and saved audio return HTTP 200.
 - [x] Extend Day 4 with Bengaluru address, auto-driver, bus-ticket, and travel-time scenarios; add matching audio, Read Kannada sight words, and three listening questions.
 - [x] Verify the expanded live lesson and scenario recordings after Pages run 45543949652; Read Kannada now groups 48 words and 16 questions.
+- [x] Add a pickup exchange for asking the driver's location at Spice Garden, sharing Smahitha Maruthi Homes as the learner's landmark, and giving the Chinnapannahalli Road turn; generate saved audio and add `hattira` to Read Kannada.
+- [ ] Test, publish, and verify the new scenario and its audio; update the documented Read Kannada count.
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 4 and the reading additions.
 

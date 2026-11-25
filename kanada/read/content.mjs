@@ -47,7 +47,8 @@ export const words = [
   {id:"ticket", day:4, script:"ಟಿಕೆಟ್", roman:"Ticket", meaning:"Ticket", example:"ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.", exampleRoman:"MG Road-ge ondu ticket kodi.", note:"Listen for this in the bus-conductor scenario."},
   {id:"time", day:4, script:"ಟೈಮ್", roman:"Time", meaning:"Time", example:"ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?", exampleRoman:"Eshtu time agatte?", note:"Use this with ಎಷ್ಟು (eshtu, how much) to ask how long."},
   {id:"traffic", day:4, script:"ಟ್ರಾಫಿಕ್", roman:"Traffic", meaning:"Traffic", example:"ಟ್ರಾಫಿಕ್ ಮೇಲೆ ಡಿಪೆಂಡ್ ಆಗತ್ತೆ.", exampleRoman:"Traffic mele depend agatte.", note:"A common English loan word in a possible travel-time reply."},
-  {id:"marathahalli", day:4, script:"ಮಾರತಹಳ್ಳಿ", roman:"Marathahalli", meaning:"Marathahalli (Bengaluru area)", example:"ಮಾರತಹಳ್ಳಿಯಿಂದ ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?", exampleRoman:"Marathahalliyinda MG Road-ge eshtu time agatte?", note:"A Bengaluru place name used to ask about journey time."}
+  {id:"marathahalli", day:4, script:"ಮಾರತಹಳ್ಳಿ", roman:"Marathahalli", meaning:"Marathahalli (Bengaluru area)", example:"ಮಾರತಹಳ್ಳಿಯಿಂದ ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?", exampleRoman:"Marathahalliyinda MG Road-ge eshtu time agatte?", note:"A Bengaluru place name used to ask about journey time."},
+  {id:"hattira", day:4, script:"ಹತ್ತಿರ", roman:"Hattira", meaning:"Near", example:"ನಾನು Spice Garden ಹತ್ತಿರ ಇದ್ದೀನಿ.", exampleRoman:"Naanu Spice Garden hattira iddini.", note:"Use after a landmark to say you are near it."}
 ];
 
 export const forms = [
@@ -72,7 +73,8 @@ export const questions = [
   {wordId:"balakke", ask:"Which direction is this?", choices:["To the right","To the left","Straight"], correct:"To the right"},
   {wordId:"ticket", ask:"Which reading means ticket?", choices:["Ticket","Time","Traffic"], correct:"Ticket"},
   {wordId:"indiranagar", ask:"Which place name is this?", choices:["MG Road","Indiranagar","Marathahalli"], correct:"Indiranagar"},
-  {wordId:"time", ask:"Which reading means time?", choices:["Traffic","Time","Address"], correct:"Time"}
+  {wordId:"time", ask:"Which reading means time?", choices:["Traffic","Time","Address"], correct:"Time"},
+  {wordId:"hattira", ask:"What does this word mean?", choices:["Near","Ahead","To the left"], correct:"Near"}
 ];
 
 export const phrases = words.map(({id, script}) => ({id, kannada:script}));

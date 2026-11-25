@@ -17,12 +17,15 @@ test("Day 4 asks where a place is and teaches reusable direction phrases", () =>
   assert.ok(phrases.some(item => item.roman === "Indiranagar-ge hogbeku."));
   assert.ok(phrases.some(item => item.roman === "MG Road-ge ondu ticket kodi."));
   assert.ok(phrases.some(item => item.roman === "Marathahalliyinda MG Road-ge eshtu time agatte?"));
-  assert.equal(scenarios.length, 3);
+  assert.ok(phrases.some(item => item.roman === "Neevu elli iddiri?"));
+  assert.ok(phrases.some(item => item.roman === "Neravaagi hogi, Chinnapannahalli Road-alli edakke tirugi."));
+  assert.equal(scenarios.length, 4);
   assert.match(scenarios.map(item => item.title).join(" "), /Indiranagar/);
   assert.match(scenarios.map(item => item.title).join(" "), /bus conductor/i);
+  assert.match(scenarios.map(item => item.title).join(" "), /Smahitha Maruthi Homes/);
   assert.equal(story.length, 5);
-  assert.equal(questions.length, 7);
-  assert.equal(audioItems.length, 32);
+  assert.equal(questions.length, 8);
+  assert.equal(audioItems.length, 37);
 });
 
 test("every Day 4 play target has a committed Sapna MP3 and matching manifest entry", () => {
@@ -57,6 +60,7 @@ test("Day 4 links from Home and Read Kannada and publishes the full page", () =>
   assert.match(page, /id="scenarios"/);
   assert.match(page, /id="sources"/);
   assert.match(page, /KANNADA_ABHIVRUDDHI_PRADHIKARA\.pdf/);
+  assert.match(page, /Lesson 9, pp\. 73–75/);
   assert.match(page, /how-to-talk-to-an-auto-driver-in-kannada/);
   assert.match(page, /whereabouts-and-travel-in-kannada/);
   assert.match(workflow, /cp kanada\/day-4\/index\.html kanada\/day-4\/styles\.css kanada\/day-4\/app\.js kanada\/day-4\/content\.mjs/);

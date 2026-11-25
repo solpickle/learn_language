@@ -119,6 +119,26 @@
       "file": "sari.mp3"
     },
     {
+      "id": "where-are-you",
+      "text": "ನೀವು ಎಲ್ಲಿ ಇದ್ದೀರಿ?",
+      "file": "where-are-you.mp3"
+    },
+    {
+      "id": "spice-garden-near",
+      "text": "ನಾನು Spice Garden ಹತ್ತಿರ ಇದ್ದೀನಿ.",
+      "file": "spice-garden-near.mp3"
+    },
+    {
+      "id": "smahitha-near",
+      "text": "ನಾನು Smahitha Maruthi Homes ಹತ್ತಿರ ಇದ್ದೀನಿ.",
+      "file": "smahitha-near.mp3"
+    },
+    {
+      "id": "chinnapannahalli-route",
+      "text": "ನೇರವಾಗಿ ಹೋಗಿ, ಚಿನ್ನಪ್ಪನಹಳ್ಳಿ ರಸ್ತೆಯಲ್ಲಿ ಎಡಕ್ಕೆ ತಿರುಗಿ.",
+      "file": "chinnapannahalli-route.mp3"
+    },
+    {
       "id": "bus-nildana",
       "text": "ಬಸ್ ನಿಲ್ದಾಣ",
       "file": "bus-nildana.mp3"
@@ -162,6 +182,11 @@
       "id": "marathahalli",
       "text": "ಮಾರತಹಳ್ಳಿ",
       "file": "marathahalli.mp3"
+    },
+    {
+      "id": "hattira",
+      "text": "ಹತ್ತಿರ",
+      "file": "hattira.mp3"
     }
   ]
 }
