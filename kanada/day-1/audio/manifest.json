@@ -1,5 +1,5 @@
 {
-  "generator": "edge-tts 7.2.8",
+  "generator": "edge-tts 7.3.1",
   "voice": "kn-IN-SapnaNeural",
   "rate": "+0%",
   "phrases": [
@@ -32,6 +32,111 @@
       "id": "thanks",
       "text": "ಧನ್ಯವಾದಗಳು",
       "file": "thanks.mp3"
+    },
+    {
+      "id": "how-are-you",
+      "text": "ನೀವು ಹೇಗಿದ್ದೀರಿ?",
+      "file": "how-are-you.mp3"
+    },
+    {
+      "id": "well-thanks",
+      "text": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ, ಧನ್ಯವಾದಗಳು. ನೀವು?",
+      "file": "well-thanks.mp3"
+    },
+    {
+      "id": "fine-thanks",
+      "text": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ, ಧನ್ಯವಾದಗಳು.",
+      "file": "fine-thanks.mp3"
+    },
+    {
+      "id": "name-question",
+      "text": "ನಿಮ್ಮ ಹೆಸರು ಏನು?",
+      "file": "name-question.mp3"
+    },
+    {
+      "id": "name-arjun",
+      "text": "ನನ್ನ ಹೆಸರು ಅರ್ಜುನ್. ನಿಮ್ಮದು?",
+      "file": "name-arjun.mp3"
+    },
+    {
+      "id": "name-maya",
+      "text": "ನನ್ನ ಹೆಸರು ಮಾಯಾ. ನಿಮ್ಮದು?",
+      "file": "name-maya.mp3"
+    },
+    {
+      "id": "live-question",
+      "text": "ನೀವು ಎಲ್ಲಿ ವಾಸ ಮಾಡುತ್ತೀರಿ?",
+      "file": "live-question.mp3"
+    },
+    {
+      "id": "live-indiranagar",
+      "text": "ನಾನು ಇಂದಿರಾನಗರದಲ್ಲಿ ವಾಸ ಮಾಡುತ್ತೇನೆ.",
+      "file": "live-indiranagar.mp3"
+    },
+    {
+      "id": "work-study-question",
+      "text": "ನೀವು ಓದುತ್ತೀರಾ ಅಥವಾ ಕೆಲಸ ಮಾಡುತ್ತೀರಾ?",
+      "file": "work-study-question.mp3"
+    },
+    {
+      "id": "work-shop",
+      "text": "ನಾನು ಅಂಗಡಿಯಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತೇನೆ.",
+      "file": "work-shop.mp3"
+    },
+    {
+      "id": "study-school",
+      "text": "ನಾನು ಶಾಲೆಯಲ್ಲಿ ಓದುತ್ತೇನೆ.",
+      "file": "study-school.mp3"
+    },
+    {
+      "id": "study-college",
+      "text": "ನಾನು ಕಾಲೇಜಿನಲ್ಲಿ ಓದುತ್ತೇನೆ.",
+      "file": "study-college.mp3"
+    },
+    {
+      "id": "work-office",
+      "text": "ನಾನು ಆಫೀಸಿನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತೇನೆ.",
+      "file": "work-office.mp3"
+    },
+    {
+      "id": "where-going",
+      "text": "ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದ್ದೀರಿ?",
+      "file": "where-going.mp3"
+    },
+    {
+      "id": "going-market",
+      "text": "ನಾನು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.",
+      "file": "going-market.mp3"
+    },
+    {
+      "id": "going-school",
+      "text": "ನಾನು ಶಾಲೆಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.",
+      "file": "going-school.mp3"
+    },
+    {
+      "id": "going-college",
+      "text": "ನಾನು ಕಾಲೇಜಿಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.",
+      "file": "going-college.mp3"
+    },
+    {
+      "id": "going-office",
+      "text": "ನಾನು ಆಫೀಸಿಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.",
+      "file": "going-office.mp3"
+    },
+    {
+      "id": "going-clinic",
+      "text": "ನಾನು ಕ್ಲಿನಿಕ್‌ಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.",
+      "file": "going-clinic.mp3"
+    },
+    {
+      "id": "nice-meet",
+      "text": "ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಿ ಸಂತೋಷವಾಯಿತು.",
+      "file": "nice-meet.mp3"
+    },
+    {
+      "id": "nice-meet-too",
+      "text": "ನನಗೂ ಸಂತೋಷವಾಯಿತು.",
+      "file": "nice-meet-too.mp3"
     },
     {
       "id": "question",

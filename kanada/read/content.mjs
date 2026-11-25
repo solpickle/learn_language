@@ -1,4 +1,4 @@
-// A compact reading bridge for words used in Days 1–4.
+// A compact reading bridge for words used in Days 1–5.
 export const words = [
   {id:"naanu", script:"ನಾನು", roman:"Naanu", meaning:"I", example:"ನಾನು ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ.", exampleRoman:"Naanu Kannada kaliyuttiddene.", note:"Look for ನಾ at the start."},
   {id:"nanage", script:"ನನಗೆ", roman:"Nanage", meaning:"to me / for me", example:"ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು.", exampleRoman:"Nanage swalpa Kannada gottu.", note:"Look for ಗೆ at the end."},
@@ -16,6 +16,17 @@ export const words = [
   {id:"mattomme", script:"ಮತ್ತೊಮ್ಮೆ", roman:"Mattomme", meaning:"Again / one more time", example:"ಮತ್ತೊಮ್ಮೆ ಹೇಳಿ.", exampleRoman:"Mattomme heli.", note:"A useful word when you want to hear something again."},
   {id:"heli", script:"ಹೇಳಿ", roman:"Heli", meaning:"Please say", example:"ಮತ್ತೊಮ್ಮೆ ಹೇಳಿ.", exampleRoman:"Mattomme heli.", note:"The polite request form in 'Please say it again.'"},
   {id:"dhanyavaadagalu", script:"ಧನ್ಯವಾದಗಳು", roman:"Dhanyavaadagalu", meaning:"Thank you", example:"ಧನ್ಯವಾದಗಳು.", exampleRoman:"Dhanyavaadagalu.", note:"A polite way to end the short exchange."},
+  {id:"name-question", day:1, script:"ನಿಮ್ಮ ಹೆಸರು ಏನು?", roman:"Nimma hesaru enu?", meaning:"What is your name?", example:"ನಮಸ್ಕಾರ. ನಿಮ್ಮ ಹೆಸರು ಏನು?", exampleRoman:"Namaskaara. Nimma hesaru enu?", note:"Use the polite form when meeting someone new."},
+  {id:"name-maya", day:1, script:"ನನ್ನ ಹೆಸರು ಮಾಯಾ.", roman:"Nanna hesaru Maya.", meaning:"My name is Maya.", example:"ನನ್ನ ಹೆಸರು ಮಾಯಾ.", exampleRoman:"Nanna hesaru Maya.", note:"Swap ಮಾಯಾ for your own name."},
+  {id:"how-are-you", day:1, script:"ನೀವು ಹೇಗಿದ್ದೀರಿ?", roman:"Nivu hegiddiri?", meaning:"How are you?", example:"ನಮಸ್ಕಾರ. ನೀವು ಹೇಗಿದ್ದೀರಿ?", exampleRoman:"Namaskaara. Nivu hegiddiri?", note:"A polite question for a new acquaintance."},
+  {id:"live-question", day:1, script:"ನೀವು ಎಲ್ಲಿ ವಾಸ ಮಾಡುತ್ತೀರಿ?", roman:"Nivu elli vaasa maaduttiri?", meaning:"Where do you live?", example:"ನೀವು ಎಲ್ಲಿ ವಾಸ ಮಾಡುತ್ತೀರಿ?", exampleRoman:"Nivu elli vaasa maaduttiri?", note:"Listen for ಎಲ್ಲಿ (elli, where)."},
+  {id:"live-indiranagar", day:1, script:"ನಾನು ಇಂದಿರಾನಗರದಲ್ಲಿ ವಾಸ ಮಾಡುತ್ತೇನೆ.", roman:"Naanu Indiranagaradalli vaasa maaduttene.", meaning:"I live in Indiranagar.", example:"ನಾನು ಇಂದಿರಾನಗರದಲ್ಲಿ ವಾಸ ಮಾಡುತ್ತೇನೆ.", exampleRoman:"Naanu Indiranagaradalli vaasa maaduttene.", note:"Replace the place name with your neighbourhood."},
+  {id:"work-study-question", day:1, script:"ನೀವು ಓದುತ್ತೀರಾ ಅಥವಾ ಕೆಲಸ ಮಾಡುತ್ತೀರಾ?", roman:"Nivu oduttira athava kelasa maaduttira?", meaning:"Do you study or work?", example:"ನೀವು ಓದುತ್ತೀರಾ ಅಥವಾ ಕೆಲಸ ಮಾಡುತ್ತೀರಾ?", exampleRoman:"Nivu oduttira athava kelasa maaduttira?", note:"This question offers two choices: study or work."},
+  {id:"study-school", day:1, script:"ನಾನು ಶಾಲೆಯಲ್ಲಿ ಓದುತ್ತೇನೆ.", roman:"Naanu shaaleyalli oduttene.", meaning:"I study at school.", example:"ನಾನು ಶಾಲೆಯಲ್ಲಿ ಓದುತ್ತೇನೆ.", exampleRoman:"Naanu shaaleyalli oduttene.", note:"A sample student answer."},
+  {id:"work-office", day:1, script:"ನಾನು ಆಫೀಸಿನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತೇನೆ.", roman:"Naanu office-nalli kelasa maaduttene.", meaning:"I work in an office.", example:"ನಾನು ಆಫೀಸಿನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತೇನೆ.", exampleRoman:"Naanu office-nalli kelasa maaduttene.", note:"A sample working adult's answer."},
+  {id:"where-going", day:1, script:"ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದ್ದೀರಿ?", roman:"Nivu ellige hoguttiddiri?", meaning:"Where are you going?", example:"ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದ್ದೀರಿ?", exampleRoman:"Nivu ellige hoguttiddiri?", note:"Compare ಎಲ್ಲಿಗೆ (ellige, to where) with ಎಲ್ಲಿ (elli, where)."},
+  {id:"going-market", day:1, script:"ನಾನು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.", roman:"Naanu maarukattege hoguttiddene.", meaning:"I am going to the market.", example:"ನಾನು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.", exampleRoman:"Naanu maarukattege hoguttiddene.", note:"Swap ಮಾರುಕಟ್ಟೆ (market) for another destination."},
+  {id:"nice-meet", day:1, script:"ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಿ ಸಂತೋಷವಾಯಿತು.", roman:"Nimmannu bhetiyaagi santoshavaayitu.", meaning:"Nice to meet you.", example:"ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಿ ಸಂತೋಷವಾಯಿತು.", exampleRoman:"Nimmannu bhetiyaagi santoshavaayitu.", note:"A friendly way to end an introduction."},
   {id:"neeru", day:2, script:"ನೀರು", roman:"Neeru", meaning:"Water", example:"ನನಗೆ ನೀರು ಬೇಕು.", exampleRoman:"Nanage neeru beku.", note:"The item in Day 2's first request."},
   {id:"beku", day:2, script:"ಬೇಕು", roman:"Beku", meaning:"Want / need", example:"ನನಗೆ ನೀರು ಬೇಕು.", exampleRoman:"Nanage neeru beku.", note:"Compare this with ಬೇಡ below."},
   {id:"beda", day:2, script:"ಬೇಡ", roman:"Beda", meaning:"Don't want / need", example:"ನನಗೆ ಚಹಾ ಬೇಡ.", exampleRoman:"Nanage chahaa beda.", note:"Use it to decline an item."},

@@ -1,4 +1,4 @@
-import {phrases, dialogue, story, questions} from "./content.mjs";
+import {phrases, introductionPhrases, dialogue, strangerPairs, story, questions} from "./content.mjs";
 import {createTimedAnswerHighlights} from "../quiz-feedback.mjs";
 
 const $ = id => document.getElementById(id);
@@ -121,7 +121,7 @@ function renderQuiz() {
       choices.append(option);
     });
     if (resolved) {
-      const item = phrases.find(phrase => phrase.id === question.audioId);
+      const item = [...phrases, ...introductionPhrases].find(phrase => phrase.id === question.audioId);
       reveal.textContent = `${answers[index] ? "Correct" : "Good try"} · ${item.kannada} · ${item.roman} · ${question.correct}`;
     }
     section.append(listen, choices, reveal);
@@ -135,6 +135,17 @@ function renderQuiz() {
 loadProgress();
 phrases.forEach(item => $("phrase-list").append(row(item, "Listen")));
 dialogue.forEach(item => $("dialogue-list").append(row(item, "Listen", true)));
+strangerPairs.forEach(pair => {
+  const card = el("details", "pair-card");
+  card.append(el("summary", "", pair.title), el("p", "pair-people", pair.people), el("p", "pair-context", pair.context));
+  const examples = el("div", "pair-examples");
+  for (const id of pair.phraseIds) {
+    const item = introductionPhrases.find(phrase => phrase.id === id);
+    if (item) examples.append(row(item, "Listen"));
+  }
+  card.append(examples);
+  $("pair-list").append(card);
+});
 story.forEach((item, i) => $("story-list").append(row(item, `Line ${i + 1}`)));
 renderQuiz(); applyVisibility();
 romanToggle.addEventListener("change", () => { applyVisibility(); saveProgress(); });

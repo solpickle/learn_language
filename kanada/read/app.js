@@ -15,7 +15,7 @@ function element(tag, className, value) {
   return node;
 }
 function listen(word) {
-  const folder = word.day === 3 ? "../day-3/audio" : word.day === 4 ? "../day-4/audio" : word.day === 5 ? "../day-5/audio" : "./audio";
+  const folder = word.day === 1 ? "../day-1/audio" : word.day === 3 ? "../day-3/audio" : word.day === 4 ? "../day-4/audio" : word.day === 5 ? "../day-5/audio" : "./audio";
   player.play(new URL(`${folder}/${word.id}.mp3`, import.meta.url).href, Number($("rate").value), word.id);
 }
 function playButton(word, label = "▶ Listen") {

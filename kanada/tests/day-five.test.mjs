@@ -58,6 +58,6 @@ test("Day 5 links its new sight words, Home, citations, and audio in GitHub Page
   assert.match(app, /learn-kannada-day-5-v2/);
   assert.match(app, /item\.audioUrl/);
   assert.match(reader, /href="#day-5">Day 5 words/);
-  assert.match(reader, /58 words/);
+  assert.match(reader, /69 words/);
   assert.match(readApp, /word\.day === 5 \? "\.\.\/day-5\/audio"/);
 });
