@@ -1,4 +1,4 @@
-> **Day 4 travel scenarios — 2026-11-25:** Added practical Bengaluru situations for asking about an address in Indiranagar, going there by auto, requesting an MG Road bus ticket, and asking the Marathahalli–MG Road journey time. Added seven Read Kannada sight words and three questions. Implementation and 32 Sapna MP3s are on `feature/day-4-bengaluru-travel`; tests pass. PR and publication are pending. Fluent-speaker review and phone feedback remain open.
+> **Day 4 travel scenarios — 2026-11-25:** Added practical Bengaluru situations for asking about an address in Indiranagar, going there by auto, requesting an MG Road bus ticket, and asking the Marathahalli–MG Road journey time. Added seven Read Kannada sight words and three questions. PR #17 is merged; the Pages run 45543949652 succeeded. The [live Day 4 lesson](https://solpickle.github.io/learn_language/kanada/day-4/) and new audio return HTTP 200; the ticket clip played through in browser review. Read Kannada now has 48 words and 16 questions. Fluent-speaker review and user phone feedback remain open.
 
 > **Current published status — 2026-11-25:** The original Day 4 (location and directions) is merged to `main` in PR #14; its 19 generated Sapna recordings, Read Kannada coverage for 41 words across Days 1–4, and 13 recognition questions are live. The Pages workflow fix in PR #15 separates build/upload from deploy; run 45541930674 succeeded. [Day 4 lesson](https://solpickle.github.io/learn_language/kanada/day-4/) and a saved audio file both return HTTP 200. Fluent-speaker review and user phone feedback remain open.
 
@@ -60,10 +60,11 @@
 - [x] Teach `elli` (where), `illi` (here), `alli` (there), `munde` (ahead), left/right, and simple route directions.
 - [x] Add a reusable place + `ellide?` question, a local directions exchange, a driver stop request, a five-line story, four listening questions, and a mission.
 - [x] Generate and commit 19 `kn-IN-SapnaNeural` recordings.
-- [x] Add nine Day 4 sight words to Read Kannada and three recognition questions; the page now groups 41 words across Days 1–4.
+- [x] Add the initial nine Day 4 direction sight words and three recognition questions; the first release grouped 41 words across Days 1–4.
 - [x] Link Day 4 from Home, Read Kannada, and the Pages workflow.
 - [x] Verify the GitHub Pages deployment; the live Day 4 lesson and saved audio return HTTP 200.
 - [x] Extend Day 4 with Bengaluru address, auto-driver, bus-ticket, and travel-time scenarios; add matching audio, Read Kannada sight words, and three listening questions.
+- [x] Verify the expanded live lesson and scenario recordings after Pages run 45543949652; Read Kannada now groups 48 words and 16 questions.
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 4 and the reading additions.
 
