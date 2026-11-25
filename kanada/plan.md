@@ -10,7 +10,7 @@
 
 # Spoken Kannada for Bengaluru --- V1 Planning Specification
 
-> **In progress — 2026-11-25:** Day 4 pickup-location exchange is implemented on `feature/day-4-auto-pickup-route`: find each other between Spice Garden and Smahitha Maruthi Homes, then give the user-supplied Chinnapannahalli Road direction. Adds four playable dialogue phrases, a `hattira` (near) sight word, one recognition question, and KDP Lesson 9 citation. All 37 Day 4 recordings are present and all 36 project tests pass; PR/deployment verification is pending.
+> **Published — 2026-11-25:** Day 4's auto pickup exchange is live from PR #20; Pages run [45660301987](https://github.com/solpickle/learn_language/actions/runs/45660301987) succeeded. Added the Spice Garden ↔ Smahitha Maruthi Homes landmark exchange, the user-supplied Chinnapannahalli Road turn, five saved Sapna MP3s, `hattira` (near) in Read Kannada, and a new question. The live route recording and sight-word recording both played through in browser review. Read Kannada now has 49 words and 17 questions. All 36 project tests passed. The Kannada Abhivrudhi Pradhikara course is cited through Lesson 9, pp. 73–75. Fluent-speaker review and user phone feedback remain open.
 
 ## Active implementation checklist
 
@@ -68,7 +68,7 @@
 - [x] Extend Day 4 with Bengaluru address, auto-driver, bus-ticket, and travel-time scenarios; add matching audio, Read Kannada sight words, and three listening questions.
 - [x] Verify the expanded live lesson and scenario recordings after Pages run 45543949652; Read Kannada now groups 48 words and 16 questions.
 - [x] Add a pickup exchange for asking the driver's location at Spice Garden, sharing Smahitha Maruthi Homes as the learner's landmark, and giving the Chinnapannahalli Road turn; generate saved audio and add `hattira` to Read Kannada.
-- [ ] Test, publish, and verify the new scenario and its audio; update the documented Read Kannada count.
+- [x] Test, publish, and verify the new scenario and its audio; update the documented Read Kannada count (PR #20; Pages run 45660301987 succeeded).
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 4 and the reading additions.
 
