@@ -10,6 +10,8 @@
 
 # Kannada app development setup
 
+> **Latest published update — 2026-11-25:** PR #20 added the Day 4 auto pickup exchange and `hattira` (near) sight word, with five new Sapna MP3s. Pages run 45660301987 passed. Read Kannada now has 49 words and 17 questions. The live route phrase and sight-word clips played through in browser review. See `plan.md` for the Day 4 checklist. Fluent-speaker review and user phone feedback remain open.
+
 > **Active work — 2026-11-25:** Branch `feature/day-4-auto-pickup-route` extends Day 4 with a driver-location and pickup exchange using Spice Garden, Smahitha Maruthi Homes, and the user-provided Chinnapannahalli Road direction. The new phrase audio and Read Kannada `hattira` sight word are complete; all 36 project tests pass. PR creation/merge and Pages verification remain. Read Kannada now has 49 words and 17 questions. The KDP reference was extended to Lesson 9, pp. 73–75 for the “Where are you?” pattern. Fluent-speaker review remains pending.
 
 Updated: 2026-11-17
