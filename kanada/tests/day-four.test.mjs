@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFileSync, readdirSync, statSync} from "node:fs";
-import {phrases, dialogue, story, questions, audioItems} from "../day-4/content.mjs";
+import {phrases, dialogue, scenarios, story, questions, audioItems} from "../day-4/content.mjs";
 
 const root = new URL("../day-4/", import.meta.url);
 
@@ -13,14 +13,21 @@ test("Day 4 asks where a place is and teaches reusable direction phrases", () =>
   assert.ok(phrases.some(item => item.kannada === "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ."));
   assert.equal(dialogue.length, 5);
   assert.equal(dialogue.at(-1).speaker, "To driver");
+  assert.ok(phrases.some(item => item.roman === "Ee address ellide?"));
+  assert.ok(phrases.some(item => item.roman === "Indiranagar-ge hogbeku."));
+  assert.ok(phrases.some(item => item.roman === "MG Road-ge ondu ticket kodi."));
+  assert.ok(phrases.some(item => item.roman === "Marathahalliyinda MG Road-ge eshtu time agatte?"));
+  assert.equal(scenarios.length, 3);
+  assert.match(scenarios.map(item => item.title).join(" "), /Indiranagar/);
+  assert.match(scenarios.map(item => item.title).join(" "), /bus conductor/i);
   assert.equal(story.length, 5);
-  assert.equal(questions.length, 4);
-  assert.equal(audioItems.length, 19);
+  assert.equal(questions.length, 7);
+  assert.equal(audioItems.length, 32);
 });
 
 test("every Day 4 play target has a committed Sapna MP3 and matching manifest entry", () => {
   assert.equal(new Set(audioItems.map(item => item.id)).size, audioItems.length);
-  for (const item of [...phrases, ...dialogue, ...story]) {
+  for (const item of [...phrases, ...dialogue, ...scenarios.flatMap(scenario => scenario.lines), ...story]) {
     assert.ok(item.kannada && item.roman && item.english);
     assert.ok(audioItems.some(audio => audio.id === (item.audioId || item.id)));
   }
@@ -46,6 +53,8 @@ test("Day 4 links from Home and Read Kannada and publishes the full page", () =>
   assert.match(page, /href="\.\.\/" aria-label="Home">Home/);
   assert.match(home, /href="\.\/day-4\/">Start Day 4/);
   assert.match(reading, /href="\.\.\/day-4\/">Day 4/);
+  assert.match(page, /Find your way around Bengaluru/);
+  assert.match(page, /id="scenarios"/);
   assert.match(workflow, /cp kanada\/day-4\/index\.html kanada\/day-4\/styles\.css kanada\/day-4\/app\.js kanada\/day-4\/content\.mjs/);
   assert.match(workflow, /cp kanada\/day-4\/audio\/\*\.mp3/);
 });

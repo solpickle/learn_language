@@ -1,4 +1,4 @@
-import {phrases, dialogue, story, questions} from "./content.mjs";
+import {phrases, dialogue, scenarios, story, questions} from "./content.mjs";
 import {createTimedAnswerHighlights} from "../quiz-feedback.mjs";
 
 const $ = id => document.getElementById(id);
@@ -135,6 +135,14 @@ function renderQuiz() {
 loadProgress();
 phrases.forEach(item => $("phrase-list").append(row(item, "Listen")));
 dialogue.forEach(item => $("dialogue-list").append(row(item, "Listen", true)));
+for (const scenario of scenarios) {
+  const section = el("section", "scenario-block");
+  section.append(el("h3", "", scenario.title), el("p", "scenario-context", scenario.context));
+  const lines = el("div", "scenario-lines");
+  scenario.lines.forEach(item => lines.append(row(item, "Listen", true)));
+  section.append(lines);
+  $("scenario-list").append(section);
+}
 story.forEach((item, i) => $("story-list").append(row(item, `Line ${i + 1}`)));
 renderQuiz(); applyVisibility();
 romanToggle.addEventListener("change", () => { applyVisibility(); saveProgress(); });

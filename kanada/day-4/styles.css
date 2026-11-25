@@ -1,2 +1,6 @@
 /* Day 4 keeps Day 1's compact lesson theme. */
 .badge{background:#e8eedf}
+.scenario-block{margin:.75rem 0;padding:.8rem .9rem;border:1px solid #d7dfce;border-radius:12px;background:#f5f6ef}
+.scenario-block h3{margin:0;font-size:1.05rem}
+.scenario-context{margin:.25rem 0 .55rem;color:#53675f}
+.scenario-lines .lesson-row{margin:.35rem 0}
