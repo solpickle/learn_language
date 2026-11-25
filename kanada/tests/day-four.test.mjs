@@ -55,6 +55,10 @@ test("Day 4 links from Home and Read Kannada and publishes the full page", () =>
   assert.match(reading, /href="\.\.\/day-4\/">Day 4/);
   assert.match(page, /Find your way around Bengaluru/);
   assert.match(page, /id="scenarios"/);
+  assert.match(page, /id="sources"/);
+  assert.match(page, /KANNADA_ABHIVRUDDHI_PRADHIKARA\.pdf/);
+  assert.match(page, /how-to-talk-to-an-auto-driver-in-kannada/);
+  assert.match(page, /whereabouts-and-travel-in-kannada/);
   assert.match(workflow, /cp kanada\/day-4\/index\.html kanada\/day-4\/styles\.css kanada\/day-4\/app\.js kanada\/day-4\/content\.mjs/);
   assert.match(workflow, /cp kanada\/day-4\/audio\/\*\.mp3/);
 });

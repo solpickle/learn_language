@@ -31,6 +31,7 @@ This repository hosts the Kannada learning MVP at `kanada/` on GitHub Pages. The
 - In quizzes and recognition practice, briefly highlight the selected choice pale green when correct and pale red when incorrect; clear the color after about 1.8 seconds while retaining the answer explanation and score. Keep choices enabled so learners can change an answer and try again without refreshing. Reuse `kanada/quiz-feedback.mjs` for this behavior.
 - Keep every new lesson focused on the agreed Days 1–7 MVP. Do not build for a future 30-day course unless the user expands scope.
 - When it fits the lesson, use practical Bengaluru settings such as asking for a local address, telling an auto driver a destination, buying a bus ticket, and asking about journey time. Keep each new phrase beginner-readable with Kannada script, romanization, English, and saved audio.
+- When published learning material or a reference informs a lesson's words or patterns, add a compact Sources section on that lesson page. Link the actual source and, where possible, cite the lesson/page that supports the pattern. Treat citations as traceability and further reading, not as a substitute for fluent-speaker review.
 
 ## App and audio structure
 
