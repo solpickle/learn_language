@@ -18,7 +18,7 @@
 
 > **Day 5 expanded and published — 2026-11-25:** The 11 requested scenarios, saved audio, nine Day 5 sight words, and updated Read Kannada page are live. PR #25 merged as commit `38bffa2`; Pages run [45670566281](https://github.com/solpickle/learn_language/actions/runs/45670566281) succeeded. The public Day 5 page shows all 11 situations; its first phrase audio played through in browser review. All 40 project tests and syntax checks passed. Fluent-speaker review and user phone feedback remain open.
 
-> **Day 1 bus-stop expansion in progress — 2026-11-25:** Branch `feature/day-1-bus-stop-introductions` adds a two-way stranger introduction at a bus stop (greeting, name, how are you, home area, study/work, destination, and nice to meet you), plus five age/gender/student/work pairings. Twenty-one new Kannada Sapna clips support the dialogue and substitutions. Read Kannada grows to 69 total words, including 11 Day 1 entries. Local responsive review and all 41 project tests pass; PR, deployment, and live verification are pending. Fluent-speaker review and user phone feedback remain open.
+> **Day 1 bus-stop expansion published — 2026-11-26:** PR #27 merged as commit `c23028b`; [Pages run 45676489959](https://github.com/solpickle/learn_language/actions/runs/45676489959) passed. Follow-up PRs #28 (`894bb01`) and #29 (`5d456fb`) version the Day 1 modules and keep five age/gender/student/work pairings visible through a local fallback; Pages runs [45677235325](https://github.com/solpickle/learn_language/actions/runs/45677235325) and [45677518128](https://github.com/solpickle/learn_language/actions/runs/45677518128) passed. The live [Day 1 lesson](https://solpickle.github.io/learn_language/kanada/day-1/) has a two-way stranger introduction at a bus stop (greeting, name, how are you, home area, study/work, destination, and nice to meet you), plus five expandable pair profiles. Twenty-one new Kannada Sapna clips support the dialogue and substitutions. Read Kannada now has 69 total words, including 11 Day 1 additions. All 42 project tests passed; fresh-page review confirmed the five profiles and live Sapna playback. Fluent-speaker review and user phone feedback remain open.
 
 ## Active implementation checklist
 
@@ -88,8 +88,8 @@
 - [x] Provide Kannada script, simple romanization, English meaning, and saved Sapna audio for every new phrase and practice answer.
 - [x] Add compact, expandable pair examples and a role-play mission; cite the Kannada Abhivrudhi Pradhikara course and introductory phrase guide.
 - [x] Add 11 Day 1 phrase cards to Read Kannada; the page now has 69 total sight words.
-- [x] Run the full suite and JavaScript syntax checks (41 project tests passed); inspect phone and desktop layouts and play new audio locally.
-- [ ] Create/merge the PR, verify GitHub Pages deployment, and inspect live lesson/audio.
+- [x] Run the full suite and JavaScript syntax checks (42 project tests passed); inspect phone and desktop layouts and play new audio locally.
+- [x] Create/merge the PR, verify GitHub Pages deployment, and inspect live lesson/audio.
 - [ ] Get fluent-speaker review and record the user's phone feedback.
 
 ### Day 2 — want / don't want
