@@ -14,6 +14,8 @@
 
 # Kannada app development setup
 
+> **Day 1 bus-stop update in progress — 2026-11-25:** Branch `feature/day-1-bus-stop-introductions` adds a two-way stranger conversation with names, how-are-you, home area, study/work, travel purpose, and a friendly closing. Five compact profiles cover boy–girl, boy–boy, girl–girl, woman–man, and older-man–schoolboy pairings. Twenty-one new `kn-IN-SapnaNeural` phrases are included in the Day 1 manifest. Read Kannada now has 69 total sight words, 27 grouped under Day 1. Local mobile/desktop review, local sample playback, and all 41 project tests pass. PR, deployment, and live verification remain pending; fluent-speaker and phone review remain open.
+
 > **Latest published update — 2026-11-25:** Day 5's scope correction is live. PR #25 merged as `38bffa2`; Pages run 45670566281 passed. It adds all 11 requested practical conversations, saved Sapna MP3s, nine Day 5 sight words, and expanded Read Kannada coverage. The public Day 5 page and phrase playback were verified. All 40 project tests and JavaScript syntax checks passed. See `plan.md` for the checklist. Fluent-speaker review and user phone feedback remain open.
 
 > **Scenario scope — 2026-11-25:** The user clarified that all previously listed situations belong in Day 5: DMart, vegetable/sweet/puncture shops, auto and bus, a traffic stop, Udupi restaurant with separate/mixed sambar, temple flowers, household help, and a PAN–Aadhaar help desk. Keep them in Day 5; do not move these categories to a later backlog. PAN–Aadhaar linking is handled on Income Tax e-Filing, not by a municipal office; link the official source and keep the role-play at a general help desk.
@@ -42,82 +44,73 @@ Updated: 2026-11-17
 
 > **Kannada Numbers feature — 2026-11-17:** The current feature branch adds `/kanada/numbers/`, linked from the app home and Read Kannada. The page teaches Kannada digit forms and spoken number words for 0–20, tens through 100, selected tens-plus-ones examples, and 101/110/120, with 41 saved `kn-IN-SapnaNeural` MP3s. Generate/regenerate with `python kanada/scripts/generate_kannada_audio.py --app-dir kanada/numbers --output kanada/numbers/audio`. The workflow explicitly copies the page and its MP3s. Number-language/audio review and phone feedback remain pending; see `plan.md`.
 
-## Current home
-All application code, MP3s, generator, tests and planning documents now live in:
-`C:\Users\sanka\work\learn_language\kanada`
+## Current repository and app
 
-This is a standalone static HTML/CSS/JavaScript app. It does not depend on Jekyll
-or the imsank website layout. The app is at the folder root, with relative assets
-so it can later be hosted at a domain root or a GitHub Pages repository path.
+The planning workspace is `C:\Users\sanka\work\learn_kanada_app`. The app source
+is the nested Git checkout at
+`C:\Users\sanka\work\learn_kanada_app\.preview-site\repo`; its lesson source is
+in `kanada/`. Keep the product plan here in `kanada/plan.md` and this setup
+contract in `kanada/dev_setup.md`.
 
-The new GitHub account/repository details are pending. No new remote has been
-configured and nothing has been published to a new account.
+- Remote: `https://github.com/solpickle/learn_language.git`
+- Production: <https://solpickle.github.io/learn_language/kanada/>
+- GitHub Pages deploys from `main` using `.github/workflows/publish.yml`.
+- The app is static HTML/CSS/JavaScript and does not depend on the imsank site.
+- The seven-day MVP is active; Days 1–5 exist, with Days 6–7 planned.
 
-## Files
-- index.html, styles.css, app.js: interface.
-- phrases.mjs: five prototype phrases.
-- recorded.mjs: saved MP3 playback; speech.mjs: optional browser TTS.
-- audio/: all five MP3s plus manifest.json recording source text and voice.
-- scripts/generate_kannada_audio.py: regenerate audio from phrase data.
-- tests/kannada-speech.test.mjs: six speech tests.
-- plan.md: product plan and checklist; this file: active setup contract.
+For each feature, fetch latest `origin/main`, create a new feature branch, run
+the checks, push, create/merge a PR with GitHub CLI, watch the Pages workflow,
+then verify the public page and representative MP3. The user authorized this
+GitHub CLI workflow. Do not merge feature branches locally into `main`.
+
+## Main files
+
+- `kanada/index.html`, `styles.css`, `app.js`: Home and shared app behavior.
+- `kanada/day-1/` through `kanada/day-5/`: lesson pages, content modules, local
+  styling, and generated audio folders with manifests.
+- `kanada/read/`: sight words, recognition practice, and vowel-mark examples.
+- `kanada/numbers/` and `kanada/alphabet/`: reference tabs.
+- `kanada/scripts/generate_kannada_audio.py`: generate committed Sapna MP3s.
+- `kanada/tests/`: content, audio, interaction, navigation, and publish checks.
+- `.github/workflows/publish.yml`: test and deploy static files to GitHub Pages.
+- `AGENTS.md`: standing content, accessibility, styling, and workflow instructions.
+- `kanada/plan.md`: active checklist, content scope, and progress history.
 
 ## Local preview and validation
-From this folder:
+
+From the repository root:
 ```powershell
-& 'C:\Users\sanka\miniconda3\envs\ds_310\python.exe' -m http.server 4174 --bind 127.0.0.1
-node --test tests/kannada-speech.test.mjs
-node --check app.js
+& 'C:\Users\sanka\work\learn_kanada_app\.venv-tts\Scripts\python.exe' -m http.server 4174 --bind 127.0.0.1
+node --test kanada/tests/*.test.mjs
+node --check kanada/day-1/app.js
 ```
-Open http://127.0.0.1:4174/ . Use HTTP because the app uses JavaScript modules.
+Open `http://127.0.0.1:4174/kanada/` or the lesson path you are reviewing.
+Serve over HTTP because pages use JavaScript modules.
 
-## Audio generation
-Python is only needed for generation/preview, not for the published app.
-The existing isolated environment remains at
-`C:\Users\sanka\work\learn_kanada_app\.venv-tts`; it contains edge-tts==7.2.8.
-It was not moved or copied because Python virtual environments are not portable.
+## Saved audio generation
 
-From this folder:
+Python is only needed to generate MP3s, not to play the published app. The
+working environment is `C:\Users\sanka\work\learn_kanada_app\.venv-tts`; it has
+`edge-tts==7.3.1`. The generator sends the Kannada text to Microsoft's online
+speech service using `kn-IN-SapnaNeural`; generated MP3s and `manifest.json` are
+committed with the lesson. A published page makes no online TTS requests.
+
+For example, regenerate Day 1 from the repository root:
 ```powershell
-& 'C:\Users\sanka\work\learn_kanada_app\.venv-tts\Scripts\python.exe' scripts/generate_kannada_audio.py --app-dir . --output audio
+& 'C:\Users\sanka\work\learn_kanada_app\.venv-tts\Scripts\python.exe' kanada/scripts/generate_kannada_audio.py --app-dir kanada/day-1 --output kanada/day-1/audio
 ```
-Alternatively create a local .venv and install scripts/requirements-audio.txt.
-Generation needs internet and Node.js. It calls Microsoft's online service via
-the third-party edge-tts library, using kn-IN-SapnaNeural. No API key is used.
-Commit generated MP3s and the manifest with changes to phrase content.
+Use the same generator with the relevant day directory for other lessons.
 
-## Migration and status
-The app was copied from imsank.github.io/hobby/learn-kannada, and every app/audio
-file plus the generator and test was hash-verified before source removal.
-The old Hobby directory, primary navigation entry and related site notes were
-removed. Source removal is on feature/learn-kannada_v2 in the old repository;
-deployment status is recorded below when verified. This is an ordinary Git
-deletion, not a rewrite of historical commits.
+## Current product agreement
 
-The original planning workspace remains at C:\Users\sanka\work\learn_kanada_app
-as an archive and pointer; plans in this new folder are now authoritative.
+- Keep the app compact, readable, and friendly at laptop and phone widths.
+- Pair Kannada script with plain romanization, English meaning, and saved audio.
+- Teach short practical conversations and reusable phrases; preserve citations on
+  lesson pages when a source informed the lesson.
+- Progress stays in each browser's local storage; there is no backend or login.
+- Fluent-speaker language/audio review and user phone feedback are tracked as
+  pending until actually completed.
+- Future content remains within Days 1–7 unless the user extends the scope.
 
-## Product agreement
-- Keep the compact visual style and comfortable tap targets.
-- Generated sample audio was accepted by the user.
-- The current app contains Days 1–4 of the seven-day MVP; Days 5–7 are still planned.
-- Next planned lesson after Day 5: Day 6, grocery shopping (final phrases still need agreement).
-- Include readable Kannada, romanization, English and saved audio.
-- No backend or authentication; future progress stays local to each browser.
-- Phone testing and fluent-speaker language review are not recorded as complete.
-- Use solpickle/learn_language for source control. GitHub Pages hosting is a separate next step.
-
-Migration verified 2026-10-11: removal commit 7972ea5 was pushed and merged into old-site master; GitHub Pages deployment succeeded. Standalone audio played through completion; six tests and old-site Jekyll build passed. New hosting remains pending.
-
-Repository setup: GitHub account solpickle; repository-local commit author solpicker <sankarshan96@live.com>. Source push requested by user; do not infer that GitHub Pages is already enabled.
-Publishing workflow added on feature/pages-deploy (2026-10-11): GitHub Pages Source is GitHub Actions; .github/workflows/publish.yml tests the app and publishes only the root landing page plus kanada runtime files/audio after a push or merge to main. The app URL is https://solpickle.github.io/learn_language/kanada/. Future work should use a new feature branch, review/test, then merge to main.
-## Day 1 commands
-
-From the repository root, run `node --test kanada/tests/*.test.mjs` and serve
-with `python -m http.server 4174`. To regenerate Day 1 MP3s, use the shared
-`kanada/scripts/generate_kannada_audio.py` with `--app-dir kanada/day-1`
-and `--output kanada/day-1/audio`. It reads `day-1/phrases.mjs`, an adapter for
-`content.mjs`. Commit both content and generated MP3s. The old `.venv-tts`
-executable was blocked by Windows application control on 2026-10-11; the
-bundled Codex Python with `edge-tts==7.2.8` installed to a temporary target
-worked. The published site requires no Python or network TTS calls.
+Older migration and prototype notes below are historical records. For the
+current workflow and state, follow the dated notes at the top of this file.

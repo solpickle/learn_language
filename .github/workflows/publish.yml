@@ -30,7 +30,7 @@ jobs:
           cp kanada/index.html kanada/styles.css kanada/app.js kanada/phrases.mjs kanada/recorded.mjs kanada/quiz-feedback.mjs kanada/speech.mjs _site/kanada/
           cp kanada/audio/*.mp3 _site/kanada/audio/
           cp kanada/day-1/index.html kanada/day-1/styles.css kanada/day-1/app.js kanada/day-1/content.mjs _site/kanada/day-1/
-          cp kanada/day-1/audio/*.mp3 _site/kanada/day-1/audio/
+          cp kanada/day-1/audio/*.mp3 kanada/day-1/audio/manifest.json _site/kanada/day-1/audio/
           cp kanada/day-2/index.html kanada/day-2/styles.css kanada/day-2/app.js kanada/day-2/content.mjs _site/kanada/day-2/
           cp kanada/day-2/audio/*.mp3 _site/kanada/day-2/audio/
           cp kanada/day-3/index.html kanada/day-3/styles.css kanada/day-3/app.js kanada/day-3/content.mjs _site/kanada/day-3/

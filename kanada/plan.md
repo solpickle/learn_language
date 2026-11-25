@@ -14,9 +14,11 @@
 
 > **Day 5 published — 2026-11-25:** PR #23 merged `feature/day-5-review`; Pages run [45666697799](https://github.com/solpickle/learn_language/actions/runs/45666697799) passed. The review lesson is live at [Day 5](https://solpickle.github.io/learn_language/kanada/day-5/). It asks for directions to a vegetable shop, then reuses familiar phrases to buy half a kilo of tomatoes. It includes a pattern recap, five-line story, six mixed listening questions, and a mission. All 39 project tests passed; the published page and cross-day Sapna audio were verified in browser. Fluency review and user phone feedback remain open.
 
-> **Day 5 scope correction — 2026-11-25:** The user clarified that the full list of real-life situations previously shared was meant for Day 5, not just a future scenario bank. Branch `feature/day-5-real-life-scenarios` is expanding the lesson into 11 short conversations (DMart, vegetable and sweet shops, scooter puncture repair, auto, bus, traffic stop, Udupi restaurant, temple flowers, household help, and PAN–Aadhaar help desk). It also adds Day 5 sight words to Read Kannada and new saved Sapna audio. Automated checks and publication are pending. The Aadhaar/PAN dialogue is at a general help desk because the official linking service is on Income Tax e-Filing, not a municipal service.
+> **Day 5 scope correction — completed 2026-11-25:** The user clarified that the full list of real-life situations belonged in Day 5. The 11 conversations and Day 5 Read Kannada additions are published in PR #25; see the current deployment note below.
 
 > **Day 5 expanded and published — 2026-11-25:** The 11 requested scenarios, saved audio, nine Day 5 sight words, and updated Read Kannada page are live. PR #25 merged as commit `38bffa2`; Pages run [45670566281](https://github.com/solpickle/learn_language/actions/runs/45670566281) succeeded. The public Day 5 page shows all 11 situations; its first phrase audio played through in browser review. All 40 project tests and syntax checks passed. Fluent-speaker review and user phone feedback remain open.
+
+> **Day 1 bus-stop expansion in progress — 2026-11-25:** Branch `feature/day-1-bus-stop-introductions` adds a two-way stranger introduction at a bus stop (greeting, name, how are you, home area, study/work, destination, and nice to meet you), plus five age/gender/student/work pairings. Twenty-one new Kannada Sapna clips support the dialogue and substitutions. Read Kannada grows to 69 total words, including 11 Day 1 entries. Local responsive review and all 41 project tests pass; PR, deployment, and live verification are pending. Fluent-speaker review and user phone feedback remain open.
 
 ## Active implementation checklist
 
@@ -77,6 +79,18 @@
 - [x] Test, publish, and verify the new scenario and its audio; update the documented Read Kannada count (PR #20; Pages run 45660301987 succeeded).
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 4 and the reading additions.
+
+### Day 1 — bus-stop introductions
+
+- [x] Keep the existing first-lesson phrases and pattern, then add a two-way stranger conversation at a Bengaluru bus stop.
+- [x] Include greetings, “How are you?”, names, where each person lives, work/study, travel destination, and a friendly closing.
+- [x] Show five adaptable pairings: boy–girl (15), boy–boy (20), girl–girl (20), woman–man (35), and older man (70)–schoolboy (10, with family nearby).
+- [x] Provide Kannada script, simple romanization, English meaning, and saved Sapna audio for every new phrase and practice answer.
+- [x] Add compact, expandable pair examples and a role-play mission; cite the Kannada Abhivrudhi Pradhikara course and introductory phrase guide.
+- [x] Add 11 Day 1 phrase cards to Read Kannada; the page now has 69 total sight words.
+- [x] Run the full suite and JavaScript syntax checks (41 project tests passed); inspect phone and desktop layouts and play new audio locally.
+- [ ] Create/merge the PR, verify GitHub Pages deployment, and inspect live lesson/audio.
+- [ ] Get fluent-speaker review and record the user's phone feedback.
 
 ### Day 2 — want / don't want
 
