@@ -1,4 +1,4 @@
-// A compact reading bridge for words used in Days 1–3.
+// A compact reading bridge for words used in Days 1–4.
 export const words = [
   {id:"naanu", script:"ನಾನು", roman:"Naanu", meaning:"I", example:"ನಾನು ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ.", exampleRoman:"Naanu Kannada kaliyuttiddene.", note:"Look for ನಾ at the start."},
   {id:"nanage", script:"ನನಗೆ", roman:"Nanage", meaning:"to me / for me", example:"ನನಗೆ ಸ್ವಲ್ಪ ಕನ್ನಡ ಗೊತ್ತು.", exampleRoman:"Nanage swalpa Kannada gottu.", note:"Look for ಗೆ at the end."},
@@ -40,7 +40,14 @@ export const words = [
   {id:"balakke", day:4, script:"ಬಲಕ್ಕೆ", roman:"Balakke", meaning:"To the right", example:"ಬಲಕ್ಕೆ ತಿರುಗಿ.", exampleRoman:"Balakke tirugi.", note:"Compare it with ಎಡಕ್ಕೆ (edakke), to the left."},
   {id:"neravaagi", day:4, script:"ನೇರವಾಗಿ", roman:"Neravaagi", meaning:"Straight", example:"ನೇರವಾಗಿ ಹೋಗಿ.", exampleRoman:"Neravaagi hogi.", note:"Combine with ಹೋಗಿ (hogi, go): go straight."},
   {id:"bus-nildana", day:4, script:"ಬಸ್ ನಿಲ್ದಾಣ", roman:"Bus nildaana", meaning:"Bus stop / bus station", example:"ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?", exampleRoman:"Bus nildaana ellide?", note:"Put a place name before ಎಲ್ಲಿದೆ? (ellide?, where is it?)."},
-  {id:"nillisi", day:4, script:"ನಿಲ್ಲಿಸಿ", roman:"Nillisi", meaning:"Please stop", example:"ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.", exampleRoman:"Illi nillisi.", note:"A polite instruction; ಇಲ್ಲಿ (illi) means here."}
+  {id:"nillisi", day:4, script:"ನಿಲ್ಲಿಸಿ", roman:"Nillisi", meaning:"Please stop", example:"ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.", exampleRoman:"Illi nillisi.", note:"A polite instruction; ಇಲ್ಲಿ (illi) means here."},
+  {id:"address", day:4, script:"ಅಡ್ರೆಸ್", roman:"Address", meaning:"Address", example:"ಈ ಅಡ್ರೆಸ್ ಎಲ್ಲಿದೆ?", exampleRoman:"Ee address ellide?", note:"A common English loan word; show the address on your phone."},
+  {id:"indiranagar", day:4, script:"ಇಂದಿರಾನಗರ", roman:"Indiranagar", meaning:"Indiranagar (Bengaluru area)", example:"ಇಂದಿರಾನಗರಕ್ಕೆ ಹೋಗಬೇಕು.", exampleRoman:"Indiranagar-ge hogbeku.", note:"A place name; -ge points to the destination."},
+  {id:"mg-road", day:4, script:"ಎಂ.ಜಿ. ರೋಡ್", roman:"MG Road", meaning:"MG Road (Bengaluru area)", example:"ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.", exampleRoman:"MG Road-ge ondu ticket kodi.", note:"A Bengaluru destination in the bus-ticket phrase."},
+  {id:"ticket", day:4, script:"ಟಿಕೆಟ್", roman:"Ticket", meaning:"Ticket", example:"ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.", exampleRoman:"MG Road-ge ondu ticket kodi.", note:"Listen for this in the bus-conductor scenario."},
+  {id:"time", day:4, script:"ಟೈಮ್", roman:"Time", meaning:"Time", example:"ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?", exampleRoman:"Eshtu time agatte?", note:"Use this with ಎಷ್ಟು (eshtu, how much) to ask how long."},
+  {id:"traffic", day:4, script:"ಟ್ರಾಫಿಕ್", roman:"Traffic", meaning:"Traffic", example:"ಟ್ರಾಫಿಕ್ ಮೇಲೆ ಡಿಪೆಂಡ್ ಆಗತ್ತೆ.", exampleRoman:"Traffic mele depend agatte.", note:"A common English loan word in a possible travel-time reply."},
+  {id:"marathahalli", day:4, script:"ಮಾರತಹಳ್ಳಿ", roman:"Marathahalli", meaning:"Marathahalli (Bengaluru area)", example:"ಮಾರತಹಳ್ಳಿಯಿಂದ ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?", exampleRoman:"Marathahalliyinda MG Road-ge eshtu time agatte?", note:"A Bengaluru place name used to ask about journey time."}
 ];
 
 export const forms = [
@@ -62,7 +69,10 @@ export const questions = [
   {wordId:"kodi", ask:"Which reading matches this word?", choices:["Kodi","Keji","Tomato"], correct:"Kodi"},
   {wordId:"elli", ask:"Which reading means where?", choices:["Elli","Illi","Alli"], correct:"Elli"},
   {wordId:"munde", ask:"What does this word mean?", choices:["To the left","Ahead / in front","There"], correct:"Ahead / in front"},
-  {wordId:"balakke", ask:"Which direction is this?", choices:["To the right","To the left","Straight"], correct:"To the right"}
+  {wordId:"balakke", ask:"Which direction is this?", choices:["To the right","To the left","Straight"], correct:"To the right"},
+  {wordId:"ticket", ask:"Which reading means ticket?", choices:["Ticket","Time","Traffic"], correct:"Ticket"},
+  {wordId:"indiranagar", ask:"Which place name is this?", choices:["MG Road","Indiranagar","Marathahalli"], correct:"Indiranagar"},
+  {wordId:"time", ask:"Which reading means time?", choices:["Traffic","Time","Address"], correct:"Time"}
 ];
 
 export const phrases = words.map(({id, script}) => ({id, kannada:script}));

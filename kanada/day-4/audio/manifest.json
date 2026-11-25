@@ -89,6 +89,36 @@
       "file": "thanks.mp3"
     },
     {
+      "id": "address-where",
+      "text": "ಈ ಅಡ್ರೆಸ್ ಎಲ್ಲಿದೆ?",
+      "file": "address-where.mp3"
+    },
+    {
+      "id": "indiranagar-go",
+      "text": "ಇಂದಿರಾನಗರಕ್ಕೆ ಹೋಗಬೇಕು.",
+      "file": "indiranagar-go.mp3"
+    },
+    {
+      "id": "mg-road-ticket",
+      "text": "ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.",
+      "file": "mg-road-ticket.mp3"
+    },
+    {
+      "id": "marathahalli-time",
+      "text": "ಮಾರತಹಳ್ಳಿಯಿಂದ ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?",
+      "file": "marathahalli-time.mp3"
+    },
+    {
+      "id": "traffic-depend",
+      "text": "ಟ್ರಾಫಿಕ್ ಮೇಲೆ ಡಿಪೆಂಡ್ ಆಗತ್ತೆ.",
+      "file": "traffic-depend.mp3"
+    },
+    {
+      "id": "sari",
+      "text": "ಸರಿ.",
+      "file": "sari.mp3"
+    },
+    {
       "id": "bus-nildana",
       "text": "ಬಸ್ ನಿಲ್ದಾಣ",
       "file": "bus-nildana.mp3"
@@ -97,6 +127,41 @@
       "id": "nillisi",
       "text": "ನಿಲ್ಲಿಸಿ",
       "file": "nillisi.mp3"
+    },
+    {
+      "id": "address",
+      "text": "ಅಡ್ರೆಸ್",
+      "file": "address.mp3"
+    },
+    {
+      "id": "indiranagar",
+      "text": "ಇಂದಿರಾನಗರ",
+      "file": "indiranagar.mp3"
+    },
+    {
+      "id": "mg-road",
+      "text": "ಎಂ.ಜಿ. ರೋಡ್",
+      "file": "mg-road.mp3"
+    },
+    {
+      "id": "ticket",
+      "text": "ಟಿಕೆಟ್",
+      "file": "ticket.mp3"
+    },
+    {
+      "id": "time",
+      "text": "ಟೈಮ್",
+      "file": "time.mp3"
+    },
+    {
+      "id": "traffic",
+      "text": "ಟ್ರಾಫಿಕ್",
+      "file": "traffic.mp3"
+    },
+    {
+      "id": "marathahalli",
+      "text": "ಮಾರತಹಳ್ಳಿ",
+      "file": "marathahalli.mp3"
     }
   ]
 }

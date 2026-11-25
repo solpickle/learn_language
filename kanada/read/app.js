@@ -27,7 +27,7 @@ function playButton(word, label = "▶ Listen") {
 }
 
 let currentDay = 0;
-const dayLabels = {1:"First conversation", 2:"Asking and choosing", 3:"Price and quantity", 4:"Location and directions"};
+const dayLabels = {1:"First conversation", 2:"Asking and choosing", 3:"Price and quantity", 4:"Directions and travel"};
 for (const word of words) {
   const day = word.day || 1;
   if (day !== currentDay) {
