@@ -1,8 +1,4 @@
-> **Current status — 2026-11-17:** Day 3 is live. Read Kannada now groups 32 words across Days 1–3, with six added Day 1 terms, two Day 3 price terms, saved audio, and direct group links. This feature is on `feature/kannada-read-days-1-3`; language/audio review and user phone feedback remain pending.
-
-> **Current status — 2026-11-17:** Day 3 (price and quantity) is implemented on `feature/kannada-day-3` with generated Kannada audio, a five-line market mini-story, four listening questions, and eleven Day 3 sight words. New language/audio review and phone feedback remain open. Follow the current repo contract in `AGENTS.md`; merge through a GitHub CLI PR and monitor the Pages workflow. This note supersedes older migration and status entries below.
-
-> **Current status — 2026-11-16:** `AGENTS.md` now records the app's scope, visual style, audio, and workflow contract. Day 2 (want / don't want) is implemented on `feature/kannada-day-2` with saved MP3s and five more reading words. Days 3–7, user phone feedback, and fluent-speaker review remain open. Older migration and hosting notes below are historical.
+> **Current status — 2026-11-25:** Day 4 (location and directions) is implemented on `feature/kannada-day-4`; 19 generated Sapna recordings, Read Kannada coverage for 41 words across Days 1–4, and 13 recognition questions are in place. The PR merge and Pages deployment remain pending. Fluent-speaker review and user phone feedback remain open.
 
 > **Reading bridge — 2026-10-11:** User accepted Day 1 and requested help recognizing Kannada script before more lesson content. A separate `/kanada/read/` page on `feature/read-kannada` teaches ten Day 1 sight words, selected vowel-mark changes, and a four-question recognition practice. Day 1 pattern and mission now include romanization and direct links. Word audio and letter guidance still await fluent-speaker review; phone feedback remains pending.
 
@@ -56,6 +52,16 @@
 - [x] Generate Day 3 audio and add eleven related sight words with listening practice.
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 3 and the reading additions.
+
+### Day 4 — location and directions
+
+- [x] Teach `elli` (where), `illi` (here), `alli` (there), `munde` (ahead), left/right, and simple route directions.
+- [x] Add a reusable place + `ellide?` question, a local directions exchange, a driver stop request, a five-line story, four listening questions, and a mission.
+- [x] Generate and commit 19 `kn-IN-SapnaNeural` recordings.
+- [x] Add nine Day 4 sight words to Read Kannada and three recognition questions; the page now groups 41 words across Days 1–4.
+- [x] Link Day 4 from Home, Read Kannada, and the Pages workflow.
+- [ ] Get fluent-speaker review of new wording, romanization, and audio.
+- [ ] Record user phone feedback on Day 4 and the reading additions.
 
 ### Day 2 — want / don't want
 
@@ -167,7 +173,7 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 - [ ] Polish Day 1: greetings and survival Kannada.
 - [x] Add Day 2: want / don't want.
 - [x] Add Day 3: price and quantity.
-- [ ] Add Day 4: location and directions.
+- [x] Add Day 4: location and directions.
 - [ ] Add Day 5: review and mini conversation.
 - [ ] Add Day 6: grocery shopping (finalize the specific phrases before authoring).
 - [ ] Add Day 7: vegetables and quantities (finalize the specific phrases before authoring).

@@ -15,7 +15,7 @@ function element(tag, className, value) {
   return node;
 }
 function listen(word) {
-  const folder = word.day === 3 ? "../day-3/audio" : "./audio";
+  const folder = word.day === 3 ? "../day-3/audio" : word.day === 4 ? "../day-4/audio" : "./audio";
   player.play(new URL(`${folder}/${word.id}.mp3`, import.meta.url).href, Number($("rate").value), word.id);
 }
 function playButton(word, label = "▶ Listen") {
@@ -27,7 +27,7 @@ function playButton(word, label = "▶ Listen") {
 }
 
 let currentDay = 0;
-const dayLabels = {1:"First conversation", 2:"Asking and choosing", 3:"Price and quantity"};
+const dayLabels = {1:"First conversation", 2:"Asking and choosing", 3:"Price and quantity", 4:"Location and directions"};
 for (const word of words) {
   const day = word.day || 1;
   if (day !== currentDay) {
