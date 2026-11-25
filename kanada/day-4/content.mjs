@@ -22,7 +22,11 @@ export const phrases = [
   {id:"mg-road-ticket", kannada:"ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಒಂದು ಟಿಕೆಟ್ ಕೊಡಿ.", roman:"MG Road-ge ondu ticket kodi.", english:"One ticket to MG Road, please.", note:"A simple request to a bus conductor."},
   {id:"marathahalli-time", kannada:"ಮಾರತಹಳ್ಳಿಯಿಂದ ಎಂ.ಜಿ. ರೋಡ್‌ಗೆ ಎಷ್ಟು ಟೈಮ್ ಆಗತ್ತೆ?", roman:"Marathahalliyinda MG Road-ge eshtu time agatte?", english:"How long does it take from Marathahalli to MG Road?", note:"Eshtu time agatte? asks how long something takes."},
   {id:"traffic-depend", kannada:"ಟ್ರಾಫಿಕ್ ಮೇಲೆ ಡಿಪೆಂಡ್ ಆಗತ್ತೆ.", roman:"Traffic mele depend agatte.", english:"It depends on the traffic.", note:"A possible answer to a travel-time question."},
-  {id:"sari", kannada:"ಸರಿ.", roman:"Sari.", english:"Okay.", note:"A short, common response."}
+  {id:"sari", kannada:"ಸರಿ.", roman:"Sari.", english:"Okay.", note:"A short, common response."},
+  {id:"where-are-you", kannada:"ನೀವು ಎಲ್ಲಿ ಇದ್ದೀರಿ?", roman:"Neevu elli iddiri?", english:"Where are you?", note:"Ask this on a call when you need to find the driver."},
+  {id:"spice-garden-near", kannada:"ನಾನು Spice Garden ಹತ್ತಿರ ಇದ್ದೀನಿ.", roman:"Naanu Spice Garden hattira iddini.", english:"I am near Spice Garden.", note:"Hattira means near. A driver can name a nearby landmark."},
+  {id:"smahitha-near", kannada:"ನಾನು Smahitha Maruthi Homes ಹತ್ತಿರ ಇದ್ದೀನಿ.", roman:"Naanu Smahitha Maruthi Homes hattira iddini.", english:"I am near Smahitha Maruthi Homes.", note:"Tell the driver your landmark so you can find each other."},
+  {id:"chinnapannahalli-route", kannada:"ನೇರವಾಗಿ ಹೋಗಿ, ಚಿನ್ನಪ್ಪನಹಳ್ಳಿ ರಸ್ತೆಯಲ್ಲಿ ಎಡಕ್ಕೆ ತಿರುಗಿ.", roman:"Neravaagi hogi, Chinnapannahalli Road-alli edakke tirugi.", english:"Go straight, then turn left on Chinnapannahalli Road.", note:"A route instruction using neravaagi (straight) and edakke tirugi (turn left)."}
 ];
 const phrase = id => phrases.find(item => item.id === id);
 export const dialogue = [
@@ -60,6 +64,16 @@ export const scenarios = [
       {speaker:"You", ...phrase("marathahalli-time"), audioId:"marathahalli-time"},
       {speaker:"Conductor", ...phrase("traffic-depend"), audioId:"traffic-depend"}
     ]
+  },
+  {
+    title:"Meet your auto near Smahitha Maruthi Homes",
+    context:"You are waiting near Smahitha Maruthi Homes. The driver calls from Spice Garden. Ask where they are, share your landmark, then guide them using the route you gave.",
+    lines:[
+      {speaker:"You", ...phrase("where-are-you"), audioId:"where-are-you"},
+      {speaker:"Driver", ...phrase("spice-garden-near"), audioId:"spice-garden-near"},
+      {speaker:"You", ...phrase("smahitha-near"), audioId:"smahitha-near"},
+      {speaker:"You", ...phrase("chinnapannahalli-route"), audioId:"chinnapannahalli-route"}
+    ]
   }
 ];
 export const story = [
@@ -76,12 +90,14 @@ export const questions = [
   {audioId:"stop-here", correct:"Please stop here.", choices:["Please stop here.","Thank you.","Go straight, please."]},
   {audioId:"mg-road-ticket", correct:"One ticket to MG Road, please.", choices:["One ticket to MG Road, please.","Where is this address?","It depends on traffic."]},
   {audioId:"marathahalli-time", correct:"How long does it take from Marathahalli to MG Road?", choices:["How long does it take from Marathahalli to MG Road?","I need to go to Indiranagar.","Please stop here."]},
-  {audioId:"address-where", correct:"Where is this address?", choices:["Where is this address?","One ticket to MG Road, please.","It is ahead."]}
+  {audioId:"address-where", correct:"Where is this address?", choices:["Where is this address?","One ticket to MG Road, please.","It is ahead."]},
+  {audioId:"where-are-you", correct:"Where are you?", choices:["Where are you?","I am near Spice Garden.","Go straight, please."]}
 ];
 export const audioItems = [...phrases,
   {id:"bus-nildana", kannada:"ಬಸ್ ನಿಲ್ದಾಣ"}, {id:"nillisi", kannada:"ನಿಲ್ಲಿಸಿ"},
   {id:"address", kannada:"ಅಡ್ರೆಸ್"}, {id:"indiranagar", kannada:"ಇಂದಿರಾನಗರ"},
   {id:"mg-road", kannada:"ಎಂ.ಜಿ. ರೋಡ್"}, {id:"ticket", kannada:"ಟಿಕೆಟ್"},
   {id:"time", kannada:"ಟೈಮ್"}, {id:"traffic", kannada:"ಟ್ರಾಫಿಕ್"},
-  {id:"marathahalli", kannada:"ಮಾರತಹಳ್ಳಿ"}
+  {id:"marathahalli", kannada:"ಮಾರತಹಳ್ಳಿ"},
+  {id:"hattira", kannada:"ಹತ್ತಿರ"}
 ];

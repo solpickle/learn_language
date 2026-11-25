@@ -10,6 +10,8 @@
 
 # Kannada app development setup
 
+> **Active work — 2026-11-25:** Branch `feature/day-4-auto-pickup-route` extends Day 4 with a driver-location and pickup exchange using Spice Garden, Smahitha Maruthi Homes, and the user-provided Chinnapannahalli Road direction. The new phrase audio and Read Kannada `hattira` sight word are complete; all 36 project tests pass. PR creation/merge and Pages verification remain. Read Kannada now has 49 words and 17 questions. The KDP reference was extended to Lesson 9, pp. 73–75 for the “Where are you?” pattern. Fluent-speaker review remains pending.
+
 Updated: 2026-11-17
 
 > **Standing user preferences — 2026-11-17:** Future lesson work should follow the user-specific checklist in the repository-root `AGENTS.md`: beginner-friendly script + romanization + English + saved audio; compact vertical links and a Home link in every page header/tab row; Alphabet focused on vowel signs and making simple word chunks; short red/green quiz feedback that clears after 1.8 seconds while keeping choices repeatable; and a simple Home audio area that hides browser voice selection/refresh. The active MVP remains Days 1–7.
