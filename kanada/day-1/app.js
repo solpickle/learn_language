@@ -135,7 +135,15 @@ function renderQuiz() {
 loadProgress();
 phrases.forEach(item => $("phrase-list").append(row(item, "Listen")));
 dialogue.forEach(item => $("dialogue-list").append(row(item, "Listen", true)));
-strangerPairs.forEach(pair => {
+const defaultPairings = [
+  {title:"Boy and girl · 15", people:"Two school students", context:"Both are waiting for the bus to school.", phraseIds:["study-school", "going-school"]},
+  {title:"Boy and boy · 20", people:"Two college students", context:"They meet on the way to class.", phraseIds:["study-college", "going-college"]},
+  {title:"Girl and girl · 20", people:"Two college students", context:"They are heading to college by bus.", phraseIds:["study-college", "going-college"]},
+  {title:"Woman and man · 35", people:"An office worker and a shop worker", context:"One is commuting to work; the other is going to the market.", phraseIds:["work-office", "work-shop", "going-office", "going-market"]},
+  {title:"Older man and schoolboy · 70 and 10", people:"A retired older man and a school student", context:"They exchange a greeting at a busy stop; the boy is with his family.", phraseIds:["going-clinic", "going-school"]}
+];
+const availablePairs = strangerPairs?.length ? strangerPairs : defaultPairings;
+availablePairs.forEach(pair => {
   const card = el("details", "pair-card");
   card.append(el("summary", "", pair.title), el("p", "pair-people", pair.people), el("p", "pair-context", pair.context));
   const examples = el("div", "pair-examples");
