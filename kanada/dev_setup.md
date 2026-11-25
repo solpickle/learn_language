@@ -1,3 +1,5 @@
+> **Active Day 5 work — 2026-11-25:** Branch `feature/day-5-review` builds a review lesson around asking where the vegetable shop is, then buying half a kilo of tomatoes. It reuses Days 1–4 phrase data and MP3s, so there are no duplicate audio assets. The page is linked from Home and the Pages workflow. All 39 project tests pass; PR, deployment, and published browser verification remain. Day 5 continues to need fluent-speaker review and phone feedback.
+
 > **Day 4 update (2026-11-25):** Day 4 is live at [https://solpickle.github.io/learn_language/kanada/day-4/](https://solpickle.github.io/learn_language/kanada/day-4/). PR #17 added three Bengaluru travel scenarios: finding an address in Indiranagar, telling an auto driver the destination, and asking a bus conductor for an MG Road ticket and the Marathahalli-to-MG Road journey time. The Day 4 folder contains 32 `kn-IN-SapnaNeural` recordings, generated with pinned `edge-tts==7.3.1`; regenerate with `python kanada/scripts/generate_kannada_audio.py --app-dir kanada/day-4 --output kanada/day-4/audio`. Read Kannada now groups 48 words across Days 1–4 and has 16 recognition questions. Pages run 45543949652 passed; the live lesson and representative scenario recordings return HTTP 200, and the ticket clip played through in browser review. All 36 project tests passed before merge. The page now cites the Kannada Abhivrudhi Pradhikara course (Lesson 5, pp. 29–39) and two travel phrase guides. Citations document source patterns but do not replace fluent-speaker review; phone feedback also remains open.
 
 > **GitHub CLI workflow (2026-11-16):** For each feature, branch from latest `origin/main`, test, push, create a PR with `gh pr create`, and merge with `gh pr merge`. The merge triggers `.github/workflows/publish.yml`; check the run using `gh run list --workflow publish.yml` and `gh run watch <run-id> --exit-status`, then verify live URLs. Use `gh workflow run publish.yml --ref main` only for a needed manual redeploy. This is the current development contract; do not merge feature branches locally into `main`.
@@ -95,7 +97,7 @@ as an archive and pointer; plans in this new folder are now authoritative.
 - Keep the compact visual style and comfortable tap targets.
 - Generated sample audio was accepted by the user.
 - The current app contains Days 1–4 of the seven-day MVP; Days 5–7 are still planned.
-- Next planned lesson: Day 5, review and mini conversation.
+- Next planned lesson after Day 5: Day 6, grocery shopping (final phrases still need agreement).
 - Include readable Kannada, romanization, English and saved audio.
 - No backend or authentication; future progress stays local to each browser.
 - Phone testing and fluent-speaker language review are not recorded as complete.

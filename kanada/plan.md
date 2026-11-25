@@ -12,6 +12,8 @@
 
 > **Published — 2026-11-25:** Day 4's auto pickup exchange is live from PR #20; Pages run [45660301987](https://github.com/solpickle/learn_language/actions/runs/45660301987) succeeded. Added the Spice Garden ↔ Smahitha Maruthi Homes landmark exchange, the user-supplied Chinnapannahalli Road turn, five saved Sapna MP3s, `hattira` (near) in Read Kannada, and a new question. The live route recording and sight-word recording both played through in browser review. Read Kannada now has 49 words and 17 questions. All 36 project tests passed. The Kannada Abhivrudhi Pradhikara course is cited through Lesson 9, pp. 73–75. Fluent-speaker review and user phone feedback remain open.
 
+> **Day 5 in progress — 2026-11-25:** Building the agreed review lesson on `feature/day-5-review`. Chosen mini conversation: ask for directions to a vegetable shop, then greet the seller and buy half a kilo of tomatoes, reusing phrases and saved recordings from Days 1–4. Includes pattern recap, five-line story, six mixed listening questions, and a mission. Automated tests pass; PR and Pages/browser verification remain.
+
 ## Active implementation checklist
 
 ### Quiz answer feedback
@@ -81,6 +83,17 @@
 - [x] Add Day 2 sight words to Read Kannada.
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 2 and the reading additions.
+
+### Day 5 — review and mini conversation
+
+- [x] Revisit key phrases from Days 1–4 with script, romanization, English, and saved audio.
+- [x] Build a directions-plus-vegetable-shop conversation using existing phrases; no new vocabulary.
+- [x] Add a three-pattern recap, five-line mini story, six mixed listening questions, and a mission.
+- [x] Reuse audio files from Days 1–4 rather than duplicating recordings.
+- [x] Link Day 5 from Home and add its page to the GitHub Pages workflow.
+- [x] Run the complete automated suite: 39 tests pass.
+- [ ] Create/merge the PR, verify Pages deployment, and review the published layout and cross-day audio.
+- [ ] Get fluent-speaker review and record the user's phone feedback.
 
 
 ### Read Kannada bridge
@@ -188,13 +201,14 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 - [ ] Add Day 7: vegetables and quantities (finalize the specific phrases before authoring).
 - [ ] Provide a short story and 3–5 listening questions for each day, reusing known vocabulary.
 - [ ] Add one simple deterministic shop role-play using learned phrases.
+- [x] Add one short shop role-play for Day 5 that reuses learned phrases.
 - [ ] Review Kannada, English meanings, and romanization for consistency; flag uncertain content and listen to new audio before marking content polished.
 
 ### Real-life conversation scenario bank — user ideas (2026-11-25)
 
 These are topic ideas, not finalized scripts or a commitment to add all of them to Days 1–7. Match a scenario to a lesson, agree on its practical phrases, and reuse vocabulary already taught.
 
-- **Buyer and seller:** buying something at DMart, a vegetable shop, or a sweet shop; getting a scooter tyre repaired at a puncture shop. The grocery and vegetable examples may fit Days 6–7; a simple shopping exchange may also work as Day 5 review.
+- **Buyer and seller:** buying something at DMart, a vegetable shop, or a sweet shop; getting a scooter tyre repaired at a puncture shop. The grocery and vegetable examples may fit Days 6–7. Day 5 now uses a short vegetable-shop purchase as a review of Days 1–4.
 - **Getting around:** conversations with a cab/auto driver or bus conductor. Day 4 already introduces directions, auto pickup, and a bus ticket; keep richer travel situations as optional follow-ups.
 - **Food:** ordering at an Udupi restaurant, including how the learner wants sambar served with idli. This can complement the existing rough Day 9 Rameshwaram Cafe idea.
 - **Temple visit:** buying flowers from a stall outside a temple.
@@ -202,7 +216,7 @@ These are topic ideas, not finalized scripts or a commitment to add all of them 
 - **Public office:** asking about linking Aadhaar and PAN at the municipal office, as proposed by the user.
 - **Traffic stop:** discussion of a red-light or helmet violation and the fine/challan; this relates to the earlier rough Day 10 idea and stays outside the active MVP unless scope changes.
 
-Day 5 remains a review and mini-conversation lesson. Its exact role-play (for example, a compact buyer–seller exchange or a directions conversation reusing Days 1–4) is still to be chosen before writing the script.
+Day 5 remains a review and mini-conversation lesson. Its first role-play is a short directions-plus-vegetable-shop exchange; additional situations remain ideas for later lessons.
 
 ### Future lesson ideas — discuss before scripting
 
