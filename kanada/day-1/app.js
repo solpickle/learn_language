@@ -1,4 +1,4 @@
-import {phrases, introductionPhrases, dialogue, strangerPairs, story, questions} from "./content.mjs";
+import {phrases, introductionPhrases, dialogue, strangerPairs, story, questions} from "./content.mjs?v=day-1-bus-stop-20261126";
 import {createTimedAnswerHighlights} from "../quiz-feedback.mjs";
 
 const $ = id => document.getElementById(id);
