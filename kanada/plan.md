@@ -14,6 +14,8 @@
 
 > **Day 5 published — 2026-11-25:** PR #23 merged `feature/day-5-review`; Pages run [45666697799](https://github.com/solpickle/learn_language/actions/runs/45666697799) passed. The review lesson is live at [Day 5](https://solpickle.github.io/learn_language/kanada/day-5/). It asks for directions to a vegetable shop, then reuses familiar phrases to buy half a kilo of tomatoes. It includes a pattern recap, five-line story, six mixed listening questions, and a mission. All 39 project tests passed; the published page and cross-day Sapna audio were verified in browser. Fluency review and user phone feedback remain open.
 
+> **Day 5 scope correction — 2026-11-25:** The user clarified that the full list of real-life situations previously shared was meant for Day 5, not just a future scenario bank. Branch `feature/day-5-real-life-scenarios` is expanding the lesson into 11 short conversations (DMart, vegetable and sweet shops, scooter puncture repair, auto, bus, traffic stop, Udupi restaurant, temple flowers, household help, and PAN–Aadhaar help desk). It also adds Day 5 sight words to Read Kannada and new saved Sapna audio. Automated checks and publication are pending. The Aadhaar/PAN dialogue is at a general help desk because the official linking service is on Income Tax e-Filing, not a municipal service.
+
 ## Active implementation checklist
 
 ### Quiz answer feedback
@@ -84,15 +86,16 @@
 - [ ] Get fluent-speaker review of new wording, romanization, and audio.
 - [ ] Record user phone feedback on Day 2 and the reading additions.
 
-### Day 5 — review and mini conversation
+### Day 5 — everyday conversations (scope corrected 2026-11-25)
 
-- [x] Revisit key phrases from Days 1–4 with script, romanization, English, and saved audio.
-- [x] Build a directions-plus-vegetable-shop conversation using existing phrases; no new vocabulary.
-- [x] Add a three-pattern recap, five-line mini story, six mixed listening questions, and a mission.
-- [x] Reuse audio files from Days 1–4 rather than duplicating recordings.
-- [x] Link Day 5 from Home and add its page to the GitHub Pages workflow.
-- [x] Run the complete automated suite: 39 tests pass.
-- [x] Create/merge PR #23, verify Pages run 45666697799, and review the published page and cross-day audio.
+- [x] Publish the original review version in PR #23; preserve it as a historical checkpoint.
+- [x] Add compact, expandable, playable conversations covering all 11 situations the user listed.
+- [x] Generate new `kn-IN-SapnaNeural` recordings and reuse existing Day 1–4 recordings where suitable.
+- [x] Add nine useful Day 5 sight words with audio to Read Kannada.
+- [x] Cite the Kannada self-instruction course, the Bengaluru conversation guide, and official Income Tax e-Filing guidance.
+- [x] Update the Pages workflow to publish Day 5 recordings and source modules.
+- [ ] Run all project tests and JavaScript syntax checks; review the full diff.
+- [ ] Create/merge the PR, verify the Pages deployment, and inspect the live Day 5 page/audio.
 - [ ] Get fluent-speaker review and record the user's phone feedback.
 
 
@@ -196,27 +199,27 @@ Prototype URL: https://imsank.github.io/hobby/learn-kannada/ (live; deployment v
 - [x] Add Day 2: want / don't want.
 - [x] Add Day 3: price and quantity.
 - [x] Add Day 4: location and directions.
-- [ ] Add Day 5: review and mini conversation.
+- [x] Add Day 5: everyday real-life conversations; the initial one-scene release is being expanded to the full set the user expected.
 - [ ] Add Day 6: grocery shopping (finalize the specific phrases before authoring).
 - [ ] Add Day 7: vegetables and quantities (finalize the specific phrases before authoring).
 - [ ] Provide a short story and 3–5 listening questions for each day, reusing known vocabulary.
 - [ ] Add one simple deterministic shop role-play using learned phrases.
-- [x] Add one short shop role-play for Day 5 that reuses learned phrases.
+- [x] Add short Day 5 role-plays for every situation the user requested, reusing known phrases where possible.
 - [ ] Review Kannada, English meanings, and romanization for consistency; flag uncertain content and listen to new audio before marking content polished.
 
-### Real-life conversation scenario bank — user ideas (2026-11-25)
+### Day 5 scenario scope — user-requested conversations (2026-11-25)
 
-These are topic ideas, not finalized scripts or a commitment to add all of them to Days 1–7. Match a scenario to a lesson, agree on its practical phrases, and reuse vocabulary already taught.
+The user clarified that every situation in this list belongs in Day 5. Keep each exchange concise and playable; show Kannada script, readable romanization, plain English, and saved audio for each new line.
 
-- **Buyer and seller:** buying something at DMart, a vegetable shop, or a sweet shop; getting a scooter tyre repaired at a puncture shop. The grocery and vegetable examples may fit Days 6–7. Day 5 now uses a short vegetable-shop purchase as a review of Days 1–4.
-- **Getting around:** conversations with a cab/auto driver or bus conductor. Day 4 already introduces directions, auto pickup, and a bus ticket; keep richer travel situations as optional follow-ups.
-- **Food:** ordering at an Udupi restaurant, including how the learner wants sambar served with idli. This can complement the existing rough Day 9 Rameshwaram Cafe idea.
-- **Temple visit:** buying flowers from a stall outside a temple.
-- **At home:** politely asking the maid why she did not come yesterday.
-- **Public office:** asking about linking Aadhaar and PAN at the municipal office, as proposed by the user.
-- **Traffic stop:** discussion of a red-light or helmet violation and the fine/challan; this relates to the earlier rough Day 10 idea and stays outside the active MVP unless scope changes.
+- **Shops:** DMart, vegetable shop, sweet shop, scooter tyre puncture shop.
+- **Getting around:** auto/cab driver and bus conductor.
+- **Traffic stop:** red-light crossing or helmet violation, respectful exchange about the fine/challan.
+- **Food:** Udupi restaurant; let the learner choose separate sambar or sambar poured over idli.
+- **Temple visit:** buy flowers or a garland at the nearby stall.
+- **At home:** check kindly why the house helper could not come yesterday.
+- **Public help desk:** ask where PAN–Aadhaar can be linked. The actual service uses the Income Tax e-Filing portal; do not present it as a municipal service.
 
-Day 5 remains a review and mini-conversation lesson. Its first role-play is a short directions-plus-vegetable-shop exchange; additional situations remain ideas for later lessons.
+The initial single market review did not satisfy this expectation. The expanded Day 5 now uses compact expandable situations, reuses known recordings where suitable, and adds useful Day 5 sight words to Read Kannada. Day 6–7 content remains in the active MVP.
 
 ### Future lesson ideas — discuss before scripting
 
@@ -911,10 +914,13 @@ item + `kodi`. Mission: ask price.
 Teach `elli`, `illi`, `alli`, `munde`, left, right, `illi nillisi`.
 Mission: recognize/use a direction word.
 
-## Day 5 --- Review
+## Day 5 --- Everyday conversations
 
-No major new vocabulary. Mixed listening, shop role-play, directions
-role-play, short story, pattern review.
+Offer compact, expandable role-plays for all of the user-requested everyday
+situations: four shops, auto, bus, traffic stop, Udupi restaurant, temple
+flowers, household help, and PAN–Aadhaar help desk. Reuse vocabulary where it
+fits; provide audio for each new line and add selected new sight words to
+Read Kannada.
 
 ------------------------------------------------------------------------
 
